@@ -1,0 +1,168 @@
+{
+  "pages": {
+    "default": {
+      "id": "default",
+      "label": "page 1",
+      "layout": "layout1",
+      "isDefault": true
+    }
+  },
+  "widgets": {
+    "upcoming-events": {
+      "id": "upcoming-events",
+      "uri": "widgets/hub/events",
+      "useDataSources": [{
+        "dataSourceId": "upcoming-events-ds"
+        }
+      ],
+      "config": {
+        "eventsDataSourceId": "upcoming-events-ds",
+        "type": "upcoming",
+        "initiativeIds": ["acff6637c14b47bbaa329a780e0028ca"],
+        "target":"_parent",
+        "header": {
+          "title": {
+            "text": "Upcoming Events"
+          }
+        }
+      }
+    },
+    "chart": {
+      "id": "chart",
+      "uri": "widgets/common/chart",
+      "useDataSources": [{
+        "dataSourceId": "states-chart-query"
+      }],
+      "config": {
+        "chartType": "bar",
+        "categoryField": "state_abbr",
+        "valueFields": ["pop2000"],
+        "categoryLabel":  "State",
+        "valueLabels": ["Population (2000)"],
+        "sortField": "value",
+        "sortDirection": "DESC"
+      }
+    },
+    "arcgis-map": {
+      "id": "arcgis-map",
+      "uri": "widgets/arcgis/arcgis-map",
+      "label": "events map",
+      "icon": "http://localhost:3000/builder/../widgets/arcgis/arcgis-map/icon.svg",
+      "config": {
+        "canZoom": true
+      },
+      "version": "1.0.0-beta",
+      "useDataSources": [
+        {
+          "dataSourceId": "141f8f1a43a8405993e08264836a207b",
+          "rootDataSourceId": "141f8f1a43a8405993e08264836a207b"
+        }
+      ],
+      "outputDataSources": [
+        "141f8f1a43a8405993e08264836a207b-view"
+      ]
+    }
+  },
+  "layouts": {
+    "layout1": {
+      "0": {
+        "id": "0",
+        "type": "FIXED"
+      },
+      "1": {
+        "parentId": "0",
+        "pos": {
+          "x": 20,
+          "y": 100,
+          "w": 600,
+          "h": 200
+        },
+        "id": "5",
+        "type": "WIDGET",
+        "widgetId": "upcoming-events"
+      },
+      "2": {
+        "parentId": "0",
+        "pos": {
+          "x": 800,
+          "y": 100,
+          "w": 600,
+          "h": 600
+        },
+        "id": "6",
+        "type": "WIDGET",
+        "widgetId": "arcgis-map"
+      },
+      "3": {
+        "parentId": "0",
+        "pos": {
+          "x": 20,
+          "y": 320,
+          "w": 600,
+          "h": 380
+        },
+        "id": "6",
+        "type": "WIDGET",
+        "widgetId": "chart"
+      }
+    }
+  },
+  "theme": "themes/default",
+  "messages": [
+    {
+      "widgetId": "upcoming-events",
+      "messageType": "FEATURE_SET_CREATE",
+      "actions": [
+        {
+          "description": "show on map",
+          "widgetId": "arcgis-map",
+          "actionName": "display-feature-set"
+        }
+      ]
+    },
+    {
+      "widgetId": "arcgis-map",
+      "messageType": "EXTENT_CHANGE",
+      "actions": [
+        {
+          "description": "query by extent",
+          "widgetId": "upcoming-events",
+          "actionName": "query"
+        },
+        {
+          "description": "update chart extent",
+          "widgetId": "chart",
+          "actionName": "query"
+        }
+      ]
+    }
+  ],
+  "dataSources": {
+    "upcoming-events-ds": {
+      "id": "upcoming-events-ds",
+      "label": "Upcoming Events Data Source",
+      "type": "HUB_EVENTS",
+      "orgId": "bkrWlSKcjUDFDtgw"
+    },
+    "141f8f1a43a8405993e08264836a207b": {
+      "type": "WEB_MAP",
+      "itemId": "141f8f1a43a8405993e08264836a207b",
+      "id": "141f8f1a43a8405993e08264836a207b",
+      "label": "USA States"
+    },
+    "141f8f1a43a8405993e08264836a207b-view": {
+      "id": "141f8f1a43a8405993e08264836a207b-view",
+      "label": "USA States",
+      "type": "MAP_VIEW",
+      "itemId": "141f8f1a43a8405993e08264836a207b",
+      "originDataSourceId": "141f8f1a43a8405993e08264836a207b",
+      "isOutputFromWidget": true
+    },
+    "states-chart-query": {
+      "id": "states-chart-query",
+      "label": "Query states feature layer",
+      "type": "FEATURE_QUERY",
+      "url": "https://sampleserver5.arcgisonline.com/arcgis/rest/services/USA/MapServer/2"
+    }
+  }
+}

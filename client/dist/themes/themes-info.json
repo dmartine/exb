@@ -1,0 +1,26 @@
+[
+  {
+    "name": "default",
+    "label": "Default",
+    "path": "themes/default/",
+    "order": 1
+  },
+  {
+    "name": "dark",
+    "label": "Dark",
+    "path": "themes/dark/",
+    "order": 2
+  },
+  {
+    "name": "calcite",
+    "label": "Calcite",
+    "path": "themes/calcite/",
+    "order": 3
+  },
+  {
+    "name": "vivid",
+    "label": "Vivid",
+    "path": "themes/vivid/",
+    "order": 4
+  }
+]

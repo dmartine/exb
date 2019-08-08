@@ -1,0 +1,17 @@
+{
+  "name": "user-menu",
+  "type": "widget",
+  "platforms": [
+    "web",
+    "mobile"
+  ],
+  "version": "1.0.0-beta",
+  "exbVersion": "1.0.0-beta",
+  "author": "Esri R&D Center D.C.",
+  "description": "Show user name/thumbnail if they are logged in, otherwise show a sign in button",
+  "copyright": "",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0",
+  "properties": {
+    "hasSettingPage": false
+  }
+}

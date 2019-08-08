@@ -1,0 +1,23 @@
+{
+  "functionConfig": {
+    "text": "button",
+    "toolTip": "",
+    "linkParam": {
+    }
+  },
+  "styleConfig": {
+    "name": "Default",
+    "themeStyle": {
+      "className": "jimu-widget d-block",
+      "color": "primary"
+    },
+    "customStyle": {
+      "regular": {
+      },
+      "hover": {
+      },
+      "clicked": {
+      }
+    }
+  }
+}

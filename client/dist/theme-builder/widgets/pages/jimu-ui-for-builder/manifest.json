@@ -1,0 +1,13 @@
+{
+  "name": "jimu-ui-for-builder",
+  "type": "widget",
+  "version": "1.0.0-beta",
+  "exbVersion": "1.0.0-beta",
+  "author": "Esri R&D Center Beijing",
+  "description": "This is the widget used to preview Jimu UI components used by the Builder app in the theme builder.",
+  "copyright": "",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0",
+  "properties": {
+    "hasSettingPage": false
+  }
+}

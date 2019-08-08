@@ -1,0 +1,126 @@
+{
+  "colors": {
+    "grays": {
+      "gray100": "#fafafa",
+      "gray200": "#eee",
+      "gray300": "#ddd",
+      "gray400": "#c3c3c3",
+      "gray500": "#aaa",
+      "gray600": "#909090",
+      "gray700": "#666",
+      "gray800": "#444",
+      "gray900": "#333"
+    },
+    "greens": {
+      "green100": "#c8e6c9",
+      "green200": "#81c784",
+      "green300": "#4caf50",
+      "green400": "#388e3c",
+      "green500": "#1b5e20"
+    },
+    "reds": {
+      "red100": "#ffcdd2",
+      "red200": "#e57373",
+      "red300": "#f44336",
+      "red400": "#d32f2f",
+      "red500": "#b71c1c"
+    },
+    "yellows": {
+      "yellow100": "#ffecb3",
+      "yellow200": "#ffd54f",
+      "yellow300": "#ffc107",
+      "yellow400": "#ffa000",
+      "yellow500": "#ff6f00"
+    },
+    "oranges": {
+      "orange100": "#ff995f",
+      "orange200": "#ff823c",
+      "orange300": "#ff7121",
+      "orange400": "#f65900",
+      "orange500": "#f4240f"
+    },
+    "blues": {
+      "blue100": "#b3e5fc",
+      "blue200": "#4fc3f7",
+      "blue300": "#03a9f4",
+      "blue400": "#0288d1",
+      "blue500": "#01579b"
+    },
+    "purples": {
+      "purple100": "#e1bee7",
+      "purple200": "#ba68c8",
+      "purple300": "#9c27b0",
+      "purple400": "#7b1fa2",
+      "purple500": "#4a148c"
+    },
+    "white": "#fff",
+    "black": "#000",
+    "gray": "#909090",
+    "grayDark": "#444",
+    "primary": "#ff7121",
+    "secondary": "#444",
+    "light": "#fafafa",
+    "dark": "#323232"
+  },
+  "border": {
+    "color": "#aaa",
+    "width": "1px"
+  },
+  "borderRadiuses": {
+    "default": "4px",
+    "lg": "4px",
+    "sm": "2px"
+  },
+  "body": {
+    "bg": "#eee",
+    "color": "#333"
+  },
+  "header": {
+    "bg": "#eee",
+    "color": "#333"
+  },
+  "link": {
+    "color": "#ff7121",
+    "hover": {
+      "color": "#f65900"
+    }
+  },
+  "components": {
+    "button": {
+      "outlineBorder": "auto",
+      "sizes": {
+        "default": {
+          "fontSize": "0.9375rem",
+          "lineHeight": 1.5,
+          "paddingX": "1rem",
+          "paddingY": "0.375rem",
+          "borderRadius": "4px"
+        },
+        "sm": {
+          "fontSize": "0.875rem",
+          "lineHeight": 1.5,
+          "paddingX": "0.75rem",
+          "paddingY": "0.28125rem",
+          "borderRadius": "2px"
+        },
+        "lg": {
+          "fontSize": "1rem",
+          "lineHeight": 1.5,
+          "paddingX": "1rem",
+          "paddingY": "0.5rem",
+          "borderRadius": "4px"
+        }
+      },
+      "variants": {
+        "primary": {
+          "normal": "#ff7121",
+          "hover": "#f65900"
+        },
+        "secondary": {
+          "normal": "#444",
+          "hover": "#333"
+        }
+      }
+    }
+  }
+}

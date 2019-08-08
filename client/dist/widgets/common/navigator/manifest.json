@@ -1,0 +1,22 @@
+{
+  "name": "navigator",
+  "label": "Navigator",
+  "type": "widget",
+  "version": "1.0.0-beta",
+  "exbVersion": "1.0.0-beta",
+  "author": "Esri R&D Center Beijing",
+  "description": "This is the widget used in developer guide",
+  "copyright": "",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0",
+  "defaultSize": {
+    "height": 50,
+    "width": 380
+  },
+  "properties": {
+    "hasLocale": true,
+    "hasSettingPage": true
+  },
+  "supportedLocales": [
+    "en"
+  ]
+}

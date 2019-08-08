@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="109px" height="90px" viewBox="0 0 109 90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>style 1</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Style" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="0-UI-icons" transform="translate(-990.000000, -847.000000)">
+            <g id="Templates" transform="translate(990.000000, 847.000000)">
+                <g id="T-1">
+                    <g id="style01" transform="translate(16.000000, 10.000000)">
+                        <path d="M1,61 L76,61 C76.5522847,61 77,61.4477153 77,62 C77,62.5522847 76.5522847,63 76,63 L1,63 C0.44771525,63 6.76353751e-17,62.5522847 0,62 C-6.76353751e-17,61.4477153 0.44771525,61 1,61 Z M1,68 L39,68 C39.5522847,68 40,68.4477153 40,69 C40,69.5522847 39.5522847,70 39,70 L1,70 C0.44771525,70 6.76353751e-17,69.5522847 0,69 C-6.76353751e-17,68.4477153 0.44771525,68 1,68 Z" id="Text" fill="#353B40" fill-rule="nonzero"></path>
+                        <g id="Icons" transform="translate(0.000000, 45.000000)" fill-rule="nonzero">
+                            <circle id="Oval" fill="#4D545B" cx="4" cy="4" r="4"></circle>
+                            <circle id="Oval-Copy" fill="#4D545B" cx="32" cy="4" r="4"></circle>
+                            <circle id="Oval-Copy-2" fill="#4D545B" cx="59" cy="4" r="4"></circle>
+                            <rect id="Rectangle" fill="#353B40" x="12" y="3" width="10" height="2" rx="1"></rect>
+                            <rect id="Rectangle-Copy-4" fill="#353B40" x="40" y="3" width="10" height="2" rx="1"></rect>
+                            <rect id="Rectangle-Copy-9" fill="#353B40" x="67" y="3" width="10" height="2" rx="1"></rect>
+                        </g>
+                        <rect id="Title" fill="#4D545B" fill-rule="nonzero" x="19" y="36" width="40" height="3" rx="1.5"></rect>
+                        <g id="Image" transform="translate(24.000000, 0.000000)">
+                            <circle id="Oval" fill="#4D545B" fill-rule="nonzero" cx="15" cy="15" r="15"></circle>
+                            <polygon id="image-14" fill="#000000" points="13.8867925 15.3584906 17 11 22 18 8 18 12 13"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

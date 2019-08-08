@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+		<title>Theme Builder</title>
+		
+		<!--
+			* Be default, we'll use structural URL pattern.
+			* When download, to simplify the deployment, we'll not use the structural URL, which means will put
+				app id and page id in URL query parameter. So, when download, we'll:
+				* Comment out baseURI
+				* Change to: ROOT_PATH = getPath();
+				* Change to: PACKAGES_IN_APP_FOLDER = true;
+				* Change to: USE_STRUCTURAL_URL = false;
+		-->
+
+
+		<!--
+			This will be commented out when downloaded. 
+			Please change this when you want to use structrual URL, this path should point to the experience folder you deployed
+		-->
+		<base href="/theme-builder/"/>
+		
+		<link rel="stylesheet" type="text/css" href="../jimu-ui/styles/base.css" />
+		
+		<script>
+			/** Please change this when you want to use structrual URL, this path should point to the experience folder you deployed */
+			var MOUNT_PATH = '/';
+			var ROOT_PATH = MOUNT_PATH + 'theme-builder/';
+
+			/** 
+			 * if true, means all packages(widgets, jimu-core, ...) are in app folder.
+			 * if false, means packages and app are in the same root folder 
+			 * 
+			 * When download, we will change this value to "true" to put all packages in the same folder
+			 * */
+			var PACKAGES_IN_APP_FOLDER = false;
+			
+			/**
+			 * true means :appId/page/:pageId
+			 * false means ?id=:appId&page=:pageId
+			 */
+			var USE_STRUCTURAL_URL = true;
+
+			var arcgisApiUrl = 'https://jsdev.arcgis.com/4.12/';
+			var env = 'prod';
+
+			/*
+			Please make sure the script is in <head>, this can help dojo to find the correct "insertPointSibling"
+			See dojo/dojo.js line 1724-1728
+			*/
+
+			/** A list of current icons available in ExB **/
+			var iconList = 'account.svg,add-10.svg,add-12.svg,add-16.svg,add-24.svg,add-8.svg,add.svg,align-h-center-10.svg,align-h-left-10.svg,align-h-right-10.svg,align-justify.svg,align-left.svg,align-middle.svg,align-right.svg,align-v-bottom-10.svg,align-v-center-10.svg,align-v-top-10.svg,android.svg,app-access.svg,app-launch.svg,app-more.svg,app-preview.svg,app-sort.svg,app-view-card.svg,app-view-list.svg,apple.svg,arrow-down-12.svg,arrow-down-14.svg,arrow-down-8.svg,arrow-down.svg,arrow-left-12.svg,arrow-left-14.svg,arrow-left-8.svg,arrow-left.svg,arrow-right-12.svg,arrow-right-14.svg,arrow-right-8.svg,arrow-right.svg,arrow-up-12.svg,arrow-up-14.svg,arrow-up-8.svg,arrow-up-down.svg,authority.svg,bold.svg,calendar.svg,carret.svg,character-space.svg,chart.svg,choose-shape.svg,clear-formats.svg,close-12.svg,close-16.svg,close-24.svg,close.svg,column.svg,controler.svg,data-123.svg,data-16.svg,data-18.svg,data-comments.svg,data-data.svg,data-date.svg,data-dot.svg,data-event.svg,data-filters.svg,data-hub.svg,data-layer-16.svg,data-layers.svg,data-line.svg,data-map.svg,data-polygon.svg,data-scene.svg,data-statistics.svg,data-text.svg,data-unknow.svg,data-widgets.svg,data.svg,datasource.svg,delete-12.svg,delete.svg,design-mode-close.svg,design-mode-open.svg,desktop.svg,direction-down.svg,direction-left.svg,direction-right.svg,direction-up.svg,drag-m.svg,drag.svg,dropbox.svg,ds-featureLayer-view.svg,ds-featureLayer.svg,ds-map-view.svg,ds-map.svg,ds-scene-view.svg,ds-web-map.svg,ds-web-scene.svg,duplicate-16.svg,duplicate.svg,edit.svg,element-section.svg,elements.svg,envelope.svg,exchange.svg,facebook.svg,fill.svg,filter.svg,fixed-layout.svg,flow-layout.svg,general-settings.svg,github.svg,google-plus.svg,google.svg,heart.svg,home.svg,image.svg,info-12.svg,info-16.svg,info.svg,instagram.svg,invisible.svg,italic.svg,layers.svg,layout-12.svg,line-arrow-down-8.svg,line-arrow-left-8.svg,line-arrow-right-8.svg,line-arrow-up-8.svg,line-space.svg,link-12.svg,link.svg,linkedin.svg,links.svg,locate.svg,lock.svg,map-pin.svg,minus-8.svg,mobile.svg,mode-edit.svg,mode-live.svg,more-12.svg,more-horizontal.svg,more.svg,navigator.svg,order.svg,pad.svg,page-toc-18.svg,page.svg,pending.svg,people.svg,phone.svg,pinterest.svg,play.svg,preview-20.svg,preview.svg,property-setting-selected.svg,property-setting.svg,redo-20.svg,redo.svg,reset.svg,right.svg,row.svg,rss.svg,save-20.svg,save.svg,search-16.svg,search-24.svg,search.svg,section.svg,setting-18.svg,setting-live-view.svg,shape-ellipse.svg,shape-rectangle.svg,shape-rounded-corner.svg,shape-triangle.svg,slack.svg,sort-down.svg,sort-up.svg,star-o.svg,star.svg,strike-through.svg,sync.svg,tab-left.svg,tab-right.svg,text-123.svg,text-dots.svg,text.svg,theme-18.svg,theme.svg,to-down.svg,to-middle.svg,to-up.svg,toc-add-folder.svg,toc-add-link.svg,toc-add-page-16.svg,toc-add-page.svg,toc-folder.svg,toc-link.svg,toc-page.svg,toc.svg,tool-a-b.svg,tool-a-c.svg,tool-a-l.svg,tool-a-m.svg,tool-a-r.svg,tool-a-t.svg,tool-align.svg,tool-bottom-left.svg,tool-bottom-right.svg,tool-cut.svg,tool-d-h.svg,tool-d-v.svg,tool-data.svg,tool-delete.svg,tool-drag.svg,tool-edit.svg,tool-height-max.svg,tool-layer-bottom.svg,tool-layer-down.svg,tool-layer-top.svg,tool-layer-up.svg,tool-layer.svg,tool-max.svg,tool-remove-sync.svg,tool-sync.svg,tool-text.svg,tool-top-left.svg,tool-top-right.svg,tool-width-max.svg,twitter.svg,underscore.svg,undo-20.svg,undo.svg,unlock.svg,uppercase.svg,view-card.svg,view-list.svg,visible.svg,warning.svg,wechat.svg,weibo.svg,widget-annotations.svg,widget-chart.svg,widget-event.svg,widget-html.svg,widget-image.svg,widget-infocard.svg,widget-link.svg,widget-list.svg,widget-map.svg,widget-menu.svg,widget-navigator.svg,widget-scene.svg,widget-survey123.svg,widget-text.svg,widget-usermenu.svg,widget.svg,widgets.svg,windows.svg,wordpress.svg,youtube.svg,zoom-out-fixed.svg';
+		</script>
+
+	</head>
+	<body>
+		<style></style>
+		<div id="app"></div>
+		<script type="text/javascript" src="../jimu-core/systemjs.js"></script>
+		<script type="text/javascript" src="init.js"></script>
+		<script>
+			SystemJS.import('./index.js');
+		</script>
+	</body>
+</html>

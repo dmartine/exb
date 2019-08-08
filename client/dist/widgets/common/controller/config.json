@@ -1,0 +1,10 @@
+{
+  "onlyOpenOne": true,
+  "displayType": "STACK",
+  "horizontal": true,
+  "iconStyle": "rectangle",
+  "showLabel": true,
+  "space": 10,
+  "iconSize": "SMALL",
+  "size": {}
+}

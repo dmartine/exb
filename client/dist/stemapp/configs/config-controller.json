@@ -1,0 +1,101 @@
+{
+  "pages": {
+    "default": {
+      "label": "page 1",
+      "layout": "layout1",
+      "isDefault": true
+    }
+  },
+  "widgets": {
+    "text-title": {
+      "uri": "widgets/common/text/",
+      "config": {
+        "text": "<h3>This app demo how controller works.<h3>"
+      }
+    },
+    "text1": {
+      "label": "Text 1",
+      "uri": "widgets/common/text/",
+      "config": {
+        "text": "<h3>This is text1 widget.<h3>"
+      }
+    },
+    "text2": {
+      "label": "Text 2",
+      "uri": "widgets/common/text/",
+      "config": {
+        "text": "<h3>This is text2 widget.<h3>"
+      }
+    },
+    "text3": {
+      "label": "Text 3",
+      "uri": "widgets/common/text/",
+      "config": {
+        "text": "<h3>This is text3 widget.<h3>"
+      }
+    },
+    "text4": {
+      "label": "Text 4",
+      "uri": "widgets/common/text/",
+      "config": {
+        "text": "<h3>This is text4 widget.<h3>"
+      }
+    },
+    "controller1": {
+      "uri": "widgets/samples/controller/",
+      "widgets": ["text1", "text2"]
+    },
+    "controller2": {
+      "uri": "widgets/samples/controller/",
+      "widgets": ["text3", "text4"]
+    }
+  },
+  "layouts": {
+    "layout1": {
+      "0": {
+        "id": "0",
+        "type": "FIXED"
+      },
+      "1": {
+        "parentId": "0",
+        "bbox": {
+          "left": 500,
+          "top": 0,
+          "right": 0,
+          "width": 800,
+          "height": 50
+        },
+        "id": "1",
+        "type": "WIDGET",
+        "widgetId": "text-title"
+      },
+      "2": {
+        "parentId": "0",
+        "bbox": {
+          "left": 500,
+          "top": 100,
+          "right": 800,
+          "width": 600,
+          "height": 100
+        },
+        "id": "2",
+        "type": "WIDGET",
+        "widgetId": "controller1"
+      },
+      "3": {
+        "parentId": "0",
+        "bbox": {
+          "left": 500,
+          "top": 300,
+          "right": 1200,
+          "width": 600,
+          "height": 100
+        },
+        "id": "3",
+        "type": "WIDGET",
+        "widgetId": "controller2"
+      }
+    }
+  },
+  "theme": "themes/default"
+}

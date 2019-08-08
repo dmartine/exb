@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="196px" height="44px" viewBox="0 0 196 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>style04-updated</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Widgets" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="w9-List" transform="translate(-1210.000000, -488.000000)">
+            <g id="SettingPanel" transform="translate(1180.000000, 40.000000)">
+                <g id="Templates" transform="translate(16.000000, 134.000000)">
+                    <g id="T-4-updated" transform="translate(0.000000, 306.000000)">
+                        <g id="style04-updated" transform="translate(14.000000, 8.000000)">
+                            <rect id="Button" fill="#4D545B" x="56" y="27" width="34" height="12" rx="6"></rect>
+                            <rect id="Title" fill="#4D545B" fill-rule="nonzero" x="56" y="5" width="140" height="3" rx="1.5"></rect>
+                            <g id="Image">
+                                <circle id="Background" fill="#4D545B" fill-rule="nonzero" cx="22" cy="22" r="22"></circle>
+                                <polygon id="image-14" fill="#000000" points="20.8867925 23.3584906 24 19 29 26 15 26 19 21"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

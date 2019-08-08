@@ -1,0 +1,10 @@
+{
+  "space": 10,
+  "style": {
+    "alignSelf": "flex-start",
+    "padding": {
+      "number": [10],
+      "unit": "px"
+    }
+  }
+}

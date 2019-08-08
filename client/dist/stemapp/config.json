@@ -1,0 +1,435 @@
+{
+  "pages": {
+    "default": {
+      "label": "Home",
+      "layout": {
+        "LARGE": "home-layout-large",
+        "MEDIUM": "home-layout-m"
+      },
+      "isVisible": true,
+      "isDefault": true,
+      "header": true,
+      "footer": true
+    },
+    "page_1": {
+      "layout": {
+        "LARGE": "layout_3"
+      },
+      "label": "page 2",
+      "isVisible": true,
+      "header": true,
+      "footer": true
+    }
+  },
+  "layouts": {
+    "home-layout-large": {
+      "type": "FIXED",
+      "order": ["1", "2", "3", "4", "5"],
+      "content": {
+        "1": {
+          "type": "WIDGET",
+          "widgetId": "widget_2",
+          "bbox": {
+            "left": "44px",
+            "top": "71px",
+            "width": "358px",
+            "height": "293px"
+          }
+        },
+        "2": {
+          "type": "WIDGET",
+          "widgetId": "widget_3",
+          "bbox": {
+            "left": "1092px",
+            "top": "55px",
+            "width": "220px",
+            "height": "50px"
+          }
+        },
+        "3": {
+          "type": "WIDGET",
+          "widgetId": "widget_4",
+          "bbox": {
+            "left": "625px",
+            "top": "71px",
+            "width": "200px",
+            "height": "30px"
+          }
+        },
+        "4": {
+          "type": "SECTION",
+          "sectionId": "section_1",
+          "bbox": {
+            "left": "632px",
+            "top": "121px",
+            "width": "570px",
+            "height": "272px"
+          }
+        },
+        "5": {
+          "type": "WIDGET",
+          "widgetId": "demo",
+          "bbox": {
+            "left": "62px",
+            "top": "446px",
+            "width": "1600px",
+            "height": "449px"
+          }
+        }
+      }
+    },
+    "home-layout-m": {
+      "type": "FIXED",
+      "order": ["1", "2", "3", "4", "5"],
+      "content": {
+        "1": {
+          "type": "WIDGET",
+          "widgetId": "widget_2",
+          "bbox": {
+            "left": "44px",
+            "top": "71px",
+            "width": "358px",
+            "height": "293px"
+          }
+        },
+        "2": {
+          "type": "WIDGET",
+          "widgetId": "widget_3",
+          "bbox": {
+            "left": "500px",
+            "top": "300px",
+            "width": "220px",
+            "height": "50px"
+          }
+        },
+        "3": {
+          "type": "WIDGET",
+          "widgetId": "widget_4",
+          "bbox": {
+            "left": "625px",
+            "top": "71px",
+            "width": "200px",
+            "height": "30px"
+          }
+        },
+        "4": {
+          "type": "SECTION",
+          "sectionId": "section_1",
+          "bbox": {
+            "left": "632px",
+            "top": "121px",
+            "width": "570px",
+            "height": "272px"
+          }
+        },
+        "5": {
+          "type": "WIDGET",
+          "widgetId": "demo",
+          "bbox": {
+            "left": "62px",
+            "top": "446px",
+            "width": "1600px",
+            "height": "449px"
+          }
+        }
+      }
+    },
+    "layout_1": {
+      "type": "FIXED",
+      "order": ["1"],
+      "content": {
+        "1": {
+          "type": "WIDGET",
+          "widgetId": "widget_1",
+          "layoutId": "layout_1",
+          "bbox": {
+            "left": "-1px",
+            "top": "-6px",
+            "width": "402px",
+            "height": "60px"
+          }
+        }
+      }
+    },
+    "layout_2": {
+      "type": "FIXED",
+      "content": {
+        "1": {
+          "type": "WIDGET",
+          "widgetId": "widget_7",
+          "layoutId": "layout_2",
+          "bbox": {
+            "left": "595px",
+            "top": "0px",
+            "width": "360px",
+            "height": "44px"
+          }
+        }
+      }      
+    },
+    "layout_3": {
+      "type": "FIXED",
+      "content": {
+        "1": {
+          "type": "WIDGET",
+          "widgetId": "widget_8",
+          "layoutId": "layout_3",
+          "bbox": {
+            "left": "172px",
+            "top": "133px",
+            "width": "360px",
+            "height": "70px"
+          }
+        },
+        "2": {
+          "type": "WIDGET",
+          "widgetId": "widget_9",
+          "layoutId": "layout_3",
+          "bbox": {
+            "left": "556px",
+            "top": "133px",
+            "width": "220px",
+            "height": "50px"
+          }
+        }
+      }
+    },
+    "layout_4": {
+      "type": "FIXED",
+      "content": {
+        "1": {
+          "type": "WIDGET",
+          "widgetId": "widget_5",
+          "layoutId": "layout_4",
+          "bbox": {
+            "left": "30px",
+            "top": "48px",
+            "width": "360px",
+            "height": "70px"
+          }
+        }
+      }
+    },
+    "layout_5": {
+      "type": "FIXED",
+      "content": {
+        "1": {
+          "type": "WIDGET",
+          "widgetId": "widget_6",
+          "layoutId": "layout_5",
+          "bbox": {
+            "left": "74px",
+            "top": "65px",
+            "width": "360px",
+            "height": "70px"
+          }
+        }
+      }
+    }
+  },
+  "theme": "themes/default",
+  "template": "default",
+  "attributes": {},
+  "widgets": {
+    "widget_1": {
+      "uri": "widgets/common/menu/",
+      "config": {
+        "dir": "right",
+        "style": {
+          "type": "tabs",
+          "color": "light",
+          "activeColor": "primary"
+        },
+        "main": {
+          "unifiedSize": false,
+          "textAlign": "center",
+          "space": {
+            "distance": 10,
+            "unit": "px"
+          },
+          "icon": {
+            "show": false,
+            "position": "left"
+          }
+        },
+        "sub": {
+          "textAlign": "center",
+          "space": {
+            "distance": 5,
+            "unit": "px"
+          },
+          "icon": {
+            "show": false,
+            "position": "left"
+          }
+        }
+      },
+      "version": "1.0.0-beta"
+    },
+    "widget_2": {
+      "uri": "widgets/common/image/",
+      "config": {
+        "functionConfig": {
+          "altText": "",
+          "toolTip": "",
+          "linkParam": {},
+          "scale": "Fit",
+          "fileName": "",
+          "src": "https://www.esri.com/content/dam/esrisites/en-us/arcgis/what-is-gis/images/overview-banner-layerstack-wide.png",
+          "imgSourceType": "BYSTATICURL",
+          "widgetWidth": 357.984375,
+          "widgetHeight": 292.984375
+        },
+        "styleConfig": {}
+      },
+      "version": "1.0.0-beta"
+    },
+    "widget_3": {
+      "uri": "widgets/common/link/",
+      "config": {
+        "functionConfig": {
+          "text": "Page 2",
+          "toolTip": "",
+          "linkParam": {
+            "linkType": "PAGE",
+            "value": "page_1"
+          }
+        },
+        "styleConfig": {
+          "name": "Default",
+          "themeStyle": {
+            "className": "jimu-widget d-block",
+            "color": "link"
+          },
+          "customStyle": {
+            "regular": {},
+            "hover": {},
+            "clicked": {}
+          }
+        }
+      },
+      "version": "1.0.0-beta"
+    },
+    "widget_4": {
+      "uri": "widgets/common/navigator/",
+      "config": {
+        "data": {
+          "type": "AUTO",
+          "section": "section_1"
+        },
+        "display": {}
+      },
+      "version": "1.0.0-beta"
+    },
+    "widget_5": {
+      "uri": "widgets/common/text/",
+      "config": {
+        "text": "<p>Text in view 1</p>"
+      },
+      "version": "1.0.0-beta"
+    },
+    "widget_6": {
+      "label": "text 1",
+      "uri": "widgets/common/text/",
+      "config": {
+        "text": "<p>Text in view2</p>"
+      },
+      "version": "1.0.0-beta"
+    },
+    "widget_7": {
+      "label": "text 2",
+      "uri": "widgets/common/text/",
+      "config": {
+        "text": "<p>Text in footer</p>"
+      },
+      "version": "1.0.0-beta"
+    },
+    "widget_8": {
+      "label": "text 3",
+      "uri": "widgets/common/text/",
+      "config": {
+        "text": "<p>Text in page 2</p>"
+      },
+      "version": "1.0.0-beta"
+    },
+    "widget_9": {
+      "label": "link 1",
+      "uri": "widgets/common/link/",
+      "config": {
+        "functionConfig": {
+          "text": "Home",
+          "toolTip": "",
+          "linkParam": {
+            "linkType": "PAGE",
+            "value": "default"
+          }
+        },
+        "styleConfig": {
+          "name": "Default",
+          "themeStyle": {
+            "className": "jimu-widget d-block",
+            "color": "link"
+          },
+          "customStyle": {
+            "regular": {},
+            "hover": {},
+            "clicked": {}
+          }
+        }
+      },
+      "version": "1.0.0-beta"
+    },
+    "demo": {
+      "uri": "widgets/samples/demo/"
+    }
+  },
+  "pageStructure": [
+    {
+      "default": []
+    },
+    {
+      "page_1": []
+    }
+  ],
+  "header": {
+    "layout": {
+      "LARGE": "layout_1"
+    },
+    "height": 50,
+    "backgroundColor": "#c4baba"
+  },
+  "footer": {
+    "layout": {
+      "LARGE": "layout_2"
+    },
+    "height": 50,
+    "backgroundColor": "#ced8c0"
+  },
+  "sections": {
+    "section_1": {
+      "id": "section_1",
+      "label": "section 1",
+      "views": [
+        "view_1",
+        "view_2"
+      ]
+    }
+  },
+  "views": {
+    "view_1": {
+      "id": "view_1",
+      "label": "view 1",
+      "layout": {
+        "LARGE": "layout_4"
+      }
+    },
+    "view_2": {
+      "id": "view_2",
+      "label": "view 2",
+      "layout": {
+        "LARGE": "layout_5"
+      }
+    }
+  },
+  "mainSizeMode": "LARGE"
+}

@@ -1,0 +1,1 @@
+{"version":3,"file":"readonly.js","sourceRoot":"","sources":["../../../src/decorators/readonly.ts"],"names":[],"mappings":";;AAAA,mCAAiC;AAEjC,SAAS,gBAAgB,CAAC,MAAM,EAAE,GAAG,EAAE,UAAU;IAC/C,UAAU,CAAC,QAAQ,GAAG,KAAK,CAAC;IAC5B,OAAO,UAAU,CAAC;AACpB,CAAC;AAED,gCAAgC;AAChC,SAAwB,QAAQ,CAAC,GAAG,IAAI;IACtC,OAAO,gBAAQ,CAAC,gBAAgB,EAAE,IAAI,CAAC,CAAC;AAC1C,CAAC;AAFD,2BAEC"}

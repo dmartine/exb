@@ -1,0 +1,11 @@
+{
+  "name": "citywalk",
+  "label": "City Walk",
+  "type": "template",
+  "version": "1.0.0-beta",
+  "exbVersion": "1.0.0-beta",
+  "author": "Esri R&D Center Beijing",
+  "description": "This is a sample app template.",
+  "copyright": "",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0"
+}

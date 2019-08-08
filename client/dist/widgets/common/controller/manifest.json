@@ -1,0 +1,48 @@
+{
+  "name": "controller",
+  "label": "Controller",
+  "type": "widget",
+  "version": "1.0.0-beta",
+  "exbVersion": "1.0.0-beta",
+  "author": "Esri R&D Center Beijing",
+  "description": "This is the widget used in developer guide",
+  "copyright": "",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0",
+  "defaultSize": {
+    "height": 70,
+    "width": 300
+  },
+  "properties": {
+    "hasLocale": true,
+    "hasSettingPage": true,
+    "type": "CONTROLLER",
+    "layoutType": "CONTROLLER",
+    "layouts": [
+      {
+        "name": "controller",
+        "label": "Controller layout"
+      },
+      {
+        "name": "openwidget",
+        "label": "Open widget layout"
+      }
+    ],
+    "hasEmbeddedLayout": true,
+    "hasBuilderSupportModule": true
+  },
+  "extensions": [
+    {
+      "name": "Previous",
+      "point": "CONTEXT_TOOL",
+      "uri": "tools/previous"
+    },
+    {
+      "name": "Next",
+      "point": "CONTEXT_TOOL",
+      "uri": "tools/next"
+    }
+  ],
+  "supportedLocales": [
+    "en"
+  ]
+}

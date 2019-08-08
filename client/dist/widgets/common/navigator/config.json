@@ -1,0 +1,14 @@
+{
+    "data":{
+        "type": "AUTO",
+        "section": "",
+        "views": []
+    },
+    "display": {
+        "vertical": false,
+        "style": "DEFAULT",
+        "color": "light",
+        "activeColor": "primary",
+        "textAlign": "center"
+    }
+}

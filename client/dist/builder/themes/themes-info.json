@@ -1,0 +1,10 @@
+[
+  {
+    "name": "dark",
+    "path": "builder/themes/dark/"
+  },
+  {
+    "name": "light",
+    "path": "builder/themes/light/"
+  }
+]

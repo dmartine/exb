@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="16px" viewBox="0 0 10 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>mobile</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Style" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="0-UI-icons" transform="translate(-370.000000, -356.000000)" fill="#000000" fill-rule="nonzero">
+            <g id="Top-navigation" transform="translate(43.000000, 309.000000)">
+                <path d="M329,47 L335,47 C336.104569,47 337,47.8954305 337,49 L337,61 C337,62.1045695 336.104569,63 335,63 L329,63 C327.895431,63 327,62.1045695 327,61 L327,49 C327,47.8954305 327.895431,47 329,47 Z M329,48 C328.447715,48 328,48.4477153 328,49 L328,61 C328,61.5522847 328.447715,62 329,62 L335,62 C335.552285,62 336,61.5522847 336,61 L336,49 C336,48.4477153 335.552285,48 335,48 L329,48 Z M328,50 L336,50 L336,51 L328,51 L328,50 Z M328,59 L336,59 L336,60 L328,60 L328,59 Z M331.5,60.5 L332.5,60.5 C332.776142,60.5 333,60.7238576 333,61 C333,61.2761424 332.776142,61.5 332.5,61.5 L331.5,61.5 C331.223858,61.5 331,61.2761424 331,61 C331,60.7238576 331.223858,60.5 331.5,60.5 Z" id="mobile"></path>
+            </g>
+        </g>
+    </g>
+</svg>

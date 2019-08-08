@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>pad</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Style" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="0-UI-icons" transform="translate(-334.000000, -356.000000)" fill="#000000" fill-rule="nonzero">
+            <g id="Top-navigation" transform="translate(43.000000, 309.000000)">
+                <path d="M293,47 L303,47 C304.104569,47 305,47.8954305 305,49 L305,61 C305,62.1045695 304.104569,63 303,63 L293,63 C291.895431,63 291,62.1045695 291,61 L291,49 C291,47.8954305 291.895431,47 293,47 Z M293,48 C292.447715,48 292,48.4477153 292,49 L292,61 C292,61.5522847 292.447715,62 293,62 L303,62 C303.552285,62 304,61.5522847 304,61 L304,49 C304,48.4477153 303.552285,48 303,48 L293,48 Z M292,59 L304,59 L304,60 L292,60 L292,59 Z M297.5,60.5 L298.5,60.5 C298.776142,60.5 299,60.7238576 299,61 C299,61.2761424 298.776142,61.5 298.5,61.5 L297.5,61.5 C297.223858,61.5 297,61.2761424 297,61 C297,60.7238576 297.223858,60.5 297.5,60.5 Z" id="pad"></path>
+            </g>
+        </g>
+    </g>
+</svg>

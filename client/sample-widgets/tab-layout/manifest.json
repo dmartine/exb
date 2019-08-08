@@ -1,0 +1,17 @@
+{
+  "name": "tab-layout",
+  "type": "widget",
+  "version": "1.0.0-beta",
+  "exbVersion": "1.0.0-beta",
+  "author": "Esri R&D Center Beijing",
+  "description": "This is the widget used in developer guide",
+  "copyright": "",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0",
+  "properties": {
+    "type": "LAYOUT"
+  },
+  "defaultSize": {
+    "width": 800,
+    "height": 500
+  }
+}

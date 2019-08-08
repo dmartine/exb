@@ -1,0 +1,20 @@
+{
+  "name": "publish-featureset-widget",
+  "dependency": "jimu-arcgis",
+  "type": "widget",
+  "version": "1.0.0-beta",
+  "exbVersion": "1.0.0-beta",
+  "author": "Esri R&D Center Beijing",
+  "description": "This is the widget used in developer guide",
+  "copyright": "",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0",
+  "publishMessages": [
+    "SPATIAL_DATA_RECORD_SET_CREATE",
+    "SPATIAL_DATA_RECORD_SET_UPDATE"
+  ],
+  "properties": {
+    "hasConfig": false,
+    "hasLocale": false,
+    "hasSettingPage": false
+  }
+}

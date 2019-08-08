@@ -1,0 +1,13 @@
+.jimu-widget-infocard-setting {
+  .jimu-widget-setting--row {
+    select {
+      &.form-control {
+        // width: 100px;
+      }
+    }
+  }
+}
+.jimu-widget-setting--color-chooser {
+  width: 40px;
+  height: 20px;
+}

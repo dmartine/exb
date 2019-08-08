@@ -1,0 +1,48 @@
+{
+  "name": "list",
+  "label": "List",
+  "type": "widget",
+  "version": "1.0.0-beta",
+  "exbVersion": "1.0.0-beta",
+  "author": "Esri R&D Center Beijing",
+  "description": "A widget to display data in a list view.",
+  "copyright": "",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0",
+  "messageActions": [
+    {
+      "name": "query",
+      "label": "Query by extent",
+      "uri": "runtime/actions/query-action"
+    }
+  ],
+  "publishMessages": [
+    "SPATIAL_DATA_RECORDS_SELECTION_CHANGE",
+    "DATA_RECORDS_SELECTION_CHANGE"
+  ],
+  "defaultSize": {
+    "width": 650,
+    "height": 350
+  },
+  "properties": {
+    "hasLocale": false,
+    "hasEmbeddedLayout": true,
+    "layouts": [
+      {
+        "name": "REGULAR",
+        "label": "regular"
+      },
+      {
+        "name": "SELECTED",
+        "label": "selected"
+      },
+      {
+        "name": "HOVER",
+        "label": "hover"
+      }
+    ],
+    "hasBuilderSupportModule": true
+  },
+  "supportedLocales": [
+    "en"
+  ]
+}

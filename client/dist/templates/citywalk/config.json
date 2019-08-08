@@ -1,0 +1,2410 @@
+{
+  "pages": {
+    "default": {
+      "label": "Home",
+      "type": "NORMAL",
+      "layout": "default-layout",
+      "isVisible": true,
+      "isDefault": true,
+      "id": "default",
+      "header": true,
+      "footer": true
+    },
+    "page_1": {
+      "id": "page_1",
+      "type": "NORMAL",
+      "layout": "layout_2",
+      "label": "Details",
+      "isVisible": true,
+      "header": true,
+      "footer": true
+    },
+    "page_2": {
+      "id": "page_2",
+      "type": "NORMAL",
+      "label": "About",
+      "linkUrl": "http://www.esri.com",
+      "isVisible": true,
+      "openTarget": "_blank"
+    }
+  },
+  "layouts": {
+    "default-layout": {
+      "0": {
+        "type": "FIXED",
+        "id": "0"
+      },
+      "1": {
+        "type": "WIDGET",
+        "widgetId": "widget_4",
+        "id": "1",
+        "bbox": {
+          "left": "0px",
+          "top": "0px",
+          "width": "1106px",
+          "height": "920px",
+          "right": "0px",
+          "bottom": "607px"
+        },
+        "parentId": "0",
+        "setting": {
+          "autoProps": {
+            "width": true,
+            "height": false,
+            "bottom": true
+          },
+          "order": 0
+        }
+      },
+      "2": {
+        "type": "WIDGET",
+        "widgetId": "widget_5",
+        "id": "2",
+        "bbox": {
+          "left": "10%",
+          "top": "920px",
+          "width": "80%",
+          "height": "187px"
+        },
+        "parentId": "0",
+        "setting": {
+          "autoProps": {
+            "height": true
+          },
+          "order": 1
+        }
+      },
+      "3": {
+        "type": "WIDGET",
+        "widgetId": "widget_6",
+        "id": "3",
+        "bbox": {
+          "left": "7%",
+          "top": "200px",
+          "width": "600px",
+          "height": "152px",
+          "right": "429px",
+          "bottom": "963px"
+        },
+        "parentId": "0",
+        "setting": {
+          "autoProps": {
+            "right": true,
+            "bottom": true,
+            "height": true
+          },
+          "style": {
+            "boxShadow": {
+              "offsetX": {
+                "distance": 0,
+                "unit": "px"
+              },
+              "offsetY": {
+                "distance": 0,
+                "unit": "px"
+              },
+              "blur": {
+                "distance": 0,
+                "unit": "px"
+              },
+              "spread": {
+                "distance": 0,
+                "unit": "px"
+              }
+            }
+          },
+          "order": 2
+        }
+      },
+      "4": {
+        "type": "WIDGET",
+        "widgetId": "widget_7",
+        "id": "4",
+        "bbox": {
+          "left": "8%",
+          "top": "355px",
+          "width": "180px",
+          "height": "4px"
+        },
+        "parentId": "0",
+        "setting": {
+          "autoProps": {
+            "left": false
+          },
+          "order": 3
+        }
+      },
+      "5": {
+        "type": "WIDGET",
+        "widgetId": "widget_8",
+        "id": "5",
+        "bbox": {
+          "left": "7%",
+          "top": "380px",
+          "width": "50%",
+          "height": "70px"
+        },
+        "parentId": "0",
+        "setting": {
+          "autoProps": {
+            "width": false,
+            "height": true
+          },
+          "order": 4
+        }
+      },
+      "7": {
+        "type": "WIDGET",
+        "widgetId": "widget_12",
+        "id": "7",
+        "bbox": {
+          "left": "10%",
+          "top": "1180px",
+          "width": "80%",
+          "height": "600px"
+        },
+        "parentId": "0",
+        "setting": {
+          "order": 5
+        }
+      },
+      "8": {
+        "type": "WIDGET",
+        "widgetId": "widget_30",
+        "id": "8",
+        "bbox": {
+          "left": "10%",
+          "top": "1823px",
+          "width": "80%",
+          "height": "600px",
+          "right": "0px",
+          "bottom": "0px"
+        },
+        "parentId": "0",
+        "setting": {
+          "autoProps": {
+            "bottom": true,
+            "height": true
+          },
+          "order": 6
+        }
+      },
+      "9": {
+        "id": "9",
+        "parentId": "0",
+        "type": "SECTION",
+        "sectionId": "section_1",
+        "bbox": {
+          "left": "10%",
+          "top": "2150px",
+          "width": "80%",
+          "height": "600px"
+        },
+        "setting": {
+          "style": {
+            "boxShadow": {
+              "offsetX": {
+                "distance": 0,
+                "unit": "px"
+              },
+              "offsetY": {
+                "distance": 20,
+                "unit": "px"
+              },
+              "blur": {
+                "distance": 40,
+                "unit": "px"
+              },
+              "spread": {
+                "distance": 0,
+                "unit": "px"
+              },
+              "color": "rgba(114,114,114,0.2)"
+            },
+            "background": {
+              "color": "rgba(255,255,255,1)",
+              "fillType": "fit",
+              "image": ""
+            }
+          },
+          "autoProps": {
+            "height": false
+          },
+          "order": 7
+        }
+      },
+      "10": {
+        "type": "WIDGET",
+        "widgetId": "widget_39",
+        "id": "10",
+        "bbox": {
+          "left": "9.9990%",
+          "top": "2083px",
+          "width": "263px",
+          "height": "30px"
+        },
+        "parentId": "0",
+        "setting": {
+          "order": 8
+        }
+      },
+      "id": "default-layout"
+    },
+    "layout_1": {
+      "0": {
+        "id": "0",
+        "type": "FIXED"
+      },
+      "1": {
+        "type": "WIDGET",
+        "widgetId": "widget_1",
+        "id": "1",
+        "bbox": {
+          "left": "15px",
+          "top": "13px",
+          "width": "96px",
+          "height": "35px",
+          "bottom": "10px"
+        },
+        "parentId": "0",
+        "setting": {
+          "order": 0
+        }
+      },
+      "2": {
+        "type": "WIDGET",
+        "widgetId": "widget_2",
+        "id": "2",
+        "bbox": {
+          "left": "759px",
+          "top": "-2px",
+          "width": "337px",
+          "height": "65px",
+          "right": "16px"
+        },
+        "parentId": "0",
+        "setting": {
+          "autoProps": {
+            "left": true,
+            "width": true
+          },
+          "order": 1
+        }
+      },
+      "3": {
+        "type": "WIDGET",
+        "widgetId": "widget_3",
+        "id": "3",
+        "bbox": {
+          "left": "135px",
+          "top": "12px",
+          "width": "91px",
+          "height": "38px"
+        },
+        "parentId": "0",
+        "setting": {
+          "autoProps": {
+            "height": true,
+            "width": true
+          },
+          "order": 2
+        }
+      },
+      "id": "layout_1"
+    },
+    "layout_2": {
+      "0": {
+        "id": "0",
+        "type": "FIXED"
+      },
+      "1": {
+        "type": "WIDGET",
+        "widgetId": "widget_46",
+        "id": "1",
+        "bbox": {
+          "left": "15%",
+          "top": "30px",
+          "width": "70%",
+          "height": "930px",
+          "right": "115px",
+          "bottom": "44px"
+        },
+        "parentId": "0",
+        "setting": {
+          "autoProps": {
+            "height": false,
+            "bottom": true
+          },
+          "order": 0
+        }
+      },
+      "id": "layout_2"
+    },
+    "layout_3": {
+      "0": {
+        "id": "0",
+        "type": null
+      },
+      "1": {
+        "type": "WIDGET",
+        "widgetId": "widget_9",
+        "id": "1",
+        "bbox": {
+          "width": "84px",
+          "height": "105px"
+        },
+        "parentId": "0",
+        "setting": {
+          "autoProps": {
+            "width": false
+          },
+          "style": {
+            "alignSelf": "center"
+          },
+          "order": 0
+        }
+      },
+      "2": {
+        "type": "WIDGET",
+        "widgetId": "widget_10",
+        "id": "2",
+        "bbox": {
+          "left": "13px",
+          "top": "253px",
+          "width": "360px",
+          "height": "70px"
+        },
+        "parentId": "0",
+        "setting": {
+          "order": 1
+        }
+      },
+      "id": "layout_3"
+    },
+    "layout_5": {
+      "0": {
+        "id": "0",
+        "type": null
+      },
+      "2": {
+        "type": "WIDGET",
+        "widgetId": "widget_14",
+        "id": "2",
+        "bbox": {
+          "width": "480px",
+          "height": 598
+        },
+        "parentId": "0",
+        "setting": {
+          "autoProps": {
+            "height": true,
+            "width": false
+          },
+          "fitContainer": false,
+          "order": 0
+        }
+      },
+      "3": {
+        "type": "WIDGET",
+        "widgetId": "widget_51",
+        "id": "3",
+        "bbox": {
+          "left": "335px",
+          "top": "-70px",
+          "width": "400px",
+          "height": "400px"
+        },
+        "parentId": "0",
+        "setting": {
+          "autoProps": {
+            "height": false,
+            "width": false
+          },
+          "fitContainer": true,
+          "order": 1
+        }
+      },
+      "id": "layout_5"
+    },
+    "layout_6": {
+      "0": {
+        "id": "0",
+        "type": "FIXED"
+      },
+      "13": {
+        "type": "WIDGET",
+        "widgetId": "widget_28",
+        "bbox": {
+          "left": "20px",
+          "top": "14px",
+          "width": "80px",
+          "height": "80px",
+          "right": "369px"
+        },
+        "setting": {
+          "order": 0
+        },
+        "id": "13",
+        "parentId": "0"
+      },
+      "14": {
+        "type": "WIDGET",
+        "widgetId": "widget_29",
+        "bbox": {
+          "left": "110px",
+          "top": "38px",
+          "width": "227px",
+          "height": "32px"
+        },
+        "setting": {
+          "order": 1,
+          "autoProps": {
+            "height": true
+          }
+        },
+        "id": "14",
+        "parentId": "0"
+      },
+      "17": {
+        "type": "WIDGET",
+        "widgetId": "widget_27",
+        "id": "17",
+        "bbox": {
+          "left": "347px",
+          "top": "29px",
+          "width": "105px",
+          "height": "50px"
+        },
+        "parentId": "0",
+        "setting": {
+          "order": 2
+        }
+      },
+      "id": "layout_6"
+    },
+    "layout_7": {
+      "0": {
+        "id": "0",
+        "type": "FIXED"
+      },
+      "1": {
+        "type": "WIDGET",
+        "widgetId": "widget_15",
+        "bbox": {
+          "left": 20,
+          "top": "150px",
+          "width": 200,
+          "height": "35px"
+        },
+        "setting": {
+          "order": 0
+        },
+        "id": "1",
+        "parentId": "0"
+      },
+      "2": {
+        "type": "WIDGET",
+        "widgetId": "widget_16",
+        "bbox": {
+          "left": 20,
+          "top": "178px",
+          "width": 260,
+          "height": "105px"
+        },
+        "setting": {
+          "order": 1
+        },
+        "id": "2",
+        "parentId": "0"
+      },
+      "3": {
+        "type": "WIDGET",
+        "widgetId": "widget_17",
+        "bbox": {
+          "left": 0,
+          "top": 0,
+          "width": 300,
+          "height": 140
+        },
+        "setting": {
+          "order": 2
+        },
+        "id": "3",
+        "parentId": "0"
+      },
+      "id": "layout_7"
+    },
+    "layout_8": {
+      "0": {
+        "id": "0",
+        "type": "FIXED"
+      },
+      "4": {
+        "type": "WIDGET",
+        "widgetId": "widget_18",
+        "bbox": {
+          "left": "0px",
+          "top": "0px",
+          "width": "140px",
+          "height": "140px",
+          "right": "0px"
+        },
+        "setting": {
+          "order": 0
+        },
+        "id": "4",
+        "parentId": "0"
+      },
+      "5": {
+        "type": "WIDGET",
+        "widgetId": "widget_19",
+        "bbox": {
+          "left": "166px",
+          "top": "115px",
+          "width": "20px",
+          "height": "20px"
+        },
+        "setting": {
+          "order": 1
+        },
+        "id": "5",
+        "parentId": "0"
+      },
+      "6": {
+        "type": "WIDGET",
+        "widgetId": "widget_20",
+        "bbox": {
+          "left": "256px",
+          "top": "115px",
+          "width": "20px",
+          "height": "20px"
+        },
+        "setting": {
+          "order": 2
+        },
+        "id": "6",
+        "parentId": "0"
+      },
+      "7": {
+        "type": "WIDGET",
+        "widgetId": "widget_21",
+        "bbox": {
+          "left": "356px",
+          "top": "115px",
+          "width": "20px",
+          "height": "20px"
+        },
+        "setting": {
+          "order": 3
+        },
+        "id": "7",
+        "parentId": "0"
+      },
+      "8": {
+        "type": "WIDGET",
+        "widgetId": "widget_22",
+        "bbox": {
+          "left": "166px",
+          "top": "11px",
+          "width": "180px",
+          "height": "32px"
+        },
+        "setting": {
+          "order": 4
+        },
+        "id": "8",
+        "parentId": "0"
+      },
+      "9": {
+        "type": "WIDGET",
+        "widgetId": "widget_23",
+        "bbox": {
+          "left": "186px",
+          "top": "108px",
+          "width": "50px",
+          "height": "32px"
+        },
+        "setting": {
+          "order": 5
+        },
+        "id": "9",
+        "parentId": "0"
+      },
+      "10": {
+        "type": "WIDGET",
+        "widgetId": "widget_24",
+        "bbox": {
+          "left": "279px",
+          "top": "108px",
+          "width": "62px",
+          "height": "32px"
+        },
+        "setting": {
+          "order": 6
+        },
+        "id": "10",
+        "parentId": "0"
+      },
+      "11": {
+        "type": "WIDGET",
+        "widgetId": "widget_25",
+        "bbox": {
+          "left": "376px",
+          "top": "108px",
+          "width": "46px",
+          "height": "32px"
+        },
+        "setting": {
+          "order": 7
+        },
+        "id": "11",
+        "parentId": "0"
+      },
+      "12": {
+        "type": "WIDGET",
+        "widgetId": "widget_26",
+        "bbox": {
+          "left": "166px",
+          "top": "33px",
+          "width": "282px",
+          "height": "80px"
+        },
+        "setting": {
+          "order": 8
+        },
+        "id": "12",
+        "parentId": "0"
+      },
+      "id": "layout_8"
+    },
+    "layout_9": {
+      "0": {
+        "id": "0",
+        "type": "FIXED"
+      },
+      "13": {
+        "type": "WIDGET",
+        "widgetId": "widget_28",
+        "bbox": {
+          "left": "20px",
+          "top": "15px",
+          "width": "110px",
+          "height": "110px",
+          "right": "0px"
+        },
+        "setting": {
+          "order": 0
+        },
+        "id": "13",
+        "parentId": "0"
+      },
+      "14": {
+        "type": "WIDGET",
+        "widgetId": "widget_29",
+        "bbox": {
+          "left": "166px",
+          "top": "5px",
+          "width": "180px",
+          "height": "32px"
+        },
+        "setting": {
+          "order": 1
+        },
+        "id": "14",
+        "parentId": "0"
+      },
+      "15": {
+        "type": "WIDGET",
+        "widgetId": "widget_30",
+        "bbox": {
+          "left": "166px",
+          "top": "55px",
+          "width": "282px",
+          "height": "80px"
+        },
+        "setting": {
+          "order": 2
+        },
+        "id": "15",
+        "parentId": "0"
+      },
+      "16": {
+        "type": "WIDGET",
+        "widgetId": "widget_31",
+        "id": "16",
+        "bbox": {
+          "left": "166px",
+          "top": "27px",
+          "width": "273px",
+          "height": "32px"
+        },
+        "parentId": "0",
+        "setting": {
+          "order": 3
+        }
+      },
+      "17": {
+        "type": "WIDGET",
+        "widgetId": "widget_27",
+        "id": "17",
+        "bbox": {
+          "left": "475px",
+          "top": "47px",
+          "width": "105px",
+          "height": "50px"
+        },
+        "parentId": "0",
+        "setting": {
+          "order": 4
+        }
+      },
+      "id": "layout_9"
+    },
+    "layout_10": {
+      "0": {
+        "id": "0",
+        "type": null
+      },
+      "1": {
+        "type": "WIDGET",
+        "widgetId": "widget_31",
+        "id": "1",
+        "bbox": {
+          "left": "115px",
+          "top": "-36px",
+          "width": "84px",
+          "height": "105px"
+        },
+        "parentId": "0",
+        "setting": {
+          "style": {
+            "alignSelf": "center"
+          },
+          "order": 0
+        }
+      },
+      "2": {
+        "type": "WIDGET",
+        "widgetId": "widget_32",
+        "id": "2",
+        "bbox": {
+          "left": "203px",
+          "top": "94px",
+          "width": "360px",
+          "height": "70px"
+        },
+        "parentId": "0",
+        "setting": {
+          "order": 1
+        }
+      },
+      "id": "layout_10"
+    },
+    "layout_11": {
+      "0": {
+        "id": "0",
+        "type": "FIXED"
+      },
+      "1": {
+        "type": "WIDGET",
+        "widgetId": "widget_33",
+        "id": "1",
+        "bbox": {
+          "left": "0px",
+          "top": "0px",
+          "width": "100%",
+          "height": "600px",
+          "right": "34px"
+        },
+        "parentId": "0",
+        "setting": {
+          "autoProps": {
+            "width": false,
+            "height": false
+          }
+        }
+      },
+      "id": "layout_11"
+    },
+    "layout_12": {
+      "0": {
+        "id": "0",
+        "type": null
+      },
+      "1": {
+        "type": "WIDGET",
+        "widgetId": "widget_35",
+        "id": "1",
+        "bbox": {
+          "width": "600px",
+          "height": "598px"
+        },
+        "parentId": "0",
+        "setting": {
+          "order": 0,
+          "fitContainer": false,
+          "autoProps": {
+            "height": false
+          }
+        }
+      },
+      "2": {
+        "type": "WIDGET",
+        "widgetId": "widget_56",
+        "id": "2",
+        "bbox": {
+          "left": "624px",
+          "top": "61px",
+          "width": "400px",
+          "height": "400px"
+        },
+        "parentId": "0",
+        "setting": {
+          "order": 1
+        }
+      },
+      "id": "layout_12"
+    },
+    "layout_13": {
+      "0": {
+        "id": "0",
+        "type": null
+      },
+      "1": {
+        "type": "WIDGET",
+        "widgetId": "widget_36",
+        "id": "1",
+        "bbox": {
+          "width": "485px",
+          "height": "240px"
+        },
+        "parentId": "0",
+        "setting": {
+          "order": 0,
+          "fitContainer": false
+        }
+      },
+      "2": {
+        "type": "WIDGET",
+        "widgetId": "widget_37",
+        "id": "2",
+        "bbox": {
+          "width": 320,
+          "height": "45px"
+        },
+        "parentId": "0",
+        "setting": {
+          "autoProps": {
+            "height": true
+          },
+          "fitContainer": false,
+          "style": {
+            "alignSelf": "flex-start"
+          },
+          "order": 1
+        }
+      },
+      "3": {
+        "type": "WIDGET",
+        "widgetId": "widget_38",
+        "id": "3",
+        "bbox": {
+          "width": 484.00390625,
+          "height": 191.5283203125
+        },
+        "parentId": "0",
+        "setting": {
+          "autoProps": {
+            "height": true,
+            "width": true
+          },
+          "fitContainer": false,
+          "order": 2
+        }
+      },
+      "id": "layout_13"
+    },
+    "layout_17": {
+      "0": {
+        "id": "0",
+        "type": "FIXED"
+      },
+      "id": "layout_17"
+    },
+    "layout_18": {
+      "0": {
+        "id": "0",
+        "type": null
+      },
+      "1": {
+        "type": "WIDGET",
+        "widgetId": "widget_47",
+        "id": "1",
+        "bbox": {
+          "width": 920.390625,
+          "height": "400px"
+        },
+        "parentId": "0",
+        "setting": {
+          "order": 0,
+          "autoProps": {
+            "height": false
+          },
+          "fitContainer": false
+        }
+      },
+      "2": {
+        "type": "WIDGET",
+        "widgetId": "widget_55",
+        "id": "2",
+        "bbox": {
+          "left": "114px",
+          "top": "293px",
+          "width": "400px",
+          "height": "600px"
+        },
+        "parentId": "0",
+        "setting": {
+          "order": 1
+        }
+      },
+      "id": "layout_18"
+    },
+    "layout_19": {
+      "0": {
+        "id": "0",
+        "type": null
+      },
+      "1": {
+        "type": "WIDGET",
+        "widgetId": "widget_53",
+        "id": "1",
+        "bbox": {
+          "width": 539.28515625,
+          "height": 348
+        },
+        "parentId": "0",
+        "setting": {
+          "order": 0,
+          "fitContainer": true,
+          "autoProps": {
+            "height": true
+          }
+        }
+      },
+      "2": {
+        "type": "WIDGET",
+        "widgetId": "widget_54",
+        "id": "2",
+        "bbox": {
+          "width": "320px",
+          "height": "320px"
+        },
+        "parentId": "0",
+        "setting": {
+          "autoProps": {
+            "width": false,
+            "height": true
+          },
+          "fitContainer": false,
+          "style": {
+            "alignSelf": "flex-start"
+          },
+          "order": 1
+        }
+      },
+      "id": "layout_19"
+    },
+    "layout_20": {
+      "0": {
+        "id": "0",
+        "type": "FIXED"
+      },
+      "1": {
+        "type": "WIDGET",
+        "widgetId": "widget_57",
+        "id": "1",
+        "bbox": {
+          "left": "0px",
+          "top": "0px",
+          "width": "100%",
+          "height": "100%"
+        },
+        "parentId": "0",
+        "setting": {
+          "autoProps": {
+            "width": false,
+            "height": false
+          },
+          "style": {
+            "background": {
+              "color": "rgba(49,94,1,1)",
+              "fillType": "fit",
+              "image": ""
+            }
+          }
+        }
+      },
+      "id": "layout_20"
+    },
+    "layout_21": {
+      "0": {
+        "id": "0",
+        "type": null
+      },
+      "1": {
+        "type": "WIDGET",
+        "widgetId": "widget_58",
+        "id": "1",
+        "bbox": {
+          "left": "269px",
+          "top": "-11px",
+          "width": "400px",
+          "height": "400px"
+        },
+        "parentId": "0",
+        "setting": {
+          "order": 1
+        }
+      },
+      "2": {
+        "type": "WIDGET",
+        "widgetId": "widget_59",
+        "id": "2",
+        "bbox": {
+          "width": "600px",
+          "height": "596px"
+        },
+        "parentId": "0",
+        "setting": {
+          "fitContainer": false,
+          "autoProps": {
+            "height": true
+          },
+          "order": 0
+        }
+      },
+      "id": "layout_21"
+    },
+    "layout_22": {
+      "0": {
+        "id": "0",
+        "type": null
+      },
+      "1": {
+        "type": "WIDGET",
+        "widgetId": "widget_60",
+        "id": "1",
+        "bbox": {
+          "left": "80px",
+          "top": "-20px",
+          "width": "300px",
+          "height": "240px"
+        },
+        "parentId": "0",
+        "setting": {
+          "fitContainer": false,
+          "order": 0
+        }
+      },
+      "2": {
+        "type": "WIDGET",
+        "widgetId": "widget_61",
+        "id": "2",
+        "bbox": {
+          "width": 598,
+          "height": 45.34375
+        },
+        "parentId": "0",
+        "setting": {
+          "autoProps": {
+            "height": true
+          },
+          "fitContainer": false,
+          "order": 1
+        }
+      },
+      "3": {
+        "type": "WIDGET",
+        "widgetId": "widget_62",
+        "id": "3",
+        "bbox": {
+          "left": "16px",
+          "top": "507px",
+          "width": "360px",
+          "height": "70px"
+        },
+        "parentId": "0",
+        "setting": {
+          "order": 2
+        }
+      },
+      "id": "layout_22"
+    }
+  },
+  "theme": "themes/citywalk",
+  "template": "citywalk",
+  "attributes": {},
+  "widgets": {
+    "widget_1": {
+      "id": "widget_1",
+      "uri": "widgets/common/image/",
+      "config": {
+        "functionConfig": {
+          "altText": "",
+          "toolTip": "",
+          "linkParam": {},
+          "scale": "Fit",
+          "src": "https://esridevbeijing.maps.arcgis.com/sharing/rest/content/items/dd5f67e34bf54c838dca39e94df0ab7e/data",
+          "fileName": "logo.svg",
+          "widgetWidth": 96,
+          "widgetHeight": 35
+        },
+        "styleConfig": {}
+      },
+      "version": "1.0.0-beta"
+    },
+    "widget_2": {
+      "id": "widget_2",
+      "uri": "widgets/common/menu/",
+      "config": {
+        "dir": "right",
+        "style": {
+          "type": "tabs",
+          "color": "primary",
+          "activeColor": "light"
+        },
+        "main": {
+          "unifiedSize": false,
+          "textAlign": "center",
+          "space": {
+            "distance": 20,
+            "unit": "px"
+          },
+          "icon": {
+            "show": false,
+            "position": "left"
+          }
+        },
+        "sub": {
+          "textAlign": "center",
+          "space": {
+            "distance": 5,
+            "unit": "px"
+          },
+          "icon": {
+            "show": false,
+            "position": "left"
+          }
+        }
+      },
+      "version": "1.0.0-beta"
+    },
+    "widget_3": {
+      "id": "widget_3",
+      "uri": "widgets/common/text/",
+      "config": {
+        "text": "<p><span data-convert=\"true\" style=\"font-size: 1.25rem; color: rgb(255, 255, 255);\">App Title</span></p>"
+      },
+      "version": "1.0.0-beta"
+    },
+    "widget_4": {
+      "id": "widget_4",
+      "label": "splash image",
+      "uri": "widgets/common/image/",
+      "config": {
+        "functionConfig": {
+          "altText": "",
+          "toolTip": "",
+          "linkParam": {},
+          "scale": "Fit",
+          "fileName": "headerImage.jpg",
+          "src": "https://esridevbeijing.maps.arcgis.com/sharing/rest/content/items/d9bff40ed9d64800a99b671c4f1aef80/data",
+          "widgetWidth": 1106,
+          "widgetHeight": 920
+        },
+        "styleConfig": {}
+      },
+      "version": "1.0.0-beta"
+    },
+    "widget_5": {
+      "id": "widget_5",
+      "uri": "widgets/layout/column/",
+      "config": {
+        "space": 40,
+        "style": {
+          "padding": {
+            "space": [
+              10
+            ],
+            "unit": "px"
+          },
+          "justifyContent": "flex-start",
+          "alignItems": "stretch",
+          "background": "white",
+          "border": {
+            "type": "dashed",
+            "color": "lightgray",
+            "width": {
+              "distance": 1,
+              "unit": "px"
+            }
+          }
+        }
+      },
+      "version": "1.0.0-beta",
+      "layouts": {
+        "DEFAULT": "layout_3"
+      },
+      "layoutId": "layout_3"
+    },
+    "widget_6": {
+      "id": "widget_6",
+      "label": "text 1",
+      "uri": "widgets/common/text/",
+      "config": {
+        "text": "<p><strong data-convert=\"true\" style=\"background-color: rgba(255, 255, 255, 0.02); color: rgb(255, 255, 255); font-family: &quot;Avenir Next&quot;; font-size: 3rem;\">DISCOVER NEW YORK LANDMARKS</strong></p>"
+      },
+      "version": "1.0.0-beta"
+    },
+    "widget_7": {
+      "id": "widget_7",
+      "label": "image 1",
+      "uri": "widgets/common/image/",
+      "config": {
+        "functionConfig": {
+          "altText": "",
+          "toolTip": "",
+          "linkParam": {},
+          "scale": "Fit",
+          "src": "https://esridevbeijing.maps.arcgis.com/sharing/rest/content/items/e846f67e5fd544e9b84f9baa9efc7c4d/data",
+          "fileName": "divider-bg.png",
+          "widgetWidth": 180,
+          "widgetHeight": 4
+        },
+        "styleConfig": {}
+      },
+      "version": "1.0.0-beta"
+    },
+    "widget_8": {
+      "id": "widget_8",
+      "label": "text 2",
+      "uri": "widgets/common/text/",
+      "config": {
+        "text": "<p><span data-convert=\"true\" style=\"font-size: 1.5rem; color: rgb(255, 255, 255);\">West from Bryant Park, 42nd Street meets Broadway at Times Square, the center of the theater district, where the pulsating neon suggests a heart for the city itself. Since the major cleanup launched by the city and by business interests like Disney, the ambience here has changed dramatically. </span></p>"
+      },
+      "version": "1.0.0-beta"
+    },
+    "widget_9": {
+      "id": "widget_9",
+      "label": "image 2",
+      "uri": "widgets/common/image/",
+      "config": {
+        "functionConfig": {
+          "altText": "",
+          "toolTip": "",
+          "linkParam": {},
+          "scale": "Fit",
+          "src": "https://esridevbeijing.maps.arcgis.com/sharing/rest/content/items/4ab4bdf3e6e946be942bd4b57c25e123/data",
+          "fileName": "pin.svg",
+          "widgetWidth": 84,
+          "widgetHeight": 105
+        },
+        "styleConfig": {}
+      },
+      "version": "1.0.0-beta"
+    },
+    "widget_10": {
+      "id": "widget_10",
+      "label": "text 3",
+      "uri": "widgets/common/text/",
+      "config": {
+        "text": "<p style=\"text-align: center;\"><strong data-convert=\"true\" style=\"font-size: 2.25rem;\">LANDMARKS LOCATIONS</strong></p>"
+      },
+      "version": "1.0.0-beta"
+    },
+    "widget_12": {
+      "id": "widget_12",
+      "uri": "widgets/layout/row/",
+      "config": {
+        "space": 10,
+        "style": {
+          "padding": {
+            "number": [
+              20
+            ],
+            "unit": "px"
+          },
+          "justifyContent": "flex-start",
+          "alignItems": "stretch",
+          "background": {
+            "0": "w",
+            "1": "h",
+            "2": "i",
+            "3": "t",
+            "4": "e",
+            "color": "rgba(255,255,255,1)"
+          },
+          "border": {
+            "type": "dashed",
+            "color": "lightgray",
+            "width": {
+              "distance": 1,
+              "unit": "px"
+            }
+          },
+          "boxShadow": {
+            "offsetX": {
+              "distance": 0,
+              "unit": "px"
+            },
+            "offsetY": {
+              "distance": 20,
+              "unit": "px"
+            },
+            "blur": {
+              "distance": 40,
+              "unit": "px"
+            },
+            "spread": {
+              "distance": 0,
+              "unit": "px"
+            },
+            "color": "rgba(114,114,114,0.2)"
+          }
+        }
+      },
+      "version": "1.0.0-beta",
+      "layouts": {
+        "DEFAULT": "layout_5"
+      },
+      "layoutId": "layout_5"
+    },
+    "widget_14": {
+      "id": "widget_14",
+      "uri": "widgets/common/list/",
+      "config": {
+        "maxItems": 10,
+        "space": 10,
+        "spacingUnit": "PX",
+        "itemsPerPage": 10,
+        "pageTransition": "TRANSITION0",
+        "hoverType": "HOVER0",
+        "selectedStyle": "STYLE0",
+        "differentOddEven": false,
+        "direction": "VERTIVAL",
+        "showCardSetting": "NONE",
+        "builderStatus": "DEFAULT",
+        "alignType": "CENTER",
+        "itemStyle": "STYLE3",
+        "pageStyle": "SCROLL",
+        "isInitialed": true,
+        "cardConfigs": {
+          "DEFAULT": {
+            "enable": true,
+            "backgroundStyle": {
+              "border": {
+                "type": "solid",
+                "color": "rgba(0,233,255,1)",
+                "width": {
+                  "distance": 1,
+                  "unit": "px"
+                }
+              }
+            }
+          },
+          "HOVER": {
+            "enable": false,
+            "backgroundStyle": {
+              "border": {
+                "type": "solid",
+                "color": "rgba(0,233,255,1)",
+                "width": {
+                  "distance": 1,
+                  "unit": "px"
+                }
+              }
+            }
+          },
+          "SELECTED": {
+            "backgroundStyle": {
+              "border": {
+                "type": "solid",
+                "color": "rgba(0,233,255,1)",
+                "width": {
+                  "distance": 1,
+                  "unit": "px"
+                }
+              }
+            },
+            "selectionMode": "SINGLE"
+          }
+        },
+        "cardSize": {
+          "width": 471.453125,
+          "height": 103
+        },
+        "style": {
+          "id": "default"
+        }
+      },
+      "version": "1.0.0-beta",
+      "layouts": {
+        "DEFAULT": "layout_6",
+        "SELECTED": "layout_9"
+      },
+      "layoutId": "layout_6",
+      "useDataSourcesEnabled": true,
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_1-16911c28add-layer-0",
+          "isInherited": false,
+          "rootDataSourceId": "dataSource_1"
+        }
+      ]
+    },
+    "widget_27": {
+      "id": "widget_27",
+      "uri": "widgets/common/link/",
+      "config": {
+        "functionConfig": {
+          "text": "Detail",
+          "toolTip": "",
+          "linkParam": {
+            "linkType": "PAGE",
+            "value": "page_1"
+          }
+        },
+        "styleConfig": {
+          "name": "Default",
+          "themeStyle": {
+            "className": "jimu-widget d-block",
+            "color": "primary",
+            "outline": false,
+            "rounded": true,
+            "size": ""
+          },
+          "customStyle": {
+            "regular": {},
+            "hover": {},
+            "clicked": {}
+          }
+        },
+        "isDataSourceUsed": true
+      },
+      "label": "widget 13",
+      "version": "1.0.0-beta",
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_1-16911c28add-layer-0",
+          "isInherited": true,
+          "rootDataSourceId": "dataSource_1"
+        }
+      ],
+      "useDataSourcesEnabled": true
+    },
+    "widget_28": {
+      "id": "widget_28",
+      "uri": "widgets/common/image/",
+      "config": {
+        "styleConfig": {
+          "shape": "round",
+          "borderRadius": {
+            "number": [
+              50,
+              50,
+              50,
+              50
+            ],
+            "unit": "%"
+          }
+        },
+        "functionConfig": {
+          "isDataSourceUsed": true,
+          "altText": "",
+          "toolTip": "",
+          "fileName": "",
+          "imgSourceType": "BYDYNAMICURL",
+          "linkParam": {},
+          "src": "{URL2}",
+          "scale": "Fit",
+          "widgetWidth": 80,
+          "widgetHeight": 80
+        }
+      },
+      "label": "widget 14",
+      "version": "1.0.0-beta",
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_1-16911c28add-layer-0",
+          "isInherited": true,
+          "rootDataSourceId": "dataSource_1",
+          "fields": [
+            "URL2"
+          ]
+        }
+      ],
+      "useDataSourcesEnabled": true
+    },
+    "widget_29": {
+      "id": "widget_29",
+      "config": {
+        "text": "<p><exp>Ã¯Â»Â¿<span contenteditable=\"false\">Ã¯Â»Â¿ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚Â»Ãƒâ€šÃ‚Â¿{$dataSource_1-16911d467c4-layer-4.DESIG_ADDR}ÃƒÆ’Ã‚Â¯Ãƒâ€šÃ‚Â»Ãƒâ€šÃ‚Â¿Ã¯Â»Â¿</span>Ã¯Â»Â¿</exp><exp>Ã¯Â»Â¿<span contenteditable=\"false\">Ã¯Â»Â¿{$dataSource_1-16911c28add-layer-0.LM_NAME}Ã¯Â»Â¿</span>Ã¯Â»Â¿</exp></p>"
+      },
+      "uri": "widgets/common/text/",
+      "label": "widget 15",
+      "version": "1.0.0-beta",
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_1-16911c28add-layer-0",
+          "isInherited": true,
+          "rootDataSourceId": "dataSource_1",
+          "fields": [
+            "LM_NAME"
+          ]
+        }
+      ],
+      "useDataSourcesEnabled": true
+    },
+    "widget_30": {
+      "id": "widget_30",
+      "label": "column 1",
+      "uri": "widgets/layout/column/",
+      "config": {
+        "space": 40,
+        "style": {
+          "padding": {
+            "space": [
+              10
+            ],
+            "unit": "px"
+          },
+          "justifyContent": "flex-start",
+          "alignItems": "stretch",
+          "background": "white",
+          "border": {
+            "type": "dashed",
+            "color": "lightgray",
+            "width": {
+              "distance": 1,
+              "unit": "px"
+            }
+          }
+        }
+      },
+      "version": "1.0.0-beta",
+      "layouts": {
+        "DEFAULT": "layout_10"
+      },
+      "layoutId": "layout_10"
+    },
+    "widget_31": {
+      "id": "widget_31",
+      "label": "image 3",
+      "uri": "widgets/common/image/",
+      "config": {
+        "functionConfig": {
+          "altText": "",
+          "toolTip": "",
+          "linkParam": {},
+          "scale": "Fit",
+          "src": "https://esridevbeijing.maps.arcgis.com/sharing/rest/content/items/4ab4bdf3e6e946be942bd4b57c25e123/data",
+          "fileName": "pin.svg",
+          "widgetWidth": 84,
+          "widgetHeight": 105
+        },
+        "styleConfig": {}
+      },
+      "version": "1.0.0-beta"
+    },
+    "widget_32": {
+      "id": "widget_32",
+      "label": "text 4",
+      "uri": "widgets/common/text/",
+      "config": {
+        "text": "<p style=\"text-align: center;\"><strong data-convert=\"true\" style=\"font-size: 2.25rem;\">LANDMARKS TYPES</strong></p>"
+      },
+      "version": "1.0.0-beta"
+    },
+    "widget_33": {
+      "id": "widget_33",
+      "label": "row 1",
+      "uri": "widgets/layout/row/",
+      "config": {
+        "space": 0,
+        "style": {
+          "padding": {
+            "space": [
+              10
+            ],
+            "unit": "px"
+          },
+          "justifyContent": "flex-start",
+          "alignItems": "stretch",
+          "background": "white",
+          "border": {
+            "type": "dashed",
+            "color": "lightgray",
+            "width": {
+              "distance": 1,
+              "unit": "px"
+            }
+          }
+        }
+      },
+      "version": "1.0.0-beta",
+      "layouts": {
+        "DEFAULT": "layout_12"
+      },
+      "layoutId": "layout_12"
+    },
+    "widget_35": {
+      "id": "widget_35",
+      "label": "column 2",
+      "uri": "widgets/layout/column/",
+      "config": {
+        "space": 0,
+        "style": {
+          "padding": {
+            "space": [
+              10
+            ],
+            "unit": "px"
+          },
+          "justifyContent": "flex-start",
+          "alignItems": "stretch",
+          "background": {
+            "0": "w",
+            "1": "h",
+            "2": "i",
+            "3": "t",
+            "4": "e",
+            "color": "rgba(180,61,204,1)"
+          },
+          "border": {
+            "type": "dashed",
+            "color": "lightgray",
+            "width": {
+              "distance": 1,
+              "unit": "px"
+            }
+          }
+        }
+      },
+      "version": "1.0.0-beta",
+      "layouts": {
+        "DEFAULT": "layout_13"
+      },
+      "layoutId": "layout_13"
+    },
+    "widget_36": {
+      "id": "widget_36",
+      "label": "image 4",
+      "uri": "widgets/common/image/",
+      "config": {
+        "functionConfig": {
+          "altText": "",
+          "toolTip": "",
+          "linkParam": {},
+          "scale": "Fit",
+          "fileName": "",
+          "src": "https://images.unsplash.com/photo-1500839690715-11c1f02ffcd9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2253&q=80",
+          "imgSourceType": "BYSTATICURL",
+          "widgetWidth": 598,
+          "widgetHeight": 240
+        },
+        "styleConfig": {}
+      },
+      "version": "1.0.0-beta"
+    },
+    "widget_37": {
+      "id": "widget_37",
+      "label": "text 5",
+      "uri": "widgets/common/text/",
+      "config": {
+        "text": "<p><strong data-convert=\"true\" style=\"font-size: 1.5rem; color: rgb(255, 255, 255);\">Individual Type</strong></p>"
+      },
+      "version": "1.0.0-beta"
+    },
+    "widget_38": {
+      "id": "widget_38",
+      "label": "text 6",
+      "uri": "widgets/common/text/",
+      "config": {
+        "text": "<p><span data-convert=\"true\" style=\"font-size: 1.25rem; color: rgba(255, 255, 255, 0.75);\">The exteriors of individual structures, ranging from farmhouses to skyscrapers. Examples include the Woolworth Building, the Pieter Claesen Wyckoff House in Brooklyn, and the Cyclone roller coaster in Coney Island.</span></p>"
+      },
+      "version": "1.0.0-beta"
+    },
+    "widget_39": {
+      "id": "widget_39",
+      "uri": "widgets/common/navigator/",
+      "config": {
+        "type": "SECTION",
+        "section": "section_1"
+      },
+      "version": "1.0.0-beta"
+    },
+    "widget_46": {
+      "id": "widget_46",
+      "label": "column 3",
+      "uri": "widgets/layout/column/",
+      "config": {
+        "space": 10,
+        "style": {
+          "padding": {
+            "space": [
+              10
+            ],
+            "unit": "px"
+          },
+          "justifyContent": "flex-start",
+          "alignItems": "stretch",
+          "background": "white",
+          "border": {
+            "type": "dashed",
+            "color": "lightgray",
+            "width": {
+              "distance": 1,
+              "unit": "px"
+            }
+          }
+        }
+      },
+      "version": "1.0.0-beta",
+      "layouts": {
+        "DEFAULT": "layout_18"
+      },
+      "layoutId": "layout_18"
+    },
+    "widget_47": {
+      "id": "widget_47",
+      "label": "row 2",
+      "uri": "widgets/layout/row/",
+      "config": {
+        "space": 40,
+        "style": {
+          "padding": {
+            "space": [
+              10
+            ],
+            "unit": "px"
+          },
+          "justifyContent": "flex-start",
+          "alignItems": "stretch",
+          "background": "white",
+          "border": {
+            "type": "dashed",
+            "color": "lightgray",
+            "width": {
+              "distance": 1,
+              "unit": "px"
+            }
+          }
+        }
+      },
+      "version": "1.0.0-beta",
+      "layouts": {
+        "DEFAULT": "layout_19"
+      },
+      "layoutId": "layout_19"
+    },
+    "widget_51": {
+      "id": "widget_51",
+      "label": "arcgis-map 3",
+      "uri": "widgets/arcgis/arcgis-map/",
+      "config": {
+        "placeholderImage": "https://esridevbeijing.maps.arcgis.com/sharing/rest/content/items/c9d9c64e28934ccbba3a48bd2bd186c7/info/thumbnail/ago_downloaded.jpg",
+        "viewMode": "INTEGRATED",
+        "initialMapDataSourceID": "dataSource_1",
+        "canZoom": true,
+        "canGoHome": true,
+        "canNavigate": true
+      },
+      "version": "1.0.0-beta",
+      "useDataSourcesEnabled": true,
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_2"
+        },
+        {
+          "dataSourceId": "dataSource_1"
+        }
+      ],
+      "outputDataSources": [
+        "dataSource_2-widget_51-view",
+        "dataSource_1-widget_51-view"
+      ]
+    },
+    "widget_53": {
+      "id": "widget_53",
+      "label": "text 9",
+      "uri": "widgets/common/text/",
+      "config": {
+        "text": "<p><strong data-convert=\"true\" style=\"font-size: 2.25rem;\"><exp>Ã¯Â»Â¿<span contenteditable=\"false\">Ã¯Â»Â¿Ã¯Â»Â¿Ã¯Â»Â¿{$dataSource_1-16911c28add-layer-0.LM_NAME}Ã¯Â»Â¿Ã¯Â»Â¿Ã¯Â»Â¿</span>Ã¯Â»Â¿</exp> </strong></p><p><br></p><p><strong data-convert=\"true\" style=\"font-size: 1.25rem;\">Design Address:</strong></p><p><span data-convert=\"true\" style=\"font-size: 1.25rem;\"><exp>Ã¯Â»Â¿<span contenteditable=\"false\">Ã¯Â»Â¿Ã¯Â»Â¿{$dataSource_1-16911c28add-layer-0.DESIG_ADDR}Ã¯Â»Â¿Ã¯Â»Â¿</span>Ã¯Â»Â¿</exp> </span></p><p><br></p><p><strong data-convert=\"true\" style=\"font-size: 1.25rem;\">Status:</strong></p><p><span data-convert=\"true\" style=\"font-size: 1.25rem;\"><exp>Ã¯Â»Â¿<span contenteditable=\"false\">Ã¯Â»Â¿{$dataSource_1-16911c28add-layer-0.STATUS}Ã¯Â»Â¿</span>Ã¯Â»Â¿</exp> </span></p><p><br></p><p><strong data-convert=\"true\" style=\"font-size: 1.25rem;\">Boundaries:</strong></p><p><span data-convert=\"true\" style=\"font-size: 1.25rem;\"><exp>Ã¯Â»Â¿<span contenteditable=\"false\">Ã¯Â»Â¿{$dataSource_1-16911c28add-layer-0.BOUNDARIES}Ã¯Â»Â¿</span>Ã¯Â»Â¿</exp> </span></p>"
+      },
+      "version": "1.0.0-beta",
+      "useDataSourcesEnabled": true,
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_1-16911c28add-layer-0",
+          "isInherited": false,
+          "rootDataSourceId": "dataSource_1",
+          "fields": [
+            "LM_NAME",
+            "DESIG_ADDR",
+            "STATUS",
+            "BOUNDARIES"
+          ]
+        }
+      ]
+    },
+    "widget_54": {
+      "id": "widget_54",
+      "label": "image 5",
+      "uri": "widgets/common/image/",
+      "config": {
+        "functionConfig": {
+          "altText": "",
+          "toolTip": "",
+          "linkParam": {},
+          "scale": "Fit",
+          "fileName": "",
+          "src": "{URL2}",
+          "imgSourceType": "BYDYNAMICURL",
+          "widgetWidth": 320,
+          "widgetHeight": 320
+        },
+        "styleConfig": {
+          "shape": "capsule",
+          "borderRadius": {
+            "number": [
+              4
+            ],
+            "unit": "%"
+          }
+        }
+      },
+      "version": "1.0.0-beta",
+      "useDataSourcesEnabled": true,
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_1-16911c28add-layer-0",
+          "isInherited": false,
+          "rootDataSourceId": "dataSource_1",
+          "fields": [
+            "URL2"
+          ]
+        }
+      ]
+    },
+    "widget_55": {
+      "id": "widget_55",
+      "label": "arcgis-map 4",
+      "uri": "widgets/arcgis/arcgis-map/",
+      "config": {
+        "placeholderImage": "https://esridevbeijing.maps.arcgis.com/sharing/rest/content/items/c9d9c64e28934ccbba3a48bd2bd186c7/info/thumbnail/ago_downloaded.jpg"
+      },
+      "version": "1.0.0-beta",
+      "useDataSourcesEnabled": true,
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_1"
+        }
+      ],
+      "outputDataSources": [
+        "dataSource_1-widget_55-view"
+      ]
+    },
+    "widget_56": {
+      "id": "widget_56",
+      "label": "arcgis-map 5",
+      "uri": "widgets/arcgis/arcgis-map/",
+      "config": {
+        "placeholderImage": "https://esridevbeijing.maps.arcgis.com/sharing/rest/content/items/139ff990894244cfa3740af918773bd8/info/thumbnail/ago_downloaded.png",
+        "canZoom": true,
+        "canGoHome": true
+      },
+      "version": "1.0.0-beta",
+      "useDataSourcesEnabled": true,
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_3"
+        }
+      ],
+      "outputDataSources": [
+        "dataSource_3-widget_56-view"
+      ]
+    },
+    "widget_57": {
+      "id": "widget_57",
+      "label": "row 3",
+      "uri": "widgets/layout/row/",
+      "config": {
+        "space": 0,
+        "style": {
+          "padding": {
+            "space": [
+              10
+            ],
+            "unit": "px"
+          },
+          "justifyContent": "flex-start",
+          "alignItems": "stretch",
+          "background": "white",
+          "border": {
+            "type": "dashed",
+            "color": "#9FA4A7",
+            "width": {
+              "distance": 1,
+              "unit": "px"
+            }
+          }
+        }
+      },
+      "version": "1.0.0-beta",
+      "layouts": {
+        "DEFAULT": "layout_21"
+      },
+      "layoutId": "layout_21"
+    },
+    "widget_58": {
+      "id": "widget_58",
+      "label": "arcgis-map 6",
+      "uri": "widgets/arcgis/arcgis-map/",
+      "config": {
+        "placeholderImage": "https://esridevbeijing.maps.arcgis.com/sharing/rest/content/items/0e1983103a1a4d589e79ca560d28c51f/info/thumbnail/ago_downloaded.png",
+        "canZoom": true,
+        "canGoHome": true
+      },
+      "version": "1.0.0-beta",
+      "useDataSourcesEnabled": true,
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_4"
+        }
+      ],
+      "outputDataSources": [
+        "dataSource_4-widget_58-view"
+      ]
+    },
+    "widget_59": {
+      "id": "widget_59",
+      "label": "column 4",
+      "uri": "widgets/layout/column/",
+      "config": {
+        "space": 10,
+        "style": {
+          "padding": {
+            "space": [
+              10
+            ],
+            "unit": "px"
+          },
+          "justifyContent": "flex-start",
+          "alignItems": "stretch",
+          "background": "white",
+          "border": {
+            "type": "dashed",
+            "color": "#9FA4A7",
+            "width": {
+              "distance": 1,
+              "unit": "px"
+            }
+          }
+        }
+      },
+      "version": "1.0.0-beta",
+      "layouts": {
+        "DEFAULT": "layout_22"
+      },
+      "layoutId": "layout_22"
+    },
+    "widget_60": {
+      "id": "widget_60",
+      "label": "image 6",
+      "uri": "widgets/common/image/",
+      "config": {
+        "functionConfig": {
+          "altText": "",
+          "toolTip": "",
+          "linkParam": {},
+          "scale": "Fit",
+          "fileName": "",
+          "src": "https://images.unsplash.com/photo-1516382310788-74f29196f98a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1936&q=80",
+          "imgSourceType": "BYSTATICURL",
+          "widgetWidth": 598,
+          "widgetHeight": 240
+        },
+        "styleConfig": {}
+      },
+      "version": "1.0.0-beta"
+    },
+    "widget_61": {
+      "id": "widget_61",
+      "label": "text 10",
+      "uri": "widgets/common/text/",
+      "config": {
+        "text": "<p><strong data-convert=\"true\" style=\"font-size: 1.5rem; color: rgb(255, 255, 255);\">Scenic Type</strong></p>"
+      },
+      "version": "1.0.0-beta"
+    },
+    "widget_62": {
+      "id": "widget_62",
+      "label": "text 11",
+      "uri": "widgets/common/text/",
+      "config": {
+        "text": "<p><span data-convert=\"true\" style=\"font-size: 1.25rem; color: rgba(255, 255, 255, 0.75);\">City-owned parks or other landscape features, such as Prospect Park, Central Park, and Ocean Parkway.</span></p>"
+      },
+      "version": "1.0.0-beta"
+    }
+  },
+  "widgetsManifest": {
+    "widgets/common/image/": {
+      "name": "image",
+      "type": "widget",
+      "version": "1.0.0-beta",
+      "exbVersion": "1.0.0-beta",
+      "defaultSize": {
+        "width": 300,
+        "height": 300
+      },
+      "properties": {
+        "hasSettingPage": true,
+        "supportRepeat": true
+      },
+      "supportedLocales": [
+        "en"
+      ],
+      "extensions": [
+        {
+          "name": "chooseshape",
+          "point": "CONTEXT_TOOL",
+          "uri": "tools/chooseshape"
+        },
+        {
+          "name": "croptool",
+          "point": "CONTEXT_TOOL",
+          "uri": "tools/croptool"
+        }
+      ]
+    },
+    "widgets/common/menu/": {
+      "name": "menu",
+      "type": "widget",
+      "version": "1.0.0-beta",
+      "exbVersion": "1.0.0-beta",
+      "defaultSize": {
+        "width": 150,
+        "height": 60
+      },
+      "properties": {
+        "hasLocale": true,
+        "hasSettingPage": true
+      },
+      "supportedLocales": [
+        "en",
+        "zh-cn"
+      ]
+    },
+    "widgets/common/text/": {
+      "name": "text",
+      "type": "widget",
+      "version": "1.0.0-beta",
+      "exbVersion": "1.0.0-beta",
+      "defaultSize": {
+        "width": 360,
+        "height": 70
+      },
+      "properties": {
+        "hasSettingPage": true,
+        "supportInlineEditing": true,
+        "supportRepeat": true
+      },
+      "extensions": [
+        {
+          "name": "format",
+          "point": "CONTEXT_TOOL",
+          "uri": "tools/format"
+        },
+        {
+          "name": "dynamic-content",
+          "point": "CONTEXT_TOOL",
+          "uri": "tools/dynamic-content"
+        }
+      ],
+      "supportedLocales": [
+        "en"
+      ]
+    },
+    "widgets/layout/column/": {
+      "name": "column",
+      "type": "widget",
+      "version": "1.0.0-beta",
+      "exbVersion": "1.0.0-beta",
+      "properties": {
+        "type": "LAYOUT",
+        "hasBuilderSupportModule": true,
+        "hasLayoutItemSettingPage": true
+      },
+      "supportedLocales": [
+        "en",
+        "zh-cn"
+      ],
+      "defaultSize": {
+        "width": 300,
+        "height": 600
+      }
+    },
+    "widgets/layout/row/": {
+      "name": "row",
+      "type": "widget",
+      "version": "1.0.0-beta",
+      "exbVersion": "1.0.0-beta",
+      "properties": {
+        "type": "LAYOUT",
+        "hasBuilderSupportModule": true,
+        "hasLayoutItemSettingPage": true
+      },
+      "supportedLocales": [
+        "en",
+        "zh-cn"
+      ],
+      "defaultSize": {
+        "width": 800,
+        "height": 400
+      }
+    },
+    "widgets/arcgis/arcgis-map/": {
+      "name": "arcgis-map",
+      "label": "Map",
+      "type": "widget",
+      "version": "1.0.0-beta",
+      "exbVersion": "1.0.0-beta",
+      "publishMessages": [
+        "EXTENT_CHANGE"
+      ],
+      "messageActions": [
+        {
+          "name": "display-feature-set",
+          "uri": "runtime/actions/display-feature-set-action"
+        },
+        {
+          "name": "pan-to",
+          "uri": "runtime/actions/pan-to-action"
+        },
+        {
+          "name": "zoom-to-feature",
+          "uri": "runtime/actions/zoom-to-feature-action"
+        },
+        {
+          "name": "select-feature",
+          "uri": "runtime/actions/select-feature-action"
+        },
+        {
+          "name": "clear-select-feature",
+          "uri": "runtime/actions/clear-select-feature-action"
+        }
+      ],
+      "defaultSize": {
+        "width": 400,
+        "height": 400
+      },
+      "properties": {
+        "hasLocale": false,
+        "autoBindDataSource": false
+      },
+      "supportedLocales": [
+        "en"
+      ]
+    },
+    "widgets/common/list/": {
+      "name": "list",
+      "label": "List",
+      "type": "widget",
+      "version": "1.0.0-beta",
+      "exbVersion": "1.0.0-beta",
+      "messageActions": [
+        {
+          "name": "query",
+          "uri": "runtime/actions/query-action"
+        }
+      ],
+      "defaultSize": {
+        "width": 650,
+        "height": 360
+      },
+      "properties": {
+        "hasLocale": false,
+        "hasSettingPage": true,
+        "hasEmbeddedLayout": true,
+        "hasBuilderSupportModule": true
+      },
+      "supportedLocales": [
+        "en",
+        "zh-cn"
+      ]
+    },
+    "widgets/common/link/": {
+      "name": "link",
+      "type": "widget",
+      "version": "1.0.0-beta",
+      "exbVersion": "1.0.0-beta",
+      "properties": {
+        "hasLocale": true,
+        "hasSettingPage": true,
+        "supportRepeat": true
+      },
+      "defaultSize": {
+        "width": 220,
+        "height": 50
+      },
+      "supportedLocales": [
+        "en",
+        "zh-cn"
+      ]
+    },
+    "widgets/common/navigator/": {
+      "name": "navigator",
+      "type": "widget",
+      "version": "1.0.0-beta",
+      "exbVersion": "1.0.0-beta",
+      "defaultSize": {
+        "height": 30,
+        "width": 200
+      },
+      "properties": {
+        "hasLocale": true,
+        "hasSettingPage": true
+      },
+      "supportedLocales": [
+        "en"
+      ]
+    }
+  },
+  "pageStructure": [
+    {
+      "default": []
+    },
+    {
+      "page_1": []
+    },
+    {
+      "page_2": []
+    }
+  ],
+  "header": {
+    "layout": "layout_1",
+    "height": "60",
+    "backgroundColor": "#5c3caf"
+  },
+  "dataSources": {
+    "dataSource_1": {
+      "type": "WEB_SCENE",
+      "itemId": "c9d9c64e28934ccbba3a48bd2bd186c7",
+      "id": "dataSource_1",
+      "label": "NY 3D landmarks",
+      "portalUrl": "https://esridevbeijing.maps.arcgis.com"
+    },
+    "dataSource_2": {
+      "type": "WEB_MAP",
+      "itemId": "b65e26af257642109da55bc622c82bee",
+      "id": "dataSource_2",
+      "label": "Discover New York City Landmarks",
+      "portalUrl": "https://esridevbeijing.maps.arcgis.com"
+    },
+    "dataSource_2-widget_51-view": {
+      "id": "dataSource_2-widget_51-view",
+      "label": "Discover New York City Landmarks",
+      "type": "MAP_VIEW",
+      "itemId": "b65e26af257642109da55bc622c82bee",
+      "originDataSourceId": "dataSource_2",
+      "isOutputFromWidget": true
+    },
+    "dataSource_1-widget_51-view": {
+      "id": "dataSource_1-widget_51-view",
+      "type": "SCENE_VIEW",
+      "itemId": "c9d9c64e28934ccbba3a48bd2bd186c7",
+      "originDataSourceId": "dataSource_1",
+      "isOutputFromWidget": true
+    },
+    "dataSource_3": {
+      "type": "WEB_MAP",
+      "itemId": "139ff990894244cfa3740af918773bd8",
+      "id": "dataSource_3",
+      "label": "Individual NY Landmarks",
+      "portalUrl": "https://esridevbeijing.maps.arcgis.com"
+    },
+    "dataSource_4": {
+      "type": "WEB_MAP",
+      "itemId": "0e1983103a1a4d589e79ca560d28c51f",
+      "id": "dataSource_4",
+      "label": "Scenic NY Landmarks",
+      "portalUrl": "https://esridevbeijing.maps.arcgis.com"
+    },
+    "dataSource_2-widget_50-view": {
+      "id": "dataSource_2-widget_50-view",
+      "label": "Discover New York City Landmarks",
+      "type": "MAP_VIEW",
+      "itemId": "b65e26af257642109da55bc622c82bee",
+      "originDataSourceId": "dataSource_2",
+      "isOutputFromWidget": true
+    },
+    "dataSource_1-widget_55-view": {
+      "id": "dataSource_1-widget_55-view",
+      "type": "SCENE_VIEW",
+      "itemId": "c9d9c64e28934ccbba3a48bd2bd186c7",
+      "originDataSourceId": "dataSource_1",
+      "isOutputFromWidget": true
+    },
+    "dataSource_4-widget_40-view": {
+      "id": "dataSource_4-widget_40-view",
+      "label": "Scenic NY Landmarks",
+      "type": "MAP_VIEW",
+      "itemId": "0e1983103a1a4d589e79ca560d28c51f",
+      "originDataSourceId": "dataSource_4",
+      "isOutputFromWidget": true
+    },
+    "dataSource_3-widget_56-view": {
+      "id": "dataSource_3-widget_56-view",
+      "label": "Individual NY Landmarks",
+      "type": "MAP_VIEW",
+      "itemId": "139ff990894244cfa3740af918773bd8",
+      "originDataSourceId": "dataSource_3",
+      "isOutputFromWidget": true
+    },
+    "dataSource_4-widget_58-view": {
+      "id": "dataSource_4-widget_58-view",
+      "label": "Scenic NY Landmarks",
+      "type": "MAP_VIEW",
+      "itemId": "0e1983103a1a4d589e79ca560d28c51f",
+      "originDataSourceId": "dataSource_4",
+      "isOutputFromWidget": true
+    }
+  },
+  "sections": {
+    "section_1": {
+      "id": "section_1",
+      "label": "landmark types section",
+      "views": [
+        "view_1",
+        "view_3"
+      ]
+    }
+  },
+  "views": {
+    "view_1": {
+      "id": "view_1",
+      "label": "Individual",
+      "layout": "layout_11"
+    },
+    "view_3": {
+      "id": "view_3",
+      "label": "Scenic",
+      "layout": "layout_20"
+    }
+  },
+  "footer": {
+    "layout": "layout_17",
+    "height": "150"
+  }
+}

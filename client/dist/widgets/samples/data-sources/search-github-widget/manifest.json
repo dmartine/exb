@@ -1,0 +1,26 @@
+{
+  "name": "search-github-widget",
+  "type": "widget",
+  "version": "1.0.0-beta",
+  "exbVersion": "1.0.0-beta",
+  "author": "Esri R&D Center Beijing",
+  "description": "This is the widget used in developer guide",
+  "copyright": "",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0",
+  "properties": {
+    "hasLocale": false,
+    "hasConfig": false,
+    "hasSettingPage": false
+  },
+  "extensions": [
+    {
+      "name": "github-data-source-factory",
+      "point": "DATA_SOURCE_FACTORY_URI",
+      "uri": "runtime/ds-factory-ext"
+    },
+    {
+      "point": "",
+      "uri": "runtime/github-data-source"
+    }
+  ]
+}

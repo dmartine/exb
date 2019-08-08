@@ -1,0 +1,23 @@
+{
+  "name": "link",
+  "label": "Button",
+  "type": "widget",
+  "version": "1.0.0-beta",
+  "exbVersion": "1.0.0-beta",
+  "author": "Esri R&D Center Beijing",
+  "description": "This is a button widget, which is represented as a UI element, like an icon, text, or the composition.",
+  "copyright": "",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0",
+  "properties": {
+    "hasLocale": true,
+    "hasSettingPage": true,
+    "supportRepeat": true
+  },
+  "defaultSize": {
+    "width": 220,
+    "height": 50
+  },
+  "supportedLocales": [
+    "en"
+  ]
+}

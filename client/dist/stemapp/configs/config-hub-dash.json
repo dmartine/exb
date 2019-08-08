@@ -1,0 +1,428 @@
+{
+  "pages": {
+    "default": {
+      "label": "default page",
+      "layout": "default-layout",
+      "id": "default",
+      "header": true,
+      "footer": true,
+      "isDefault": true
+    }
+  },
+  "layouts": {
+    "default-layout": {
+      "0": {
+        "type": "COLUMN",
+        "id": "0",
+        "setting": {}
+      },
+      "1": {
+        "type": "WIDGET",
+        "widgetId": "widget_page_title",
+        "id": "1",
+        "layoutId": "default-layout",
+        "parentId": "3",
+        "setting": {
+          "order": 0,
+          "typeOfHeight": "AUTO",
+          "style": {
+            "width": {
+              "value": {
+                "distance": 1091,
+                "unit": "px"
+              }
+            },
+            "height": {
+              "value": {
+                "distance": 52,
+                "unit": "px"
+              }
+            }
+          }
+        }
+      },
+      "2": {
+        "id": "2",
+        "layoutId": "default-layout",
+        "parentId": "0",
+        "type": "SUBLAYOUT",
+        "setting": {
+          "order": 0
+        }
+      },
+      "3": {
+        "id": "3",
+        "layoutId": "default-layout",
+        "parentId": "2",
+        "type": "ROW",
+        "setting": {}
+      },
+      "4": {
+        "type": "WIDGET",
+        "widgetId": "widget_map",
+        "id": "4",
+        "layoutId": "default-layout",
+        "setting": {
+          "typeOfWidth": "MANUAL",
+          "typeOfHeight": "MANUAL",
+          "style": {
+            "width": {
+              "value": {
+                "distance": 1091,
+                "unit": "px"
+              }
+            },
+            "height": {
+              "value": {
+                "distance": 400,
+                "unit": "px"
+              }
+            }
+          },
+          "order": 0
+        },
+        "parentId": "6"
+      },
+      "5": {
+        "id": "5",
+        "layoutId": "default-layout",
+        "parentId": "0",
+        "type": "SUBLAYOUT",
+        "setting": {
+          "order": 1
+        }
+      },
+      "6": {
+        "id": "6",
+        "layoutId": "default-layout",
+        "parentId": "5",
+        "type": "ROW",
+        "setting": {}
+      },
+      "7": {
+        "type": "WIDGET",
+        "widgetId": "widget_list_placrholder",
+        "id": "7",
+        "layoutId": "default-layout",
+        "parentId": "9",
+        "setting": {
+          "order": 0,
+          "style": {
+            "width": {
+              "value": {
+                "distance": 460,
+                "unit": "px"
+              }
+            },
+            "height": {
+              "value": {
+                "distance": 220,
+                "unit": "px"
+              }
+            }
+          },
+          "typeOfHeight": "AUTO"
+        }
+      },
+      "8": {
+        "id": "8",
+        "layoutId": "default-layout",
+        "parentId": "0",
+        "type": "SUBLAYOUT",
+        "setting": {
+          "order": 2
+        }
+      },
+      "9": {
+        "id": "9",
+        "layoutId": "default-layout",
+        "parentId": "8",
+        "type": "ROW",
+        "setting": {
+          "style": {
+            "padding": {
+              "space": [10],
+              "unit": "px"
+            },
+            "justifyContent": "center",
+            "alignItems": "flex-start"
+          }
+        }
+      },
+      "10": {
+        "type": "WIDGET",
+        "widgetId": "widget_big_chart",
+        "id": "10",
+        "layoutId": "default-layout",
+        "parentId": "15",
+        "setting": {
+          "draggable": true,
+          "resizable": true,
+          "minHeight": 16,
+          "order": 0,
+          "style": {
+            "width": {
+              "value": {
+                "distance": 516.390625,
+                "unit": "px"
+              }
+            },
+            "height": {
+              "value": {
+                "distance": 240,
+                "unit": "px"
+              }
+            }
+          },
+          "typeOfHeight": "MANUAL"
+        }
+      },
+      "11": {
+        "type": "WIDGET",
+        "widgetId": "widget_small_chart_1",
+        "id": "11",
+        "layoutId": "default-layout",
+        "parentId": "20",
+        "setting": {
+          "draggable": true,
+          "resizable": true,
+          "minHeight": 16,
+          "order": 0,
+          "style": {
+            "width": {
+              "value": {
+                "distance": 240,
+                "unit": "px"
+              }
+            },
+            "height": {
+              "value": {
+                "distance": 100,
+                "unit": "px"
+              }
+            }
+          },
+          "typeOfHeight": "MANUAL"
+        }
+      },
+      "14": {
+        "id": "14",
+        "layoutId": "default-layout",
+        "parentId": "9",
+        "type": "SUBLAYOUT",
+        "setting": {
+          "order": 1,
+          "typeOfWidth": "MANUAL",
+          "style": {
+            "width": {
+              "value": {
+                "distance": 620,
+                "unit": "px"
+              }
+            }
+          }
+        }
+      },
+      "15": {
+        "id": "15",
+        "layoutId": "default-layout",
+        "parentId": "14",
+        "type": "COLUMN",
+        "setting": {}
+      },
+      "16": {
+        "type": "WIDGET",
+        "widgetId": "widget_smart_chart_2",
+        "id": "16",
+        "layoutId": "default-layout",
+        "parentId": "20",
+        "setting": {
+          "draggable": true,
+          "resizable": true,
+          "minHeight": 16,
+          "order": 1,
+          "style": {
+            "width": {
+              "value": {
+                "distance": 240,
+                "unit": "px"
+              }
+            },
+            "height": {
+              "value": {
+                "distance": 100,
+                "unit": "px"
+              }
+            }
+          },
+          "typeOfHeight": "MANUAL"
+        }
+      },
+      "19": {
+        "id": "19",
+        "layoutId": "default-layout",
+        "parentId": "15",
+        "type": "SUBLAYOUT",
+        "setting": {
+          "order": 1,
+          "typeOfHeight": "MANUAL",
+          "style": {
+            "width": {
+              "value": {
+                "distance": 516,
+                "unit": "px"
+              }
+            },
+            "height": {
+              "value": {
+                "distance": 119,
+                "unit": "px"
+              }
+            }
+          }
+        }
+      },
+      "20": {
+        "id": "20",
+        "layoutId": "default-layout",
+        "parentId": "19",
+        "type": "ROW",
+        "setting": {}
+      },
+      "id": {
+        "setting": {}
+      }
+    }
+  },
+  "theme": "themes/radar",
+  "attributes": {},
+  "widgets": {
+    "widget_page_title": {
+      "id": "widget_page_title",
+      "label": "text",
+      "uri": "widgets/common/text/",
+      "icon": "http://localhost:3000/builder/../widgets/common/text/dist/runtime/assets/icon.svg",
+      "config": {
+        "text": "<p><strong style=\"font-size: 24px;\">Survey Dashboard﻿</strong></p>"
+      },
+      "version": "1.0.0-beta"
+    },
+    "widget_map": {
+      "id": "widget_map",
+      "label": "arcgis-map",
+      "uri": "widgets/arcgis/arcgis-map/",
+      "icon": "http://localhost:3000/builder/../widgets/arcgis/arcgis-map/dist/runtime/assets/icon.svg",
+      "config": {},
+      "version": "1.0.0-beta",
+      "useDataSources": [{
+        "dataSourceId": "aedb8657cf6c414e91728c73b3743253"
+      }],
+      "outputDataSources": ["aedb8657cf6c414e91728c73b3743253-view"]
+    },
+    "widget_list_placrholder": {
+      "id": "widget_list_placrholder",
+      "label": "text 1",
+      "uri": "widgets/common/text/",
+      "icon": "http://localhost:3000/builder/../widgets/common/text/dist/runtime/assets/icon.svg",
+      "config": {
+        "text": "<p>LIST WIDGET: COMING SOON</p>"
+      },
+      "version": "1.0.0-beta"
+    },
+    "widget_big_chart": {
+      "id": "widget_big_chart",
+      "label": "text 2",
+      "uri": "widgets/common/chart/",
+      "icon": "http://localhost:3000/builder/../widgets/common/chart/dist/runtime/assets/icon.svg",
+      "useDataSources": [{
+        "dataSourceId": "field_6-ds"
+      }],
+      "config": {
+        "title": "What is your primary mode of transportation?",
+        "chartType": "pie",
+        "categoryField": "field_6",
+        "valueFields": ["ObjectId"],
+        "statType": "count",
+        "categoryLabel":  "Transportation Mode",
+        "valueLabels": ["Count"],
+        "height": 300
+      },
+      "version": "1.0.0-beta"
+    },
+    "widget_small_chart_1": {
+      "id": "widget_small_chart_1",
+      "label": "text 3",
+      "uri": "widgets/common/chart/",
+      "icon": "http://localhost:3000/builder/../widgets/common/chart/dist/runtime/assets/icon.svg",
+      "useDataSources": [{
+        "dataSourceId": "field_0-ds"
+      }],
+      "config": {
+        "chartType": "bar",
+        "categoryField": "field_0",
+        "valueFields": ["ObjectId"],
+        "statType": "count",
+        "categoryLabel":  "How safe do you feel walking?",
+        "valueLabels": ["Count"],
+        "height": 200
+      },
+      "version": "1.0.0-beta"
+    },
+    "widget_smart_chart_2": {
+      "id": "widget_smart_chart_2",
+      "label": "text 4",
+      "uri": "widgets/common/chart/",
+      "icon": "http://localhost:3000/builder/../widgets/common/chart/dist/runtime/assets/icon.svg",
+      "useDataSources": [{
+        "dataSourceId": "field_2-ds"
+      }],
+      "config": {
+        "chartType": "bar",
+        "categoryField": "field_2",
+        "valueFields": ["ObjectId"],
+        "statType": "count",
+        "categoryLabel": "How safe do you feel riding a bicycle?",
+        "valueLabels": ["Count"],
+        "height": 200
+      },
+      "version": "1.0.0-beta"
+    }
+  },
+  "pageStructure": [{
+    "default": []
+  }],
+  "dataSources": {
+    "aedb8657cf6c414e91728c73b3743253": {
+      "type": "WEB_MAP",
+      "itemId": "aedb8657cf6c414e91728c73b3743253",
+      "id": "aedb8657cf6c414e91728c73b3743253",
+      "label": "Map: EXB dev use - Yiwei"
+    },
+    "aedb8657cf6c414e91728c73b3743253-view": {
+      "id": "aedb8657cf6c414e91728c73b3743253-view",
+      "label": "Map: EXB dev use - Yiwei",
+      "type": "MAP_VIEW",
+      "itemId": "aedb8657cf6c414e91728c73b3743253",
+      "originDataSourceId": "aedb8657cf6c414e91728c73b3743253",
+      "isOutputFromWidget": true
+    },
+    "field_0-ds": {
+      "id": "field_0-ds",
+      "label": "field_0 data source",
+      "type": "FEATURE_QUERY",
+      "url": "https://services7.arcgis.com/BBpPn9wZu2D6eTNY/arcgis/rest/services/survey123_3c8f3649087c49159576a780093d05b2_stakeholder/FeatureServer/0"
+    },
+    "field_2-ds": {
+      "id": "field_2-ds",
+      "label": "field_2 data source",
+      "type": "FEATURE_QUERY",
+      "url": "https://services7.arcgis.com/BBpPn9wZu2D6eTNY/arcgis/rest/services/survey123_3c8f3649087c49159576a780093d05b2_stakeholder/FeatureServer/0"
+    },
+    "field_6-ds": {
+      "id": "field_6-ds",
+      "label": "field_6 data source",
+      "type": "FEATURE_QUERY",
+      "url": "https://services7.arcgis.com/BBpPn9wZu2D6eTNY/arcgis/rest/services/survey123_3c8f3649087c49159576a780093d05b2_stakeholder/FeatureServer/0"
+    }
+  }
+}

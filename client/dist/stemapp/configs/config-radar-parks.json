@@ -1,0 +1,2810 @@
+{
+  "hub": {
+    "community": {
+      "portalUrl": "https://dc.mapsqa.arcgis.com/sharing/rest"
+    }
+  },
+  "theme": "themes/radar",
+  "attributes": {
+    "title": "DC Parks",
+    "portalUrl": "https://dc.mapsqa.arcgis.com/sharing/rest"
+  },
+  "pages": {
+    "default": {
+      "id": "default",
+      "label": "Explore",
+      "layout": "main-page-layout",
+      "mobileLayout": "main-page-layout-mobile",
+      "widgets": [
+        "arcgis-scene"
+      ],
+      "sections": [
+        "sidebar-section"
+      ],
+      "sharedArea": {
+        "header": true
+      },
+      "isDefault": true
+    },
+    "detail-page": {
+      "id": "detail-page",
+      "label": "Details",
+      "layout": "detail-page-layout",
+      "mobileLayout": "detail-page-layout-mobile",
+      "widgets": [
+        "arcgis-scene-overview",
+        "feature-info-large",
+        "feature-info-large2",
+        "feature-info3",
+        "details-page_related-features",
+        "details-page_view-map-link",
+        "approved-comments",
+        "survey123"
+      ],
+      "sections": [],
+      "sharedArea": {
+        "header": false
+      }
+    },
+    "about": {
+      "label": "About",
+      "layout": "default-layout",
+      "id": "about"
+    },
+    "dashboard": {
+      "id": "dashboard",
+      "label": "Dashboard",
+      "sharedArea": {},
+      "layout": "layout_1",
+      "widgets": []
+    }
+  },
+  "sharedArea": {
+    "header": {
+      "widgets": [
+        "header-title-text",
+        "user-menu"
+      ]
+    },
+    "footer": {},
+    "leftArea": {},
+    "rightArea": {},
+    "layout": "app-layout"
+  },
+  "sections": {
+    "sidebar-section": {
+      "id": "sidebar-section",
+      "views": [
+        "main-view",
+        "list-view",
+        "details-view",
+        "survey-view"
+      ]
+    }
+  },
+  "views": {
+    "main-view": {
+      "id": "main-view",
+      "label": "main view",
+      "layout": "main-view-layout",
+      "mobileLayoutCompact": "main-view-compact-layout",
+      "mobileTheresholdSize": {
+        "height": 300
+      },
+      "widgets": [
+        "main-image",
+        "main-text-title",
+        "main-text-description",
+        "feature-list-main",
+        "main-view-places-link"
+      ]
+    },
+    "list-view": {
+      "id": "list-view",
+      "label": "list view",
+      "layout": "list-view-layout",
+      "widgets": [
+        "list-view-link",
+        "feature-list"
+      ]
+    },
+    "details-view": {
+      "id": "details-view",
+      "label": "details view",
+      "layout": "details-view-layout",
+      "mobileLayoutCompact": "details-view-compact-layout",
+      "mobileTheresholdSize": {
+        "height": 300
+      },
+      "widgets": [
+        "detail-view-link",
+        "feature-info",
+        "feature-info2",
+        "approved-comments",
+        "detail-comment-link",
+        "detail-view-more-link",
+        "survey123"
+      ]
+    },
+    "survey-view": {
+      "id": "survey-view",
+      "label": "survey view",
+      "layout": "survey-view-layout",
+      "widgets": [
+        "survey123"
+      ]
+    }
+  },
+  "layouts": {
+    "main-page-layout": {
+      "0": {
+        "id": "0",
+        "type": "COLUMN"
+      },
+      "4": {
+        "id": "4",
+        "parentId": "0",
+        "type": "SUBLAYOUT",
+        "setting": {
+          "typeOfHeight": "FIT_WINDOW",
+          "order": 0
+        }
+      },
+      "1": {
+        "id": "1",
+        "type": "ROW",
+        "parentId": "4",
+        "setting": {
+          "space": 0,
+          "typeOfHeight": "FILL_LAYOUT",
+          "style":{
+            "padding": {
+              "number": [0],
+              "unit": "px"
+            },
+            "alignItems": "stretch"
+          }
+        }
+      },
+      "2": {
+        "id": "2",
+        "parentId": "1",
+        "type": "SECTION",
+        "sectionId": "sidebar-section",
+        "setting": {
+          "typeOfWidth": "MANUAL",
+          "style":{
+            "width": {
+              "value": {
+                "distance": 400,
+                "unit": "px"
+              }
+            }
+          }
+        }
+      },
+      "3": {
+        "id": "3",
+        "parentId": "1",
+        "type": "WIDGET",
+        "widgetId": "arcgis-scene",
+        "setting": {
+          "typeOfWidth": "FILL_LAYOUT"
+        }
+      }
+    },
+    "main-page-layout-mobile": {
+      "1": {
+        "id": "1",
+        "type": "SIDEBAR"
+      },
+      "2": {
+        "id": "2",
+        "parentId": "1",
+        "pos": {
+          "x": 0,
+          "y": 0,
+          "w": 400,
+          "h": 120
+        },
+        "setting": {
+          "attach": "bottom",
+          "togglable": false,
+          "resizable": true,
+          "overlay": true,
+          "min": 120
+        },
+        "type": "SECTION",
+        "sectionId": "sidebar-section"
+      },
+      "3": {
+        "id": "3",
+        "parentId": "1",
+        "pos": {
+          "x": 0,
+          "y": 0,
+          "w": 50,
+          "h": 80
+        },
+        "setting": {
+          "attach": "center"
+        },
+        "type": "WIDGET",
+        "widgetId": "arcgis-scene"
+      }
+    },
+    "detail-page-layout": {
+      "0": {
+        "id": "0",
+        "type": "COLUMN",
+        "style": {
+          "padding": {
+            "number": [0],
+            "unit": "px"
+          }
+        }
+      },
+      "3": {
+        "id": "3",
+        "parentId": "0",
+        "type": "WIDGET",
+        "widgetId": "feature-info-large",
+        "setting": {
+          "order": 0
+        }
+      },
+      "6": {
+        "id": "6",
+        "parentId": "0",
+        "pos": {},
+        "type": "WIDGET",
+        "widgetId": "feature-info-large2",
+        "setting": {
+          "order": 1
+        }
+      },
+      "7": {
+        "id": "7",
+        "parentId": "0",
+        "pos": {},
+        "type": "WIDGET",
+        "widgetId": "details-page_highlighted-features",
+        "setting": {
+          "order": 2
+        }
+      },
+      "8": {
+        "id": "8",
+        "parentId": "0",
+        "pos": {},
+        "type": "WIDGET",
+        "widgetId": "upcoming-events",
+        "setting": {
+          "order": 3
+        }
+      },
+      "9": {
+        "id": "9",
+        "parentId": "0",
+        "pos": {
+          "h": 240
+        },
+        "type": "WIDGET",
+        "widgetId": "arcgis-scene-overview",
+        "setting": {
+          "style": {
+            "height": {
+              "value": {
+                "distance": 240,
+                "unit": "px"
+              }
+            }
+          },
+          "order": 4
+        }
+      },
+      "10": {
+        "parentId": "0",
+        "pos": {},
+        "id": "10",
+        "type": "WIDGET",
+        "widgetId": "feature-info3",
+        "setting": {
+          "order": 5
+        }
+      },
+
+      "4": {
+        "id": "4",
+        "parentId": "0",
+        "type": "WIDGET",
+        "widgetId": "details-page_view-map-link",
+        "setting": {
+          "order": 6
+        }
+      },
+      "11": {
+        "id": "11",
+        "parentId": "0",
+        "pos": {
+          "x": 0,
+          "y": 435,
+          "w": "100%",
+          "h": 540
+        },
+        "type": "WIDGET",
+        "widgetId": "survey123",
+        "setting": {
+          "order": 7,
+          "className": "mt-4"
+        }
+      }
+
+    },
+    "detail-page-layout-mobile": {
+      "0": {
+        "id": "0",
+        "type": "FIXED"
+      },
+      "11": {
+        "id": "11",
+        "parentId": "0",
+        "pos": {
+          "x": 0,
+          "y": 0,
+          "w": "100%"
+        },
+        "type": "SUBLAYOUT",
+        "setting": {}
+      },
+      "1": {
+        "id": "1",
+        "parentId": "11",
+        "type": "grid",
+        "setting": {
+          "padding": [
+            20,
+            20
+          ]
+        }
+      },
+      "2": {
+        "id": "2",
+        "parentId": "1",
+        "pos": {
+          "x": 0,
+          "y": 0,
+          "w": "100%",
+          "h": 7
+        },
+        "type": "WIDGET",
+        "widgetId": "feature-info-mobile",
+        "setting": {}
+      },
+      "3": {
+        "id": "3",
+        "parentId": "1",
+        "pos": {
+          "x": 0,
+          "y": 7,
+          "w": 1,
+          "h": 1.5
+        },
+        "type": "WIDGET",
+        "widgetId": "details-page_view-map-link",
+        "setting": {}
+      },
+      "4": {
+        "id": "4",
+        "parentId": "1",
+        "pos": {
+          "x": 1,
+          "y": 12,
+          "w": 1,
+          "h": 1.5
+        },
+        "type": "WIDGET",
+        "widgetId": "details-page_view-comments"
+      },
+      "5": {
+        "id": "5",
+        "parentId": "1",
+        "pos": {
+          "x": 0,
+          "w": 100,
+          "h": 4
+        },
+        "type": "WIDGET",
+        "widgetId": "feature-info-mobile2"
+      },
+      "6": {
+        "id": "6",
+        "parentId": "1",
+        "pos": {
+          "x": 0,
+          "y": 18.5,
+          "w": 100,
+          "h": 2
+        },
+        "type": "WIDGET",
+        "widgetId": "arcgis-scene-overview"
+      },
+      "7": {
+        "id": "7",
+        "parentId": "1",
+        "pos": {
+          "x": 0,
+          "y": 20,
+          "w": "100%",
+          "h": 4.5
+        },
+        "type": "WIDGET",
+        "widgetId": "feature-info3",
+        "setting": {}
+      },
+      "8": {
+        "id": "8",
+        "parentId": "1",
+        "pos": {
+          "x": 0,
+          "y": 25.5,
+          "w": 100,
+          "h": 8
+        },
+        "type": "WIDGET",
+        "widgetId": "details-page_highlighted-features"
+      },
+      "9": {
+        "id": "9",
+        "parentId": "1",
+        "pos": {
+          "x": 0,
+          "y": 34,
+          "w": 100,
+          "h": 16
+        },
+        "type": "WIDGET",
+        "widgetId": "details-page_related-features"
+      },
+      "10": {
+        "id": "10",
+        "parentId": "1",
+        "pos": {
+          "x": 0,
+          "y": 50,
+          "w": 100,
+          "h": 10
+        },
+        "type": "WIDGET",
+        "widgetId": "survey123"
+      }
+    },
+    "main-view-layout": {
+      "0": {
+        "id": "0",
+        "type": "COLUMN",
+        "style": {
+          "padding": {
+            "number": [0],
+            "unit": "px"
+          }
+        }
+      },
+      "2": {
+        "parentId": "0",
+        "id": "2",
+        "type": "WIDGET",
+        "widgetId": "main-image",
+        "setting": {
+          "typeOfHeight": "MANUAL",
+          "style": {
+            "height": {
+              "value": {
+                "distance": 240,
+                "unit": "px"
+              }
+            }
+          },
+          "order": 0
+        }
+      },
+      "3": {
+        "parentId": "0",
+        "id": "3",
+        "type": "WIDGET",
+        "widgetId": "main-text-title",
+        "setting": {
+          "className": "p-4",
+          "order": 1
+        }
+      },
+      "4": {
+        "parentId": "0",
+        "id": "4",
+        "type": "WIDGET",
+        "widgetId": "main-text-description",
+        "setting": {
+          "className": "p-4",
+          "order": 2
+        }
+      },
+      "5": {
+        "parentId": "0",
+        "pos": {
+          "w": "48%"
+        },
+        "id": "5",
+        "setting": {
+          "order": 3
+        },
+        "type": "WIDGET",
+        "widgetId": "about-link"
+      },
+      "6": {
+        "parentId": "0",
+        "pos": {},
+        "id": "6",
+        "type": "WIDGET",
+        "widgetId": "feature-list-main",
+        "setting": {
+          "className": "p-4",
+          "typeOfHeight": "FILL_LAYOUT",
+          "order": 4
+        }
+      },
+
+      "11": {
+        "parentId": "0",
+        "pos": {
+          "x": 0,
+          "y": 0,
+          "h": 60
+        },
+        "id": "11",
+        "type": "SUBLAYOUT",
+        "setting": {
+          "order": 5,
+          "className": "bg-white",
+          "typeOfHeight": "MANUAL",
+          "style": {
+            "height": {
+              "value": {
+                "distance": 60,
+                "unit": "px"
+              }
+            }
+          }
+        }
+      },
+      "13": {
+        "parentId": "11",
+        "id": "13",
+        "type": "ROW",
+        "setting": {
+          "style": {
+            "alignItems": "space-evenly"
+          }
+        }
+      },
+
+      "8": {
+        "parentId": "13",
+        "id": "8",
+        "setting": {
+          "typeOfWidth": "MANUAL",
+          "style": {
+            "width": {
+              "value": {
+                "distance": 48,
+                "unit": "%"
+              }
+            },
+            "flexGrow": 1
+          }
+        },
+        "type": "WIDGET",
+        "widgetId": "main-view-places-link"
+      },
+      "9": {
+        "parentId": "13",
+        "id": "9",
+        "setting": {
+          "typeOfWidth": "MANUAL",
+          "style": {
+            "width": {
+              "value": {
+                "distance": 48,
+                "unit": "%"
+              }
+            },
+            "flexGrow": 1
+          }
+        },
+        "type": "WIDGET",
+        "widgetId": "survey-link"
+      }
+
+    },
+    "main-view-compact-layout": {
+      "1": {
+        "id": "1",
+        "type": "FIXED"
+      },
+      "2": {
+        "parentId": "1",
+        "pos": {
+          "x": 20,
+          "y": 15
+        },
+        "id": "2",
+        "type": "WIDGET",
+        "widgetId": "main-text-title"
+      },
+      "3": {
+        "parentId": "1",
+        "pos": {
+          "w": null,
+          "h": 82,
+          "x": 0,
+          "y": 0.01
+        },
+        "id": "3",
+        "type": "WIDGET",
+        "widgetId": "main-view-places-link",
+        "setting": {
+          "vPriority": "bottom",
+          "className": "p-4"
+        }
+      }
+    },
+    "list-view-layout": {
+      "0": {
+        "id": "0",
+        "type": "COLUMN",
+        "setting": {
+          "padding": 0
+        }
+      },
+      "1": {
+        "parentId": "0",
+        "pos": {},
+        "id": "1",
+        "type": "WIDGET",
+        "widgetId": "list-view-link"
+      },
+      "2": {
+        "parentId": "0",
+        "pos": {},
+        "id": "2",
+        "type": "WIDGET",
+        "widgetId": "feature-list",
+        "setting": {
+          "className": "px-4",
+          "typeOfHeight": "FILL_LAYOUT"
+        }
+      }
+    },
+    "details-view-layout": {
+      "0": {
+        "id": "0",
+        "type": "FIXED",
+        "pos": {
+          "h": "100%",
+          "w": "80%"
+        }
+      },
+      "10": {
+        "id": "10",
+        "parentId": "0",
+        "pos": {
+          "x": 0,
+          "y": 60,
+          "w": "100%"
+        },
+        "type": "SUBLAYOUT",
+        "setting": {
+          "vPriority": "bottom",
+          "order": 1,
+          "className": "bg-white"
+        }
+      },
+      "1": {
+        "id": "1",
+        "parentId": "10",
+        "type": "COLUMN",
+        "setting": {
+          "padding": 0
+        }
+      },
+      "2": {
+        "parentId": "0",
+        "pos": {
+          "x": 10,
+          "y": 10,
+          "w": 100,
+          "h": 50
+        },
+        "id": "2",
+        "setting": {
+          "order": 3
+        },
+        "type": "WIDGET",
+        "widgetId": "detail-view-link"
+      },
+      "3": {
+        "parentId": "1",
+        "pos": {},
+        "id": "3",
+        "setting": {},
+        "type": "WIDGET",
+        "widgetId": "feature-info"
+      },
+      "4": {
+        "parentId": "1",
+        "pos": {},
+        "id": "4",
+        "setting": {},
+        "type": "WIDGET",
+        "widgetId": "feature-info2"
+      },
+      "5": {
+        "parentId": "1",
+        "pos": {},
+        "id": "5",
+        "setting": {},
+        "type": "WIDGET",
+        "widgetId": "upcoming-events"
+      },
+      "11": {
+        "parentId": "0",
+        "pos": {
+          "x": 0,
+          "y": 0,
+          "h": 60
+        },
+        "id": "11",
+        "type": "SUBLAYOUT",
+        "setting": {
+          "vPriority": "bottom",
+          "order": 2,
+          "className": "bg-white"
+        }
+      },
+      "6": {
+        "parentId": "11",
+        "id": "6",
+        "type": "ROW",
+        "setting": {
+          "style": {
+            "alignItems": "space-evenly"
+          }
+        }
+      },
+      "9": {
+        "parentId": "6",
+        "pos": {
+          "w": "48%"
+        },
+        "id": "9",
+        "setting": {
+          "typeOfWidth": "FILL_LAYOUT"
+        },
+        "type": "WIDGET",
+        "widgetId": "detail-view-more-link"
+      }
+    },
+    "details-view-compact-layout": {
+      "0": {
+        "id": "0",
+        "type": "FIXED"
+      },
+      "3": {
+        "id": "3",
+        "parentId": "0",
+        "pos": {
+          "x": 0,
+          "y": 0,
+          "h": "100%"
+        },
+        "type": "SUBLAYOUT",
+        "setting": {}
+      },
+      "1": {
+        "id": "1",
+        "parentId": "3",
+        "type": "grid",
+        "setting": {
+          "padding": [
+            0,
+            0
+          ]
+        }
+      },
+      "2": {
+        "parentId": "1",
+        "pos": {
+          "x": 0,
+          "y": 0,
+          "w": 12,
+          "h": 5
+        },
+        "id": "2",
+        "setting": {
+          "active": false
+        },
+        "type": "WIDGET",
+        "widgetId": "feature-info"
+      }
+    },
+    "survey-view-layout": {
+      "0": {
+        "id": "0",
+        "type": "COLUMN",
+        "style": {
+          "padding": {
+            "number": [10],
+            "unit": "px"
+          }
+        }
+      },
+      "10": {
+        "id": "10",
+        "parentId": "0",
+        "type": "SUBLAYOUT",
+        "setting": {
+          "typeOfHeight": "FILL_LAYOUT",
+          "order": 1,
+          "className": "bg-white"
+        }
+      },
+      "1": {
+        "id": "1",
+        "parentId": "10",
+        "type": "ROW",
+        "style": {
+          "justifyContent": "stretch"
+        }
+      },
+      "2": {
+        "parentId": "0",
+        "id": "2",
+        "setting": {
+          "order": 0,
+          "typeOfHeight": "MANUAL",
+          "style": {
+            "height": {
+              "value": {
+                "distance": 50,
+                "unit": "px"
+              }
+            }
+          }
+        },
+        "type": "WIDGET",
+        "widgetId": "detail-view-link"
+      },
+      "3": {
+        "parentId": "1",
+        "pos": {},
+        "id": "3",
+        "setting": {},
+        "type": "WIDGET",
+        "widgetId": "survey123"
+      },
+      "11": {
+        "parentId": "0",
+        "id": "11",
+        "type": "SUBLAYOUT",
+        "setting": {
+          "order": 2,
+          "typeOfHeight": "MANUAL",
+          "style": {
+            "height": {
+              "value": {
+                "distance": 60,
+                "unit": "px"
+              }
+            }
+          }
+        }
+      },
+      "6": {
+        "parentId": "11",
+        "id": "6",
+        "type": "ROW",
+        "setting": {
+          "style": {
+            "justifyContent": "space-evenly"
+          }
+        }
+      },
+      "8": {
+        "parentId": "6",
+        "id": "8",
+        "setting": {
+          "typeOfWidth": "MANUAL",
+          "style": {
+            "flexGrow": 1,
+            "width": {
+              "value": {
+                "distance": 48,
+                "unit": "%"
+              }
+            }
+          }
+        },
+        "type": "WIDGET",
+        "widgetId": "dashboard-link"
+      }
+    },
+
+    "app-layout": {
+      "0": {
+        "id": "0",
+        "type": "SIDEBAR",
+        "setting": {
+          "pageLevel": true
+        }
+      },
+      "8": {
+        "id": "8",
+        "parentId": "0",
+        "pos": {
+          "x": 0,
+          "y": 0,
+          "w": 100,
+          "h": 60
+        },
+        "type": "SUBLAYOUT",
+        "setting": {
+          "attach": "top",
+          "togglable": false,
+          "resizable": false
+        }
+      },
+      "1": {
+        "id": "1",
+        "parentId": "8",
+        "setting": {
+          "min": 32,
+          "padding": [14, 40]
+        },
+        "type": "ROW"
+      },
+      "2": {
+        "parentId": "1",
+        "pos": {
+        },
+        "id": "2",
+        "setting": {
+        },
+        "type": "WIDGET",
+        "widgetId": "header-logo"
+      },
+      "3": {
+        "parentId": "1",
+        "pos": {
+        },
+        "id": "3",
+        "setting": {
+          "flexGrow": 1
+        },
+        "type": "WIDGET",
+        "widgetId": "header-title-text"
+      },
+      "4": {
+        "parentId": "1",
+        "pos": {
+        },
+        "id": "4",
+        "setting": {
+        },
+        "type": "WIDGET",
+        "widgetId": "user-menu"
+      },
+      "9": {
+        "id": "9",
+        "parentId": "0",
+        "pos": {
+          "x": 0,
+          "y": 0,
+          "h": 50
+        },
+        "type": "SUBLAYOUT",
+        "setting": {
+          "attach": "bottom",
+          "togglable": false
+        }
+      },
+      "5": {
+        "id": "5",
+        "parentId": "9",
+        "type": "FIXED"
+      },
+      "10": {
+        "id": "10",
+        "parentId": "0",
+        "pos": {
+          "x": 0,
+          "y": 0,
+          "w": 50
+        },
+        "type": "SUBLAYOUT",
+        "setting": {
+          "attach": "left",
+          "togglable": false
+        }
+      },
+      "6": {
+        "id": "6",
+        "parentId": "10",
+        "type": "FIXED"
+      },
+      "11": {
+        "id": "11",
+        "parentId": "0",
+        "pos": {
+          "x": 0,
+          "y": 0,
+          "w": 50
+        },
+        "type": "SUBLAYOUT",
+        "setting": {
+          "attach": "right",
+          "togglable": false
+        }
+      },
+      "7": {
+        "id": "7",
+        "parentId": "11",
+        "type": "FIXED"
+      }
+    },
+    "default-layout": {
+      "0": {
+        "type": "COLUMN",
+        "id": "0",
+        "setting": {},
+        "pos": {
+          "h": "100%",
+          "w": 800
+        }
+      },
+      "1": {
+        "type": "WIDGET",
+        "widgetId": "widget_1",
+        "id": "1",
+        "layoutId": "default-layout",
+        "parentId": "3",
+        "setting": {
+          "order": 0,
+          "style": {
+            "height": {
+              "value": {
+                "distance": 127,
+                "unit": "px"
+              }
+            }
+          },
+          "typeOfHeight": "MANUAL",
+          "typeOfWidth": "FILL_LAYOUT"
+        }
+      },
+      "2": {
+        "id": "2",
+        "layoutId": "default-layout",
+        "parentId": "0",
+        "type": "SUBLAYOUT",
+        "setting": {
+          "order": 2
+        }
+      },
+      "3": {
+        "id": "3",
+        "layoutId": "default-layout",
+        "parentId": "2",
+        "type": "ROW",
+        "setting": {}
+      },
+      "4": {
+        "type": "WIDGET",
+        "widgetId": "widget_2",
+        "id": "4",
+        "layoutId": "default-layout",
+        "parentId": "6",
+        "setting": {
+          "order": 1,
+          "style": {
+            "width": {
+              "value": {
+                "distance": 321,
+                "unit": "px"
+              }
+            }
+          },
+          "typeOfWidth": "MANUAL"
+        }
+      },
+      "5": {
+        "id": "5",
+        "layoutId": "default-layout",
+        "parentId": "0",
+        "type": "SUBLAYOUT",
+        "setting": {
+          "order": 8
+        }
+      },
+      "6": {
+        "id": "6",
+        "layoutId": "default-layout",
+        "parentId": "5",
+        "type": "ROW",
+        "setting": {}
+      },
+      "7": {
+        "type": "WIDGET",
+        "widgetId": "widget_3",
+        "id": "7",
+        "layoutId": "default-layout",
+        "parentId": "11",
+        "setting": {
+          "draggable": true,
+          "resizable": true,
+          "minHeight": 16,
+          "order": 0,
+          "style": {},
+          "typeOfWidth": "FILL_LAYOUT"
+        }
+      },
+      "10": {
+        "id": "10",
+        "layoutId": "default-layout",
+        "parentId": "0",
+        "type": "SUBLAYOUT",
+        "setting": {
+          "order": 3
+        }
+      },
+      "11": {
+        "id": "11",
+        "layoutId": "default-layout",
+        "parentId": "10",
+        "type": "ROW",
+        "setting": {}
+      },
+      "12": {
+        "type": "WIDGET",
+        "widgetId": "widget_4",
+        "id": "12",
+        "layoutId": "default-layout",
+        "parentId": "11",
+        "setting": {
+          "draggable": true,
+          "resizable": true,
+          "minHeight": 16,
+          "order": 3,
+          "style": {},
+          "typeOfWidth": "FILL_LAYOUT"
+        }
+      },
+      "13": {
+        "type": "WIDGET",
+        "widgetId": "widget_5",
+        "id": "13",
+        "layoutId": "default-layout",
+        "parentId": "11",
+        "setting": {
+          "draggable": true,
+          "resizable": true,
+          "minHeight": 16,
+          "order": 4,
+          "style": {
+            "alignItems": "flex-start"
+          },
+          "typeOfWidth": "FILL_LAYOUT"
+        }
+      },
+      "14": {
+        "type": "WIDGET",
+        "widgetId": "widget_6",
+        "id": "14",
+        "layoutId": "default-layout",
+        "setting": {
+          "draggable": true,
+          "resizable": true,
+          "minHeight": 16,
+          "order": 0,
+          "style": {
+            "width": {
+              "value": {
+                "distance": 669,
+                "unit": "px"
+              }
+            },
+            "height": {
+              "value": {
+                "distance": 300,
+                "unit": "px"
+              }
+            }
+          },
+          "typeOfWidth": "FILL_LAYOUT",
+          "typeOfHeight": "MANUAL"
+        },
+        "parentId": "18"
+      },
+      "17": {
+        "id": "17",
+        "layoutId": "default-layout",
+        "parentId": "0",
+        "type": "SUBLAYOUT",
+        "setting": {
+          "order": 1
+        }
+      },
+      "18": {
+        "id": "18",
+        "layoutId": "default-layout",
+        "parentId": "17",
+        "type": "ROW",
+        "setting": {
+          "space": 0,
+          "style": {
+            "padding": {
+              "space": [
+                10
+              ],
+              "unit": "px"
+            },
+            "justifyContent": "center",
+            "alignItems": "flex-start",
+            "margin": {
+              "space": [
+                0
+              ],
+              "unit": "px"
+            }
+          }
+        }
+      },
+      "19": {
+        "type": "WIDGET",
+        "widgetId": "widget_7",
+        "id": "19",
+        "layoutId": "default-layout",
+        "setting": {
+          "draggable": true,
+          "resizable": true,
+          "minHeight": 16,
+          "order": 0,
+          "style": {
+            "width": {
+              "value": {
+                "distance": 500,
+                "unit": "px"
+              }
+            },
+            "height": {
+              "value": {
+                "distance": 500,
+                "unit": "px"
+              }
+            }
+          },
+          "typeOfWidth": "FILL_LAYOUT",
+          "typeOfHeight": "MANUAL"
+        },
+        "parentId": "6"
+      },
+      "25": {
+        "type": "WIDGET",
+        "widgetId": "widget_9",
+        "id": "25",
+        "layoutId": "default-layout",
+        "parentId": "35",
+        "setting": {
+          "draggable": true,
+          "resizable": true,
+          "minHeight": 16,
+          "order": 0,
+          "style": {
+            "height": {
+              "value": {
+                "distance": 26,
+                "unit": "px"
+              }
+            }
+          },
+          "typeOfHeight": "MANUAL"
+        }
+      },
+      "34": {
+        "id": "34",
+        "layoutId": "default-layout",
+        "parentId": "0",
+        "type": "SUBLAYOUT",
+        "setting": {
+          "order": 7
+        }
+      },
+      "35": {
+        "id": "35",
+        "layoutId": "default-layout",
+        "parentId": "34",
+        "type": "ROW",
+        "setting": {}
+      },
+      "36": {
+        "type": "WIDGET",
+        "widgetId": "widget_10",
+        "id": "36",
+        "layoutId": "default-layout",
+        "parentId": "46",
+        "setting": {
+          "draggable": true,
+          "resizable": true,
+          "minHeight": 16,
+          "order": 0,
+          "style": {}
+        }
+      },
+      "42": {
+        "type": "WIDGET",
+        "widgetId": "widget_22",
+        "id": "42",
+        "layoutId": "default-layout",
+        "parentId": "46",
+        "setting": {
+          "draggable": true,
+          "resizable": true,
+          "minHeight": 16,
+          "order": 1,
+          "style": {
+            "alignItems": "center"
+          },
+          "typeOfHeight": "FILL_LAYOUT"
+        }
+      },
+      "45": {
+        "id": "45",
+        "layoutId": "default-layout",
+        "parentId": "3",
+        "type": "SUBLAYOUT",
+        "setting": {
+          "order": 1
+        }
+      },
+      "46": {
+        "id": "46",
+        "layoutId": "default-layout",
+        "parentId": "45",
+        "type": "COLUMN",
+        "setting": {}
+      },
+      "id": {
+        "setting": {}
+      }
+    },
+    "layout_1": {
+      "0": {
+        "id": "0",
+        "type": "COLUMN",
+        "setting": {}
+      },
+      "1": {
+        "type": "WIDGET",
+        "widgetId": "widget_11",
+        "id": "1",
+        "layoutId": "layout_1",
+        "parentId": "3",
+        "setting": {
+          "order": 0
+        }
+      },
+      "2": {
+        "id": "2",
+        "layoutId": "layout_1",
+        "parentId": "0",
+        "type": "SUBLAYOUT",
+        "setting": {
+          "order": 0
+        }
+      },
+      "3": {
+        "id": "3",
+        "layoutId": "layout_1",
+        "parentId": "2",
+        "type": "ROW",
+        "setting": {}
+      },
+      "7": {
+        "type": "WIDGET",
+        "widgetId": "widget_13",
+        "id": "7",
+        "layoutId": "layout_1",
+        "parentId": "19",
+        "setting": {
+          "draggable": true,
+          "resizable": true,
+          "minHeight": 16,
+          "order": 1,
+          "style": {
+            "width": {
+              "value": {
+                "distance": 194,
+                "unit": "px"
+              }
+            }
+          },
+          "typeOfWidth": "MANUAL"
+        }
+      },
+      "8": {
+        "id": "8",
+        "layoutId": "layout_1",
+        "parentId": "0",
+        "type": "SUBLAYOUT",
+        "setting": {
+          "order": 2
+        }
+      },
+      "9": {
+        "id": "9",
+        "layoutId": "layout_1",
+        "parentId": "8",
+        "type": "ROW",
+        "setting": {}
+      },
+      "13": {
+        "type": "WIDGET",
+        "widgetId": "widget_15",
+        "id": "13",
+        "layoutId": "layout_1",
+        "parentId": "19",
+        "setting": {
+          "order": 0,
+          "style": {
+            "width": {
+              "value": {
+                "distance": 317,
+                "unit": "px"
+              }
+            }
+          },
+          "typeOfWidth": "MANUAL"
+        }
+      },
+      "14": {
+        "id": "14",
+        "layoutId": "layout_1",
+        "parentId": "0",
+        "type": "SUBLAYOUT",
+        "setting": {
+          "order": 4
+        }
+      },
+      "15": {
+        "id": "15",
+        "layoutId": "layout_1",
+        "parentId": "14",
+        "type": "ROW",
+        "setting": {}
+      },
+      "16": {
+        "type": "WIDGET",
+        "widgetId": "widget_16",
+        "id": "16",
+        "layoutId": "layout_1",
+        "setting": {
+          "draggable": true,
+          "resizable": true,
+          "minHeight": 16,
+          "order": 0,
+          "style": {
+            "width": {
+              "value": {
+                "distance": 500,
+                "unit": "px"
+              }
+            },
+            "height": {
+              "value": {
+                "distance": 500,
+                "unit": "px"
+              }
+            }
+          },
+          "typeOfWidth": "FILL_LAYOUT",
+          "typeOfHeight": "MANUAL"
+        },
+        "parentId": "15"
+      },
+      "17": {
+        "type": "WIDGET",
+        "widgetId": "widget_17",
+        "id": "17",
+        "layoutId": "layout_1",
+        "parentId": "9",
+        "setting": {
+          "draggable": true,
+          "resizable": true,
+          "minHeight": 16,
+          "order": 0,
+          "style": {}
+        }
+      },
+      "18": {
+        "id": "18",
+        "layoutId": "layout_1",
+        "parentId": "15",
+        "type": "SUBLAYOUT",
+        "setting": {
+          "order": 1,
+          "style": {
+            "width": {
+              "value": {
+                "distance": 324,
+                "unit": "px"
+              }
+            }
+          },
+          "typeOfWidth": "MANUAL"
+        }
+      },
+      "19": {
+        "id": "19",
+        "layoutId": "layout_1",
+        "parentId": "18",
+        "type": "COLUMN",
+        "setting": {}
+      },
+      "20": {
+        "type": "WIDGET",
+        "widgetId": "widget_18",
+        "id": "20",
+        "layoutId": "layout_1",
+        "parentId": "22",
+        "setting": {
+          "order": 0,
+          "typeOfWidth": "FILL_LAYOUT"
+        }
+      },
+      "21": {
+        "id": "21",
+        "layoutId": "layout_1",
+        "parentId": "0",
+        "type": "SUBLAYOUT",
+        "setting": {
+          "order": 5
+        }
+      },
+      "22": {
+        "id": "22",
+        "layoutId": "layout_1",
+        "parentId": "21",
+        "type": "ROW",
+        "setting": {}
+      },
+      "26": {
+        "type": "WIDGET",
+        "widgetId": "widget_20",
+        "id": "26",
+        "layoutId": "layout_1",
+        "parentId": "3",
+        "setting": {
+          "draggable": true,
+          "resizable": true,
+          "minHeight": 16,
+          "order": 1,
+          "style": {
+            "width": {
+              "value": {
+                "distance": 225,
+                "unit": "px"
+              }
+            }
+          },
+          "typeOfWidth": "MANUAL"
+        }
+      },
+      "id": {
+        "setting": {}
+      }
+    }
+  },
+  "widgets": {
+    "upcoming-events": {
+      "id": "upcoming-events",
+      "uri": "widgets/hub/events",
+      "useDataSources": [{
+        "dataSourceId": "upcoming-events-ds"
+      }],
+      "config": {
+        "type": "upcoming"
+      }
+    },
+    "survey123": {
+        "id": "survey123",
+        "uri": "widgets/survey123/",
+        "icon": "/widgets/survey123/assets/survey123.png",
+        "label": "survey123",
+        "config": {
+          "surveyItemId": "4e64c44cb1ba44d98a157038d1846731",
+          "defaultValue":{
+            "field_1":"testewrwerwe"
+          },
+          "isEmbed": true,
+          "isFullScreen": true,
+          "isHideNavbar": true
+        },
+        "version": "1.0.0-beta"
+      },
+    "survey-link": {
+      "id": "survey-link",
+      "uri": "widgets/common/link/",
+      "config": {
+        "functionConfig": {
+            "text": "Send Feedback",
+            "toolTip": "",
+            "linkParam": {
+                "value": ",survey-view",
+                "linkType": "VIEW"
+            }
+        },
+        "styleConfig": {
+            "name": "default",
+            "themeStyle": {
+              "style": "button",
+              "color": "color1",
+              "className": "btn btn-outline-primary d-block"
+            },
+            "customStyle": {
+                "regular": {
+                },
+                "hover": {
+                },
+                "clicked": {
+                }
+            }
+        }
+      }
+    },
+    "dashboard-link": {
+      "id": "dashboard-link",
+      "uri": "widgets/common/link/",
+      "config": {
+        "functionConfig": {
+            "text": "Community Results",
+            "toolTip": "",
+            "linkParam": {
+              "linkType": "PAGE",
+              "value": "dashboard"
+            }
+        },
+        "styleConfig": {
+            "name": "default",
+            "themeStyle": {
+              "style": "button",
+              "color": "color1",
+              "className": "btn btn-outline-primary d-block"
+            },
+            "customStyle": {
+                "regular": {
+                },
+                "hover": {
+                },
+                "clicked": {
+                }
+            }
+        }
+      }
+    },
+    "about-link": {
+      "id": "about-link",
+      "uri": "widgets/common/link/",
+      "config": {
+        "functionConfig": {
+            "text": "Read More",
+            "toolTip": "",
+            "linkParam": {
+              "linkType": "PAGE",
+              "value": "about"
+            }
+        },
+        "styleConfig": {
+            "name": "default",
+            "themeStyle": {
+              "style": "button",
+              "color": "color1",
+              "className": "btn btn-outline-secondary d-block"
+            },
+            "customStyle": {
+                "regular": {
+                },
+                "hover": {
+                },
+                "clicked": {
+                }
+            }
+        }
+      }
+    },
+    "main-view-places-link": {
+      "id": "main-view-places-link",
+      "uri": "widgets/common/link/",
+      "config": {
+        "functionConfig": {
+            "text": "View Places",
+            "toolTip": "",
+            "linkParam": {
+                "value": ",list-view",
+                "linkType": "VIEW"
+            }
+        },
+        "styleConfig": {
+            "name": "default",
+            "themeStyle": {
+              "style": "button",
+              "color": "color1",
+              "className": "btn btn-primary d-block"
+            },
+            "customStyle": {
+                "regular": {
+                },
+                "hover": {
+                },
+                "clicked": {
+                }
+            }
+        }
+      }
+    },
+    "detail-comment-link": {
+      "id": "detail-comment-link",
+      "uri": "widgets/common/link/",
+      "config": {
+        "functionConfig": {
+            "text": "Comment",
+            "toolTip": "",
+            "linkParam": {}
+        },
+        "styleConfig": {
+            "name": "default",
+            "themeStyle": {
+              "style": "button",
+              "color": "color1",
+              "className": "btn btn-primary d-block"
+            },
+            "customStyle": {
+                "regular": {
+                },
+                "hover": {
+                },
+                "clicked": {
+                }
+            }
+        }
+      }
+    },
+    "detail-view-more-link": {
+      "id": "detail-view-more-link",
+      "uri": "widgets/common/link/",
+      "config": {
+        "functionConfig": {
+            "text": "More Info",
+            "toolTip": "",
+            "linkParam": {
+                "value": "detail-page",
+                "linkType": "PAGE"
+            }
+        },
+        "styleConfig": {
+            "name": "default",
+            "themeStyle": {
+              "style": "outline",
+              "color": "color1",
+              "className": "btn btn-outline-primary d-block"
+            },
+            "customStyle": {
+                "regular": {
+                },
+                "hover": {
+                },
+                "clicked": {
+                }
+            }
+        }
+      }
+    },
+    "detail-view-link": {
+      "id": "detail-view-link",
+      "uri": "widgets/common/link/",
+      "config": {
+        "functionConfig": {
+            "text": "Back",
+            "toolTip": "",
+            "linkParam": {
+                "value": ",list-view",
+                "linkType": "View"
+            }
+        },
+        "styleConfig": {
+            "name": "default",
+            "themeStyle": {
+              "style": "button",
+              "className": "btn btn-light btn-sm"
+            },
+            "customStyle": {
+                "regular": {
+                },
+                "hover": {
+                },
+                "clicked": {
+                }
+            }
+        }
+      }
+    },
+    "list-view-link": {
+      "id": "list-view-link",
+      "uri": "widgets/common/link/",
+      "config": {
+        "functionConfig": {
+            "text": "Back",
+            "toolTip": "",
+            "linkParam": {
+                "value": ",main-view",
+                "linkType": "VIEW"
+            }
+        },
+        "styleConfig": {
+            "name": "default",
+            "themeStyle": {
+              "style": "button",
+              "className": "btn btn-light btn-sm"
+            },
+            "customStyle": {
+                "regular": {
+                },
+                "hover": {
+                },
+                "clicked": {
+                }
+            }
+        }
+      }
+    },
+    "details-page_view-map-link": {
+      "id": "details-page_view-map-link",
+      "uri": "widgets/common/link/",
+      "config": {
+        "functionConfig": {
+            "text": "View Map",
+            "toolTip": "",
+            "linkParam": {
+                "value": "default,details-view",
+                "linkType": "VIEW"
+            }
+        },
+        "styleConfig": {
+            "name": "default",
+            "themeStyle": {
+              "style": "button",
+              "color": "color1",
+              "className": "btn btn-primary d-block"
+            },
+            "customStyle": {
+                "regular": {
+                },
+                "hover": {
+                },
+                "clicked": {
+                }
+            }
+        }
+      }
+    },
+    "details-page_view-comments": {
+      "id": "details-page_view-comments",
+      "uri": "widgets/common/link/",
+      "config": {
+        "functionConfig": {
+            "text": "Comments",
+            "toolTip": "",
+            "linkParam": {}
+        },
+        "styleConfig": {
+            "name": "default",
+            "themeStyle": {
+              "style": "outline",
+              "color": "color1",
+              "className": "btn btn-outline-primary d-block"
+            },
+            "customStyle": {
+                "regular": {
+                },
+                "hover": {
+                },
+                "clicked": {
+                }
+            }
+        }
+      }
+    },
+    "arcgis-scene": {
+      "id": "arcgis-scene",
+      "uri": "widgets/arcgis/arcgis-scene/",
+      "outputDataSources": [
+        "arcgis-scene"
+      ],
+      "useDataSources": [{
+        "dataSourceId": "ds-1"
+      }],
+      "config": {
+        "canZoom": true,
+        "canGoHome": true,
+        "canLocate": false,
+        "canNavigate": false,
+        "canCompass": true,
+        "disablePopup": true,
+        "centerAt": {
+          "target": "selected",
+          "zoom": 16,
+          "tilt": 45
+        },
+        "ui": {
+          "padding": {
+            "left": 30,
+            "top": 6
+          }
+        }
+      }
+    },
+    "arcgis-scene-overview": {
+      "id": "arcgis-scene-overview",
+      "uri": "widgets/arcgis/arcgis-scene/",
+      "outputDataSources": [
+        "arcgis-scene"
+      ],
+      "useDataSources": [{
+        "dataSourceId": "ds-1"
+      }],
+      "config": {
+        "canZoom": false,
+        "canGoHome": false,
+        "canLocate": false,
+        "canNavigate": false,
+        "canCompass": false,
+        "disablePopup": true,
+        "excludeUnselected": true,
+        "centerAt": {
+          "target": "selected",
+          "zoom": 17,
+          "tilt": 0.5
+        }
+      }
+    },
+    "arcgis-map": {
+      "id": "arcgis-map",
+      "uri": "widgets/arcgis/arcgis-map/",
+      "useDataSources": [
+        {
+          "dataSourceId": "ds-2"
+        }
+      ],
+      "outputDataSources": [
+        "arcgis-map"
+      ],
+      "config": {
+        "canZoom": true,
+        "canScale": true,
+        "canGoHome": true,
+        "canGoExtent": true,
+        "canOverviewMap": false,
+        "canLocate": true
+      }
+    },
+    "feature-list-main": {
+      "id": "feature-list-main",
+      "uri": "widgets/common/list/",
+      "useDataSources": [
+        {
+          "dataSourceId": "arcgis-scene-1674713f595-layer-0",
+          "rootDataSourceId": "arcgis-scene"
+        }
+      ],
+      "config": {
+        "dataSourceId": "arcgis-scene",
+        "title": {
+          "field": "NAME"
+        },
+        "description": {
+          "field": "USE_TYPE"
+        },
+        "image": {
+          "field": "PHOTO_URL"
+        },
+        "limit": 3,
+        "header": {
+          "title": {
+            "text": "Featured Places"
+          }
+        },
+        "onItemSelect": {
+          "goto": {
+            "views": [
+              "details-view"
+            ]
+          }
+        }
+      }
+    },
+    "feature-list": {
+      "id": "feature-list",
+      "uri": "widgets/common/list/",
+      "useDataSources": [
+        {
+          "dataSourceId": "arcgis-scene-1674713f595-layer-0",
+          "rootDataSourceId": "arcgis-scene"
+        }
+      ],
+      "config": {
+        "dataSourceId": "arcgis-scene",
+        "title": {
+          "field": "NAME"
+        },
+        "description": {
+          "field": "USE_TYPE"
+        },
+        "image": {
+          "field": "PHOTO_URL"
+        },
+        "style": {
+          "id": "style1"
+        },
+        "highlightSelection": false,
+        "onItemSelect": {
+          "goto": {
+            "views": [
+              "details-view"
+            ]
+          }
+        }
+      }
+    },
+    "details-page_highlighted-features": {
+      "id": "details-page_highlighted-features",
+      "uri": "widgets/common/list/",
+      "useDataSources": [
+        {
+          "dataSourceId": "arcgis-scene-1674713f595-layer-0",
+          "rootDataSourceId": "arcgis-scene"
+        }
+      ],
+      "config": {
+        "dataSourceId": "arcgis-scene",
+        "style": {
+          "id": "style3"
+        },
+        "horizontal": true,
+        "title": {
+          "field": "NAME"
+        },
+        "description": {
+          "field": "USE_TYPE"
+        },
+        "image": {
+          "field": "PHOTO_URL"
+        },
+        "limit": 5,
+        "header": {
+          "title": {
+            "text": "Features Highlighted"
+          }
+        }
+      }
+    },
+    "details-page_related-features": {
+      "id": "details-page_related-features",
+      "uri": "widgets/common/list/",
+      "useDataSources": [
+        {
+          "dataSourceId": "arcgis-scene-1674713f595-layer-0",
+          "rootDataSourceId": "arcgis-scene"
+        }
+      ],
+      "config": {
+        "style": {
+          "id": "style2"
+        },
+        "dataSourceId": "arcgis-scene",
+        "title": {
+          "field": "NAME"
+        },
+        "description": {
+          "field": "USE_TYPE"
+        },
+        "limit": 5,
+        "header": {
+          "title": {
+            "text": "Related Featured"
+          }
+        },
+        "onItemSelect": {
+          "goto": {
+            "page": "default",
+            "views": [
+              "details-view"
+            ]
+          }
+        }
+      }
+    },
+    "feature-info": {
+      "id": "feature-info",
+      "uri": "widgets/common/info-card/",
+      "useDataSources": [
+        {
+          "dataSourceId": "arcgis-scene-1674713f595-layer-0",
+          "rootDataSourceId": "arcgis-scene"
+        }
+      ],
+      "config": {
+        "image": {
+          "field": "PHOTO_URL",
+          "height": 225
+        },
+        "title": {
+          "field": "NAME"
+        },
+        "description": {
+          "field": "DESCRIPTION",
+          "limit": 150
+        }
+      }
+    },
+    "feature-info2": {
+      "id": "feature-info2",
+      "uri": "widgets/common/info-card/",
+      "useDataSources": [
+        {
+          "dataSourceId": "arcgis-scene-1674713f595-layer-0",
+          "rootDataSourceId": "arcgis-scene"
+        }
+      ],
+      "config": {
+        "description": {
+          "type": "list",
+          "fields": [
+            {
+              "icon": {
+                "name": "map-pin"
+              },
+              "field": "ADDRESS"
+            },
+            {
+              "icon": {
+                "name": "compass"
+              },
+              "field": "USE_TYPE"
+            },          {
+            "icon": {
+                "name": "phone"
+              },
+              "field": "PHONE"
+            },
+            {
+              "icon": {
+                "name": "link"
+              },
+              "field": "WEB_URL"
+            }
+          ]
+        }
+      }
+    },
+    "feature-info3": {
+      "id": "feature-info3",
+      "uri": "widgets/common/info-card/",
+      "useDataSources": [
+        {
+          "dataSourceId": "arcgis-scene-1674713f595-layer-0",
+          "rootDataSourceId": "arcgis-scene"
+        }
+      ],
+      "config": {
+        "style": {
+          "id": "style2"
+        },
+        "description": {
+          "type": "list",
+          "fields": [
+            {
+              "icon": {
+                "name": "map-pin"
+              },
+              "field": "ADDRESS"
+            },
+            {
+              "icon": {
+                "name": "compass"
+              },
+              "field": "USE_TYPE"
+            },          {
+            "icon": {
+                "name": "phone"
+              },
+              "field": "PHONE"
+            },
+            {
+              "icon": {
+                "name": "link"
+              },
+              "field": "WEB_URL"
+            }
+          ]
+        }
+      }
+    },
+    "feature-info-mobile": {
+      "id": "feature-info-mobile",
+      "uri": "widgets/common/info-card",
+      "useDataSources": [
+        {
+          "dataSourceId": "arcgis-scene-1674713f595-layer-0",
+          "rootDataSourceId": "arcgis-scene"
+        }
+      ],
+      "config": {
+        "image": {
+          "field": "PHOTO_URL",
+          "height": 225
+        },
+        "title": {
+          "field": "NAME"
+        }
+      }
+    },
+    "feature-info-mobile2": {
+      "id": "feature-info-mobile2",
+      "uri": "widgets/common/info-card/",
+      "useDataSources": [
+        {
+          "dataSourceId": "arcgis-scene-1674713f595-layer-0",
+          "rootDataSourceId": "arcgis-scene"
+        }
+      ],
+      "config": {
+        "description": {
+          "field": "ADDRESS",
+          "limit": 150
+        }
+      }
+    },
+    "feature-info-large": {
+      "id": "feature-info-large",
+      "uri": "widgets/common/info-card/",
+      "useDataSources": [
+        {
+          "dataSourceId": "arcgis-scene-1674713f595-layer-0",
+          "rootDataSourceId": "arcgis-scene"
+        }
+      ],
+      "config": {
+        "image": {
+          "field": "PHOTO_URL",
+          "height": 225
+        },
+        "title": {
+          "field": "NAME"
+        }
+      }
+    },
+    "feature-info-large2": {
+      "id": "feature-info-large2",
+      "uri": "widgets/common/info-card/",
+      "useDataSources": [
+        {
+          "dataSourceId": "arcgis-scene-1674713f595-layer-0",
+          "rootDataSourceId": "arcgis-scene"
+        }
+      ],
+      "config": {
+        "description": {
+          "field": "ADDRESS",
+          "richText": true
+        }
+      }
+    },
+    "approved-comments": {
+      "id": "approved-comments",
+      "uri": "widgets/hub/annotations",
+      "useDataSources": [
+        {
+          "dataSourceId": "approved-comments-ds"
+        }
+      ],
+      "config": {
+        "target": "https://maps2.dcgis.dc.gov/dcgis/rest/services/DCGIS_DATA/Recreation_WebMercator/MapServer/9",
+        "status": "approved",
+        "targetDataSourceId": "arcgis-scene",
+        "header": {
+          "title": {
+            "text": "Comments"
+          }
+        }
+      }
+    },
+    "header-logo": {
+      "id": "header-logo",
+      "uri": "widgets/common/image/",
+      "config": {
+        "functionConfig": {
+          "src": "assets/img/Logo.svg",
+          "altText": "Radar Experience",
+          "toolTip": "",
+          "linkParam": {}
+        },
+        "styleConfig": {}
+      }
+    },
+    "header-title-text": {
+      "id": "header-title-text",
+      "uri": "widgets/common/text/",
+      "config": {
+        "text": "<h5>Radar <span style='font-weight: normal;'>Experience</span></h5>"
+      }
+    },
+    "user-menu": {
+      "id": "user-menu",
+      "uri": "widgets/common/user-menu",
+      "config": {
+        "hub": true
+      }
+    },
+    "main-image": {
+      "id": "main-image",
+      "uri": "widgets/common/image/",
+      "config": {
+        "functionConfig": {
+          "src": "https://fitt.co/washington-dc/wp-content/uploads/sites/21/2016/09/WashingtonRockCreekPark.jpg",
+          "altText": "test image",
+          "scale": "Fit",
+          "toolTip": "",
+          "linkParam": {}
+        },
+        "styleConfig": {
+          "className": "radar-main--image_demo-only"
+        }
+      }
+    },
+    "main-image-small": {
+      "id": "main-image-small",
+      "uri": "widgets/common/image/",
+      "config": {
+        "functionConfig": {
+          "src": "https://fitt.co/washington-dc/wp-content/uploads/sites/21/2016/09/WashingtonRockCreekPark.jpg",
+          "altText": "test image",
+          "scale": "Fit",
+          "toolTip": "",
+          "linkParam": {}
+        },
+        "styleConfig": {
+          "className": "radar-main--image_demo-only"
+        }
+      }
+    },
+    "main-text-title": {
+      "id": "main-text-title",
+      "uri": "widgets/common/text/",
+      "config": {
+        "text": "<h4>Learn about DC Parks</h4>"
+      }
+    },
+    "main-text-description": {
+      "id": "main-text-description",
+      "uri": "widgets/common/text/",
+      "config": {
+        "text": "<span style='color: #333'>DPR has principal authority over the construction and maintenance of city-owned (but not federally owned) parks, and over nearly all public recreation facilities in Washington, D.C. It oversees 900 acres (360 ha) of parks and 68 recreational facilities. This includes 25 outdoor pools, eight spray parks, and 10 indoor pools—all offered with no admission fee for residents of the District.</span>  Nav: <a href='http://home-dc.hubqa.arcgis.com/app/73a5743b8f8a4449a1eae0a6176bca09' target='_parent'>Home</a> | <a href='http://parks-dc.hubqa.arcgis.com/app/50d80b927f16444b98c0d28b564d5e37' target='_parent'>Parks</a> | <a href='http://dot-dc.hubqa.arcgis.com/app/9d7b942a20894420a4dd9541c598a0e0' target='_parent'>DOT Projects</a> | <a href='http://visionzero-dc.hubqa.arcgis.com/app/7a891d23336d4951acc8c282ad6710e5' target='_parent'>Vision Zero</a>"
+      }
+    },
+    "text-detail-title": {
+      "id": "text-detail-title",
+      "uri": "widgets/common/text/",
+      "config": {
+        "text": "this is the detail page"
+      }
+    },
+     "widget_1": {
+      "id": "widget_1",
+      "label": "html",
+      "uri": "widgets/common/html/",
+      "icon": "https://hubqa.arcgis.com/exb/builder/../widgets/common/html/dist/runtime/assets/icon.svg",
+      "config": {
+        "html": "<p>The District of Columbia Department of Parks and Recreation (DPR) is an executive branch agency of the government of the District of Columbia in the United States. The department plans, builds, and maintains publicly owned recreational facilities in Washington, D.C., including athletic fields, community centers, parks, playgrounds, swimming pools, spray pools and tennis courts. It also manages publicly run recreational sports leagues for youth and adults as well as provides various outdoor activities (such as boating and camping) for youth, adults, and senior citizens. </p> <p>DPR has principal authority over the construction and maintenance of city-owned (but not federally owned) parks, and over nearly all public recreation facilities in Washington, D.C. It oversees 900 acres (360 ha) of parks and 68 recreational facilities. This includes 25 outdoor pools, eight spray parks, and 10 indoor pools—all offered with no admission fee for residents of the District. In its fiscal 2011 budget, the department proposed eliminating 21 full-time workers (saving $1.67 million), but adding $1.056 million to provide additional summer youth health and safety activities.</p>",
+        "_defaultstr": "{\"html\":\"<p>The District of Columbia Department of Parks and Recreation (DPR) is an executive branch agency of the government of the District of Columbia in the United States. The department plans, builds, and maintains publicly owned recreational facilities in Washington, D.C., including athletic fields, community centers, parks, playgrounds, swimming pools, spray pools and tennis courts. It also manages publicly run recreational sports leagues for youth and adults as well as provides various outdoor activities (such as boating and camping) for youth, adults, and senior citizens. </p> <p>DPR has principal authority over the construction and maintenance of city-owned (but not federally owned) parks, and over nearly all public recreation facilities in Washington, D.C. It oversees 900 acres (360 ha) of parks and 68 recreational facilities. This includes 25 outdoor pools, eight spray parks, and 10 indoor pools—all offered with no admission fee for residents of the District. In its fiscal 2011 budget, the department proposed eliminating 21 full-time workers (saving $1.67 million), but adding $1.056 million to provide additional summer youth health and safety activities.</p>\"}"
+      },
+      "version": "1.0.0-beta"
+    },
+    "widget_2": {
+      "id": "widget_2",
+      "label": "chart 2",
+      "uri": "widgets/common/chart",
+      "useDataSources3": [{
+        "dataSourceId": "place-ds"
+      }],
+      "useDataSources": [{
+          "dataSourceId": "dashboard-map-view-place-layer",
+          "rootDataSourceId": "dashboard-map-view"
+      }],
+      "config": {
+        "chartType": "bar",
+        "categoryField": "USE_TYPE",
+        "valueFields": ["USE_TYPE"],
+        "statType": "count",
+        "categoryLabel":  "Park Type",
+        "valueLabels": ["Number by Type 2"]
+      },
+      "version": "1.0.0-beta"
+    },
+    "widget_3": {
+      "id": "widget_3",
+      "label": "html 1",
+      "uri": "widgets/common/html/",
+      "icon": "https://hubqa.arcgis.com/exb/builder/../widgets/common/html/dist/runtime/assets/icon.svg",
+      "config": {
+        "html": "<h5>Education & Enforcement</h5><p>Greater enforcement and education protects our most vulnerable travelers. Infrastructure alone will not reduce fatalities and serious injuries to zero.</p>",
+        "_defaultstr": "{\"html\":\"<h5>Education & Enforcement</h5><p>Greater enforcement and education protects our most vulnerable travelers. Infrastructure alone will not reduce fatalities and serious injuries to zero.</p>\"}"
+      },
+      "version": "1.0.0-beta"
+    },
+    "widget_4": {
+      "id": "widget_4",
+      "label": "html 2",
+      "uri": "widgets/common/html/",
+      "icon": "https://hubqa.arcgis.com/exb/builder/../widgets/common/html/dist/runtime/assets/icon.svg",
+      "config": {
+        "html": "<h5>Engineering & Infrastructure</h5><p>Careful data analysis identifies specific locations that require new interventions and safe street designs. </p>",
+        "_defaultstr": "{\"html\":\"<h5>Engineering & Infrastructure</h5><p>Careful data analysis identifies specific locations that require new interventions and safe street designs. </p>\"}"
+      },
+      "version": "1.0.0-beta"
+    },
+    "widget_5": {
+      "id": "widget_5",
+      "label": "html 3",
+      "uri": "widgets/common/html/",
+      "icon": "https://hubqa.arcgis.com/exb/builder/../widgets/common/html/dist/runtime/assets/icon.svg",
+      "config": {
+        "html": "<h5>Data Collection</h5><p>A systematic data and information-driven process informs Vision Zero strategies.  The process identifies and prioritizes interventions with the greatest potential to eliminate fatalities and serious injuries. </p>",
+        "_defaultstr": "{\"html\":\"<h5>Data Collection</h5><p>A systematic data and information-driven process informs Vision Zero strategies.  The process identifies and prioritizes interventions with the greatest potential to eliminate fatalities and serious injuries. </p>\"}"
+      },
+      "version": "1.0.0-beta"
+    },
+    "widget_6": {
+      "id": "widget_6",
+      "label": "image",
+      "uri": "widgets/common/image/",
+      "icon": "https://hubqa.arcgis.com/exb/builder/../widgets/common/image/dist/runtime/assets/icon.svg",
+      "config": {
+        "functionConfig": {
+          "altText": "",
+          "toolTip": "",
+          "scale": "Fit",
+          "linkParam": {
+                "value": "default,details-view",
+                "linkType": "VIEW"
+          },
+          "src": "https://fitt.co/washington-dc/wp-content/uploads/sites/21/2016/09/WashingtonRockCreekPark.jpg"
+        },
+        "styleConfig": {
+          "shape": "square",
+          "borderRadius": {
+            "distance": [
+              0
+            ],
+            "unit": "px"
+          }
+        }
+      },
+      "version": "1.0.0-beta"
+    },
+    "widget_7": {
+      "id": "widget_7",
+      "label": "arcgis-map",
+      "uri": "widgets/arcgis/arcgis-map/",
+      "useDataSources": [
+        {
+          "dataSourceId": "dashboard-map"
+        }
+      ],
+      "outputDataSources": [
+        "dashboard-map-view"
+      ],
+      "config": {
+        "canZoom": true,
+        "canScale": true,
+        "canGoHome": true,
+        "canGoExtent": true,
+        "canOverviewMap": false,
+        "canLocate": true
+      }
+    },
+    "widget_8": {
+      "id": "widget_8",
+      "label": "text",
+      "uri": "widgets/common/text/",
+      "icon": "https://hubqa.arcgis.com/exb/builder/../widgets/common/text/dist/runtime/assets/icon.svg",
+      "config": {
+        "text": "<p>Progress</p>"
+      },
+      "version": "1.0.0-beta"
+    },
+    "widget_9": {
+      "id": "widget_9",
+      "label": "html 4",
+      "uri": "widgets/common/html/",
+      "icon": "https://hubqa.arcgis.com/exb/builder/../widgets/common/html/dist/runtime/assets/icon.svg",
+      "config": {
+        "html": "<h3>Increasing Access to Parks</h3>",
+        "_defaultstr": "{\"html\":\"<h3>Our Progress to Vision Zero</h3>\"}"
+      },
+      "version": "1.0.0-beta"
+    },
+    "widget_10": {
+      "id": "widget_10",
+      "label": "html 5",
+      "uri": "widgets/common/html/",
+      "icon": "https://hubqa.arcgis.com/exb/builder/../widgets/common/html/dist/runtime/assets/icon.svg",
+      "config": {
+        "html": "<div class='card' style='width: 18rem;'> <img height='160px'class='card-img-top' src='https://caseytrees.org/wp-content/uploads/2018/10/dpr-article.jpg' alt='Card image cap'> <div class='card-body'> <h5 class='card-title'>Park Progress</h5> <p class='card-text'>Explore how DC Parks are improving with your feedback.</p></div> </div>",
+        "_defaultstr": "{\"html\":\"<div class='card' style='width: 18rem;'> <img height='160px'class='card-img-top' src='https://data.tempe.gov/uploads/showcase/2018-08-27-160531.092419visionzerodashboard.png' alt='Card image cap'> <div class='card-body'> <h5 class='card-title'>Crash Statistics</h5> <p class='card-text'>Some quick example text to build on the card title and make up the bulk of the card's content.</p></div> </div>\"}"
+      },
+      "version": "1.0.0-beta"
+    },
+    "widget_11": {
+      "id": "widget_11",
+      "label": "html 6",
+      "uri": "widgets/common/html/",
+      "icon": "https://hubqa.arcgis.com/exb/builder/../widgets/common/html/dist/runtime/assets/icon.svg",
+      "config": {
+        "html": "<h2>Our Progress</h2>",
+        "_defaultstr": "{\"html\":\"<h2>Our Progress</h2>\"}"
+      },
+      "version": "1.0.0-beta"
+    },
+    "widget_12": {
+      "id": "widget_12",
+      "label": "chart 12",
+      "uri": "widgets/common/chart",
+      "useDataSources": [{
+        "dataSourceId": "place-ds"
+      }],
+      "config": {
+        "chartType": "bar",
+        "categoryField": "USE_TYPE",
+        "valueFields": ["USE_TYPE"],
+        "statType": "count",
+        "categoryLabel":  "Park Type",
+        "valueLabels": ["Number by Type 15"]
+      },
+      "version": "1.0.0-beta"
+    },
+    "widget_13": {
+      "useDataSources2": [{
+          "dataSourceId": "dashboard-map-view-place-layer",
+          "rootDataSourceId": "dashboard-map-view"
+      }],
+      "id": "widget_13",
+      "label": "chart 13",
+      "uri": "widgets/common/chart",
+      "useDataSources": [{
+        "dataSourceId": "place-ds"
+      }],
+      "config": {
+        "chartType": "bar",
+        "categoryField": "USE_TYPE",
+        "valueFields": ["USE_TYPE"],
+        "statType": "count",
+        "categoryLabel":  "Park Type",
+        "valueLabels": ["Number by Type 13"]
+      }
+    },
+    "widget_14": {
+      "id": "widget_14",
+      "label": "chart 14",
+      "useDataSources": [{
+        "dataSourceId": "place-ds"
+      }],
+      "uri": "widgets/common/chart/",
+      "icon": "https://hubqa.arcgis.com/exb/builder/../widgets/common/chart/dist/runtime/assets/icon.svg",
+      "config": {
+        "chartType": "bar",
+        "categoryField": "USE_TYPE",
+        "valueFields": ["USE_TYPE"],
+        "statType": "count",
+        "categoryLabel":  "Park Type",
+        "valueLabels": ["Number by Type 14"]
+      },
+      "version": "1.0.0-beta"
+    },
+    "widget_15": {
+      "id": "widget_15",
+      "uri": "widgets/common/chart",
+      "useDataSources": [{
+        "dataSourceId": "survey-ds"
+      }],
+      "config": {
+        "chartType": "bar",
+        "categoryField": "field_1",
+        "valueFields": ["field_1"],
+        "statType": "count",
+        "categoryLabel":  "Rating",
+        "valueLabels": ["Rating count"]
+      }
+    },
+    "widget_16": {
+      "id": "widget_16",
+      "label": "arcgis-map 1",
+      "uri": "widgets/arcgis/arcgis-map/",
+      "useDataSources": [
+        {
+          "dataSourceId": "dashboard-map"
+        }
+      ],
+      "outputDataSources": [
+        "dashboard-map-view"
+      ],
+      "config": {
+        "canZoom": true,
+        "canScale": true,
+        "canGoHome": true,
+        "canGoExtent": true,
+        "canOverviewMap": false,
+        "canLocate": true
+      }
+    },
+    "widget_17": {
+      "id": "widget_17",
+      "label": "html 7",
+      "uri": "widgets/common/html/",
+      "icon": "https://hubqa.arcgis.com/exb/builder/../widgets/common/html/dist/runtime/assets/icon.svg",
+      "config": {
+        "html": "statistics",
+        "_defaultstr": "{\"html\":\"statistics\"}"
+      },
+      "version": "1.0.0-beta"
+    },
+    "widget_19": {
+      "id": "widget_19",
+      "label": "html 9",
+      "uri": "widgets/common/html/",
+      "icon": "https://hubqa.arcgis.com/exb/builder/../widgets/common/html/dist/runtime/assets/icon.svg",
+      "config": {
+        "html": "<div id='carouselExampleControls' class='carousel slide' data-ride='carousel'> <div class='carousel-inner'> <div class='carousel-item active'> <img class='d-block w-100' src='https://data.tempe.gov/uploads/showcase/2018-08-27-160531.092419visionzerodashboard.png' alt='First slide'> </div> <div class='carousel-item'> <img class='d-block w-100' src='...' alt='Second slide'> </div> <div class='carousel-item'> <img class='d-block w-100' src='https://ischool.uw.edu/sites/default/files/2017-05/Vision%20Zero%20Poster%20-%20FINAL.png' alt='Third slide'> </div> </div> <a class='carousel-control-prev' href='#carouselExampleControls' role='button' data-slide='prev'> <span class='carousel-control-prev-icon' aria-hidden='true'></span> <span class='sr-only'>Previous</span> </a> <a class='carousel-control-next' href='#carouselExampleControls' role='button' data-slide='next'> <span class='carousel-control-next-icon' aria-hidden='true'></span> <span class='sr-only'>Next</span> </a> </div>",
+        "_defaultstr": "{\"html\":\"<div id='carouselExampleControls' class='carousel slide' data-ride='carousel'> <div class='carousel-inner'> <div class='carousel-item active'> <img class='d-block w-100' src='https://data.tempe.gov/uploads/showcase/2018-08-27-160531.092419visionzerodashboard.png' alt='First slide'> </div> <div class='carousel-item'> <img class='d-block w-100' src='...' alt='Second slide'> </div> <div class='carousel-item'> <img class='d-block w-100' src='https://ischool.uw.edu/sites/default/files/2017-05/Vision%20Zero%20Poster%20-%20FINAL.png' alt='Third slide'> </div> </div> <a class='carousel-control-prev' href='#carouselExampleControls' role='button' data-slide='prev'> <span class='carousel-control-prev-icon' aria-hidden='true'></span> <span class='sr-only'>Previous</span> </a> <a class='carousel-control-next' href='#carouselExampleControls' role='button' data-slide='next'> <span class='carousel-control-next-icon' aria-hidden='true'></span> <span class='sr-only'>Next</span> </a> </div>\"}"
+      },
+      "version": "1.0.0-beta"
+    },
+    "widget_20": {
+      "id": "widget_20",
+      "label": "menu",
+      "uri": "widgets/common/menu/",
+      "icon": "https://hubqa.arcgis.com/exb/builder/../widgets/common/menu/dist/runtime/assets/icon.svg",
+      "config": {
+        "dir": "LTR",
+        "unifiedSize": true,
+        "tabAlign": "start",
+        "textAlign": "center"
+      },
+      "version": "1.0.0-beta"
+    },
+    "widget_21": {
+      "id": "widget_21",
+      "label": "menu 1",
+      "uri": "widgets/common/menu/",
+      "icon": "https://hubqa.arcgis.com/exb/builder/../widgets/common/menu/dist/runtime/assets/icon.svg",
+      "config": {
+        "dir": "LTR",
+        "unifiedSize": true,
+        "tabAlign": "start",
+        "textAlign": "center"
+      },
+      "version": "1.0.0-beta"
+    },
+    "widget_22": {
+      "id": "widget_22",
+      "label": "link",
+      "uri": "widgets/common/link/",
+      "icon": "https://hubqa.arcgis.com/exb/builder/../widgets/common/link/dist/runtime/assets/icon.svg",
+      "config": {
+        "functionConfig": {
+          "text": "View Dashboard",
+          "toolTip": "",
+          "linkParam": {
+            "linkType": "PAGE",
+            "value": "dashboard"
+          }
+        },
+        "styleConfig": {
+          "name": "style1",
+          "themeStyle": {
+            "style": "button",
+            "color": "color1",
+            "className": "btn btn-primary"
+          },
+          "customStyle": {
+            "regular": {},
+            "hover": {},
+            "clicked": {}
+          }
+        }
+      },
+      "version": "1.0.0-beta"
+    }
+  },
+  "dataSources": {
+    "ds-1": {
+      "id": "ds-1",
+      "label": "ds 1",
+      "type": "WEB_SCENE",
+      "itemId": "fac7e5ba860b4335974255857273a3c7"
+    },
+    "ds-2": {
+      "id": "ds-2",
+      "label": "test web map",
+      "type": "WEB_MAP",
+      "itemId": "aedb8657cf6c414e91728c73b3743253"
+    },
+    "arcgis-scene": {
+      "id": "arcgis-scene",
+      "label": "test arcgis scene output datasource",
+      "type": "SCENE_VIEW",
+      "isOutputFromWidget": true,
+      "originDataSourceId": "ds-1"
+    },
+    "arcgis-map": {
+      "id": "arcgis-map",
+      "label": "test arcgis map output datasource",
+      "type": "MAP_VIEW",
+      "isOutputFromWidget": true,
+      "originDataSourceId": "ds-2"
+    },
+    "dashboard-map": {
+      "id": "dashboard-map",
+      "label": "Dashboard map",
+      "type": "WEB_MAP",
+      "itemId": "8c4222c1a4cf41fd9715b2b8428c3a65"
+    },
+    "dashboard-map-view": {
+      "id": "dashboard-map-view",
+      "label": "Dashboard map view",
+      "type": "MAP_VIEW",
+      "isOutputFromWidget": true,
+      "originDataSourceId": "dashboard-map"
+    },
+    "approved-comments-ds": {
+      "id": "approved-comments-ds",
+      "label": "Approved Comments Data Source",
+      "type": "HUB_ANNOTATIONS",
+      "url": "https://services7.arcgis.com/BBpPn9wZu2D6eTNY/arcgis/rest/services/Hub%20Annotations/FeatureServer/0"
+    },
+    "place-ds": {
+      "id": "place-ds",
+      "label": "Feature Query Test Data Source",
+      "type": "FEATURE_QUERY",
+      "url": "https://services.arcgis.com/bkrWlSKcjUDFDtgw/arcgis/rest/services/DC_Parks_and_Recreation_Areas/FeatureServer/0"
+    },
+    "survey-ds": {
+      "id": "survey-ds",
+      "label": "Survey responses",
+      "type": "FEATURE_QUERY",
+      "url": "https://services.arcgis.com/bkrWlSKcjUDFDtgw/arcgis/rest/services/survey123_4e64c44cb1ba44d98a157038d1846731_stakeholder/FeatureServer/0"
+    },
+    "upcoming-events-ds": {
+      "id": "upcoming-events-ds",
+      "label": "Upcoming Events Data Source",
+      "type": "HUB_EVENTS",
+      "orgId": "bkrWlSKcjUDFDtgw"
+    }
+  }
+}

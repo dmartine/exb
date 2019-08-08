@@ -1,0 +1,22 @@
+{
+  "pages": {
+    "home": {
+      "label": "Home",
+      "type": "NORMAL",
+      "mode": "AUTO_SCROLL",
+      "layout": {
+        "LARGE": "home-layout-large"
+      },
+      "isVisible": true,
+      "isDefault": true
+    }
+  },
+  "layouts": {
+    "home-layout-large": {
+      "type": "FLOW"
+    }
+  },
+  "mainSizeMode": "LARGE",
+  "theme": "themes/default",
+  "exbVersion": "1.0.0-beta"
+}

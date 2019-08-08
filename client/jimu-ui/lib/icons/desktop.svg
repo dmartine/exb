@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>desktop</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Style" stroke="none" stroke-width="1" fill-rule="evenodd">
+        <g id="0-UI-icons" transform="translate(-297.000000, -356.000000)" fill-rule="nonzero">
+            <g id="Top-navigation" transform="translate(43.000000, 309.000000)">
+                <path d="M261,62 L261,59 L256,59 C254.895431,59 254,58.1045695 254,57 L254,49 C254,47.8954305 254.895431,47 256,47 L268,47 C269.104569,47 270,47.8954305 270,49 L270,57 C270,58.1045695 269.104569,59 268,59 L263,59 L263,62 L265.5,62 C265.776142,62 266,62.2238576 266,62.5 C266,62.7761424 265.776142,63 265.5,63 L258.5,63 C258.223858,63 258,62.7761424 258,62.5 C258,62.2238576 258.223858,62 258.5,62 L261,62 Z M256,48 C255.447715,48 255,48.4477153 255,49 L255,57 C255,57.5522847 255.447715,58 256,58 L268,58 C268.552285,58 269,57.5522847 269,57 L269,49 C269,48.4477153 268.552285,48 268,48 L256,48 Z" id="desktop"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,11 @@
+{
+  "name": "default2",
+  "label": "Blank Full Screen App",
+  "type": "template",
+  "version": "1.0.0-beta",
+  "exbVersion": "1.0.0-beta",
+  "author": "Esri R&D Center Beijing",
+  "description": "A blank template for creating a web app that uses the full area of the page.",
+  "copyright": "",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0"
+}

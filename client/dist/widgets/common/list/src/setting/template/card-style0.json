@@ -1,0 +1,173 @@
+{
+  "config": {
+    "maxItems": 3,
+    "space": 10,
+    "itemsPerPage": 10,
+    "pageStyle": "SCROLL",
+    "itemStyle": "STYLE0",
+    "hoverType": "HOVER0",
+    "selectedStyle": "STYLE0",
+    "differentOddEven": false,
+    "direction": "HORIZON",
+    "alignType": "CENTER",
+    "isInitialed": true,
+    "cardConfigs": {
+      "REGULAR": {
+        "cardSize": {
+          "DESKTOP": {
+            "width": 300,
+            "height": 300
+          }
+        },
+        "enable": true,
+        "backgroundStyle": {
+          "border": {
+            "type": "solid",
+            "color": "rgba(0, 0, 0, 1)",
+            "width": {
+              "distance": 1,
+              "unit": "px"
+            }
+          }
+        }
+      },
+      "HOVER": {
+        "cardSize": {
+          "DESKTOP": {
+            "width": 300,
+            "height": 300
+          }
+        },
+        "enable": false,
+        "backgroundStyle": {
+          "border": {
+            "type": "solid",
+            "color": "rgba(0, 0, 0, 1)",
+            "width": {
+              "distance": 1,
+              "unit": "px"
+            }
+          }
+        }
+      },
+      "SELECTED": {
+        "cardSize": {
+          "DESKTOP": {
+            "width": 300,
+            "height": 300
+          }
+        },
+        "backgroundStyle": {
+          "border": {
+            "type": "solid",
+            "color": "rgba(133, 55, 241, 1)",
+            "width": {
+              "distance": 1,
+              "unit": "px"
+            }
+          }
+        },
+        "selectionMode": "SINGLE"
+      }
+    },
+    "style": {
+      "id": "default"
+    },
+    "isItemStyleConfirm": true
+  },
+  "layouts": {
+    "REGULAR": {
+      "DESKTOP": "layout_10"
+    }
+  },
+  "allLayouts": {
+    "layout_10": {
+      "type": "FIXED",
+      "content": {
+        "21": {
+          "type": "WIDGET",
+          "widgetId": "widget_2",
+          "bbox": {
+            "left": "20px",
+            "top": "150px",
+            "height": "35px",
+            "right": "20px"
+          },
+          "setting": {
+            "autoProps": {
+              "width": true
+            },
+            "lockParent": true
+          }
+        },
+        "22": {
+          "type": "WIDGET",
+          "widgetId": "widget_3",
+          "bbox": {
+            "left": 20,
+            "top": "178px",
+            "height": "105px",
+            "right": "20px"
+          },
+          "setting": {
+            "autoProps": {
+              "width": true
+            },
+            "lockParent": true
+          }
+        },
+        "23": {
+          "type": "WIDGET",
+          "widgetId": "widget_4",
+          "bbox": {
+            "height": "144px",
+            "right": "0px",
+            "bottom": "0px",
+            "left": "0px",
+            "top": "0px"
+          },
+          "setting": {
+            "autoProps": {
+              "width": true
+            },
+            "lockParent": true
+          }
+        }
+      },
+      "order": [
+        "21",
+        "22",
+        "23"
+      ]
+    }
+  },
+  "widgets": {
+    "widget_2": {
+      "config": {
+        "text": "<p><span style=\"font-size: 18px;\">DEFAULT TEXT</span></p>"
+      },
+      "uri": "widgets/common/text/"
+    },
+    "widget_3": {
+      "config": {
+        "text": "<p><span data-convert=\"true\" style=\"font-size: 0.75rem;\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</span></p>"
+      },
+      "uri": "widgets/common/text/"
+    },
+    "widget_4": {
+      "uri": "widgets/common/image/",
+      "config": {
+        "functionConfig": {
+          "altText": "",
+          "toolTip": "",
+          "linkParam": {},
+          "scale": "Fit",
+          "imageParam": {}
+        },
+        "styleConfig": {}
+      }
+    }
+  },
+  "views": {},
+  "sections": {}
+}

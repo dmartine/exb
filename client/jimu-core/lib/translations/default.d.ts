@@ -1,0 +1,21 @@
+declare const _default: {
+    loading: string;
+    ok: string;
+    cancel: string;
+    notPublishError: string;
+    versionUpdateMsg: string;
+    doUpdate: string;
+    message_StringSelectionChange: string;
+    message_ExtentChange: string;
+    message_DataRecordsSelectionChange: string;
+    message_SpatialDataRecordsSelectionChange: string;
+    message_DataRecordSetCreate: string;
+    message_SpatialDataRecordSetCreate: string;
+    message_DataRecordSetUpdate: string;
+    message_SpatialDataRecordSetUpdate: string;
+    message_SelectDataRecord: string;
+    dataAction_ExportJson: string;
+    messageAction_SelectDataRecord: string;
+    messageAction_FilterDataRecord: string;
+};
+export default _default;

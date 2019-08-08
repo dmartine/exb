@@ -1,0 +1,27 @@
+{
+  "name": "events",
+  "type": "widget",
+  "version": "1.0.0-beta",
+  "exbVersion": "1.0.0-beta",
+  "author": "Esri R&D Center D.C.",
+  "description": "A list of events for Hub community members",
+  "copyright": "",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0",
+  "supportedLocales": [
+    "en",
+    "es"
+  ],
+  "messageActions": [
+    {
+      "name": "query",
+      "uri": "runtime/actions/query-action"
+    }
+  ],
+  "publishMessages": [
+    "FEATURE_SET_CREATE"
+  ],
+  "properties": {
+    "hasLocale": true,
+    "hasSettingPage": true
+  }
+}

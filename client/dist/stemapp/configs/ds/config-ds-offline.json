@@ -1,0 +1,88 @@
+{
+  "pages": {
+    "default": {
+      "id": "default",
+      "label": "page 1",
+      "layout": "page-default-layout",
+      "widgets": [
+      ],
+      "isDefault": true
+    }
+  },
+  "widgets": {
+    "ds-widget1": {
+      "id": "ds-widget1",
+      "uri": "widgets/common/datasource-offline/"
+    },
+    "fl-widget2": {
+      "id": "fl-widget2",
+      "uri": "widgets/samples/data-sources/use-feature-layer-with-offline-widget/",
+      "useDataSources": [{
+        "dataSourceId": "fl-1",
+        "fields": ["jimu_field_1"]
+      }],
+      "config": {
+        "fieldName": "jimu_field_1"
+      }
+    }
+  },
+  "layouts": {
+    "page-default-layout": {
+      "0": {
+        "id": "0",
+        "pos": {
+          "x": 0,
+          "y": 0,
+          "w": 100,
+          "h": 100
+        },
+        "type": "FIXED",
+        "setting": {
+          "heightInPixel": false,
+          "widthInPixel": false
+        }
+      },
+      "2": {
+        "parentId": "0",
+        "pos": {
+          "x": 100,
+          "y": 20,
+          "w": 500,
+          "h": 500
+        },
+        "id": "2",
+        "type": "WIDGET",
+        "widgetId": "ds-widget1"
+      },
+      "3": {
+        "parentId": "0",
+        "pos": {
+          "x": 700,
+          "y": 20,
+          "w": 500,
+          "h": 500
+        },
+        "id": "2",
+        "type": "WIDGET",
+        "widgetId": "fl-widget2"
+      }
+    }
+  },
+  "dataSources": {
+    "fl-1": {
+      "id": "fl-1",
+      "label": "Feature layer - world cities",
+      "type": "FEATURE_LAYER",
+      "url": "http://sampleserver6.arcgisonline.com/arcgis/rest/services/SampleWorldCities/MapServer/0",
+      "schema": {
+        "fields": {
+          "jimu_field_1": {
+            "jimuName": "jimu_field_1",
+            "name": "CITY_NAME",
+            "type": "STRING"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="228px" height="70px" viewBox="0 0 228 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Templates</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Style" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="0-UI-icons" transform="translate(-990.000000, -947.000000)">
+            <g id="Templates" transform="translate(990.000000, 847.000000)">
+                <g id="T-3" transform="translate(0.000000, 100.000000)">
+                    <g id="style03" transform="translate(1.000000, 1.000000)">
+                        <g id="Icons" transform="translate(84.000000, 48.000000)" fill-rule="nonzero">
+                            <circle id="Oval" fill="#4D545B" cx="4" cy="4" r="4"></circle>
+                            <circle id="Oval-Copy" fill="#4D545B" cx="32" cy="4" r="4"></circle>
+                            <circle id="Oval-Copy-2" fill="#4D545B" cx="59" cy="4" r="4"></circle>
+                            <rect id="Rectangle" fill="#353B40" x="12" y="3" width="10" height="2" rx="1"></rect>
+                            <rect id="Rectangle-Copy-4" fill="#353B40" x="40" y="3" width="10" height="2" rx="1"></rect>
+                            <rect id="Rectangle-Copy-9" fill="#353B40" x="67" y="3" width="10" height="2" rx="1"></rect>
+                        </g>
+                        <path d="M85,27 L210,27 C210.552285,27 211,27.4477153 211,28 C211,28.5522847 210.552285,29 210,29 L85,29 C84.4477153,29 84,28.5522847 84,28 C84,27.4477153 84.4477153,27 85,27 Z M85,34 L163,34 C163.552285,34 164,34.4477153 164,35 C164,35.5522847 163.552285,36 163,36 L85,36 C84.4477153,36 84,35.5522847 84,35 C84,34.4477153 84.4477153,34 85,34 Z" id="Text" fill="#353B40" fill-rule="nonzero"></path>
+                        <rect id="Title" fill="#4D545B" fill-rule="nonzero" x="84" y="12" width="40" height="3" rx="1.5"></rect>
+                        <g id="Image">
+                            <rect id="Background" fill="#4D545B" fill-rule="nonzero" x="0" y="0" width="68" height="68"></rect>
+                            <polygon id="image-14" fill="#000000" points="32.8867925 34.3584906 36 30 41 37 27 37 31 32"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

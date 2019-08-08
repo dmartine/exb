@@ -1,0 +1,226 @@
+{
+  "pages": {
+    "default": {
+      "label": "default page",
+      "layout": {
+        "LARGE": "default-layout"
+      },
+      "isDefault": true
+    }
+  },
+  "layouts": {
+    "default-layout": {
+      "order": ["0", "1", "2"],
+      "type": "FIXED",
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "palette",
+          "bbox": {
+            "top": 0,
+            "left": 0,
+            "right": 0,
+            "bottom": 0,
+            "width": 360
+          },
+          "setting": {
+            "style": {
+              "padding": {
+                "number": [1.5],
+                "unit": "rem"
+              },
+              "backgroundColor": "rgba(63,81,181,0.03)",
+              "borderRight": "1px solid rgba(0,0,0,0.05)" 
+            }
+          }
+        },
+        "1": {
+          "type": "WIDGET",
+          "widgetId": "navigator",
+          "bbox": {
+            "left": 360,
+            "right": 0,
+            "top": 0,
+            "height": 60
+          },
+          "setting": {
+            "style": {
+              "padding": {
+                "number": [1],
+                "unit": "rem"
+              }
+            }
+          }
+        },
+        "2": {
+          "type": "SECTION",
+          "sectionId": "section-preview",
+          "bbox": {
+            "left": 360,
+            "top": 60,
+            "right": 0,
+            "bottom": 0
+          }
+        }
+      }
+    },
+    "layout-bootstrap": {
+      "order": ["0"],
+      "type": "FIXED",
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "bootstrap-page",
+          "bbox": {
+            "top": 0,
+            "left": 0,
+            "right": 0,
+            "bottom": 0
+          },
+          "setting": {
+            "style":{
+              "overflow": "auto"
+            }
+          }
+        }
+      }
+    },
+    "layout-jimu-ui": {
+      "order": ["0"],
+      "type": "FIXED",
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "jimu-ui-page",
+          "bbox": {
+            "top": 0,
+            "left": 0,
+            "right": 0,
+            "bottom": 0
+          },
+          "setting": {
+            "style":{
+              "overflow": "auto"
+            }
+          }
+        }
+      }
+    },
+    "layout-jimu-ui-for-builder": {
+      "order": ["0"],
+      "type": "FIXED",
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "jimu-ui-for-builder-page",
+          "bbox": {
+            "top": 0,
+            "left": 0,
+            "right": 0,
+            "bottom": 0
+          },
+          "setting": {
+            "style":{
+              "overflow": "auto"
+            }
+          }
+        }
+      }
+    },
+    "layout-icons": {
+      "order": ["0"],
+      "type": "FIXED",
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "icons-page",
+          "bbox": {
+            "top": 0,
+            "left": 0,
+            "right": 0,
+            "bottom": 0
+          },
+          "setting": {
+            "style":{
+              "overflow": "auto"
+            }
+          }
+        }
+      }
+    }
+  },
+  "theme": "themes/default",
+  "attributes": {},
+  "sections": {
+    "section-preview": {
+      "views": [
+        "bootstrap",
+        "jimu-ui",
+        "jimu-ui-for-builder",
+        "icons"
+      ]
+    }
+  },
+  "views": {
+    "bootstrap": {
+      "label": "bootstrap",
+      "layout": {
+        "LARGE": "layout-bootstrap"
+      }
+    },
+    "jimu-ui": {
+      "label": "jimu-ui",
+      "layout": {
+        "LARGE": "layout-jimu-ui"
+      }
+    },
+    "jimu-ui-for-builder": {
+      "label": "jimu-ui-for-builder",
+      "layout": {
+        "LARGE": "layout-jimu-ui-for-builder"
+      }
+    },
+    "icons": {
+      "label": "icons",
+      "layout": {
+        "LARGE": "layout-icons"
+      }
+    }
+  },
+  "widgets": {
+    "palette": {
+      "id": "palette",
+      "uri": "theme-builder/widgets/palette/"
+    },
+    "bootstrap-page": {
+      "id": "bootstrap-page",
+      "uri": "theme-builder/widgets/pages/bootstrap/"
+    },
+    "jimu-ui-page": {
+      "id": "bootstrap-page",
+      "uri": "theme-builder/widgets/pages/jimu-ui/"
+    },
+    "jimu-ui-for-builder-page": {
+      "id": "jimu-ui-for-builder-page",
+      "uri": "theme-builder/widgets/pages/jimu-ui-for-builder/"
+    },
+    "icons-page": {
+      "id": "icons-page",
+      "uri": "theme-builder/widgets/pages/icons/"
+    },
+    "navigator": {
+      "uri": "widgets/common/navigator/",
+      "config": {
+        "data": {
+          "Type": "AUTO",
+          "section": "section-preview"
+        },
+        "display": {}
+      },
+      "label": "Navigator"
+    }
+  },
+  "pageStructure": [{
+    "default": []
+  }]
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+		<title>ArcGIS Experience Builder Beta</title>
+		<link rel="shortcut icon" href="assets/exb.ico">
+		<base href="/builder/"/>
+		<style>
+			html, body{
+				margin: 0;
+				background-color: #232323;
+				user-select: none;
+				height: 100%;
+			}
+
+			#loading{
+				width: 100vw;
+				height: 100vh;
+				justify-content: center;
+				align-items: center;
+				background-color: #232323;
+				display: none;
+			}
+
+			#app{
+				height: 100%;
+			}
+
+			.exb-logo {
+				height: 123px;
+				width: 123px;
+			}
+
+			.exb-logo-text {
+				margin-top: 30px;
+				margin-bottom: 38px;
+				margin-right: -45px;
+				-webkit-user-drag: none;
+			}
+
+			.exb-main-content {
+				width: 100%;
+			}
+
+			#loading-indicator {
+				display: flex;
+				height: 10px;
+				overflow: hidden;
+				background-color: #00aabb;
+				background-image: linear-gradient(75deg,rgba(0,0,0,0.2) 25%,transparent 25%,transparent 50%,rgba(0,0,0,0.2) 50%,rgba(0,0,0,0.2) 75%,transparent 75%,transparent);
+				background-size: 16px 60px;
+				border-radius: 5px;
+				max-width: 300px;
+				margin: 0 auto;
+				-webkit-animation: loading-indicator-animation 1s linear infinite;
+				animation: loading-indicator-animation 1s linear infinite;
+			}
+
+			@-webkit-keyframes loading-indicator-animation {
+				from {
+					background-position: 1rem 0;
+				}
+				to {
+					background-position: 0 0;
+				}
+			}
+
+			@keyframes loading-indicator-animation {
+				from {
+					background-position: 1rem 0;
+				}
+				to {
+					background-position: 0 0;
+				}
+			}
+		</style>
+		<link rel="stylesheet" type="text/css" href="../jimu-ui/styles/base.css" />
+		<script>
+				var arcgisApiUrl = 'https://js.arcgis.com/4.12/';
+				var MOUNT_PATH = '/';
+				var ROOT_PATH = MOUNT_PATH + 'builder/';
+				var PACKAGES_IN_APP_FOLDER = false;
+				var USE_STRUCTURAL_URL = true;
+				var hostEnv = 'prod';
+
+				/*
+				Please make sure the script is in <head>, this can help dojo to find the correct "insertPointSibling"
+				See dojo/dojo.js line 1724-1728
+				*/
+			</script>
+	</head>
+	<body>
+		<div id="loading">
+			<div class="exb-main-content text-center">
+				<div id="exb-logo">
+					<img class="exb-logo" src="./assets/exb-logo.png">
+				</div>
+				<div id="exb-describe">
+					<img class="exb-logo-text" src="./assets/exb-logo-text.svg" alt="ArcGIS Experience Builder BETA">
+				</div>
+				<div id="loading-indicator"></div>
+			</div>
+		</div>
+		<div id="app" style="display: none">
+
+		</div>
+
+		<script>
+			if(window.location.search){
+				document.getElementById('loading').style.display = 'flex';
+			}
+		</script>
+		<script type="text/javascript" src="./pubsub.js"></script>
+		<script type="text/javascript" src="../jimu-core/systemjs.js"></script>
+		<script type="text/javascript" src="./init.js"></script>
+		<script>
+			SystemJS.import('./index.js');
+		</script>
+		<script type="text/javascript" src="../service-worker-registration.js"></script>
+	</body>
+</html>

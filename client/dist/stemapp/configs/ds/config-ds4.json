@@ -1,0 +1,47 @@
+{
+  "pages": {
+    "default": {
+      "id": "default",
+      "label": "page 1",
+      "layout": {"LARGE": "page-default-layout"},
+      "isDefault": true
+    }
+  },
+  "theme": "themes/default",
+  "widgets": {
+    "widget1": {
+      "uri": "widgets/samples/data-sources/multiple-ds-component-widget/",
+      "useDataSources": [
+        {
+          "dataSourceId": "fl-1",
+          "fields": ["CITY_NAME"]
+        }
+      ]
+    }
+  },
+  "layouts": {
+    "page-default-layout": {
+      "type": "FIXED",
+      "order": ["0"],
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget1",
+          "bbox": {
+            "left": 100,
+            "width": 1200,
+            "top": 100
+          }
+        }
+      }
+    }
+  },
+  "dataSources": {
+    "fl-1": {
+      "id": "fl-1",
+      "label": "f",
+      "type": "FEATURE_QUERY",
+      "url": "https://sampleserver6.arcgisonline.com/arcgis/rest/services/SampleWorldCities/MapServer/0"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="14px" viewBox="0 0 10 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="TopBar" transform="translate(-988.000000, -23.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Desktop/Mobile">
+                <g transform="translate(948.000000, 13.000000)">
+                    <path d="M47.5,10 L42.5,10 C40.5225,10 40,11.6355 40,12.5 L40,21.5 C40,23.4775 41.6355,24 42.5,24 L47.5,24 C49.4775,24 50,22.3645 50,21.5 L50,12.5 C50,10.5225 48.3645,10 47.5,10 Z M41,20 L41,13 L49,13 L49,20 L41,20 Z M42.5,11 L47.497,11 C47.714,11.0025 48.679,11.069 48.9355,12 L41.078,12 C41.209,11.555 41.5595,11 42.5,11 Z M47.5,23 L42.5025,23 C42.2515,22.997 41,22.9115 41,21.5 L41,21 L43,21 L43,21.5 C43,21.7765 43.224,22 43.5,22 L46.5,22 C46.7765,22 47,21.7765 47,21.5 L47,21 L49,21 L49,21.497 C48.997,21.748 48.9115,23 47.5,23 Z" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

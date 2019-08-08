@@ -1,0 +1,236 @@
+// this file is added for link-setting style in themes/default
+$link-white:                     #000    !default;
+$link-gray-100:                  #232323 !default; // Left Panel Background / Pop-up Window Background / Selected: on Top Bar
+$link-gray-200:                  #353b40 !default; // Left Navigator Background
+$link-gray-300:                  #4d545b !default; // Cutting Line
+$link-gray-400:                  #666    !default; // Disable Text / Disable Icon
+$link-gray-500:                  #8a9091 !default; // Button_Stroke / Icons
+$link-gray-550:                  #909090 ; // Unselected Icon (Tab)
+$link-gray-600:                  #999    !default; // Unselected Icon (Tab)
+$link-gray-700:                  #ccc    !default; // Disable Button Background /Hint Text / Unselected Text (Tab) 
+$link-gray-800:                  #e0e5ef !default; // Builder Background
+$link-gray-900:                  #f9f9fc !default; // Header Background
+$link-black:                     #fff    !default; 
+
+// Accents
+$link-blue-100:                  #00d5ff !default;
+$link-blue-200:                  #00e1f6 !default;
+$link-blue-300:                  #00a6b6 !default;
+$link-blue-400:                  #03687a !default;
+
+.widget-linksetting-app {
+
+    .widget-builder-linksetting {
+
+        .linksetting-list {
+
+            .linksetting-list-item {
+                height: 30px;
+                cursor: pointer;
+
+                // todo, need use global css color variable later
+                &:hover {
+                    background-color: rgba($link-gray-300, .5);
+                }
+            }
+        }
+
+        .itemselected {
+            background-color: $link-blue-400 !important;
+        }
+
+        .btn {
+            display: inline-block;
+            font-weight: 400;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            user-select: none;
+            border: 1px solid transparent;
+            padding: 0.28571rem 1.42857rem;
+            font-size: 1rem;
+            line-height: 1.5;
+            border-radius: 2px;
+            transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+            &,
+            &:hover,
+            &.disabled,
+            &:disabled {
+            color: $link-black;
+            }
+            .jimu-icon {
+            vertical-align: middle;
+            fill: $link-black;
+            }
+        }
+        
+        .btn-outline-secondary {
+            border-color: $link-gray-500;
+            color: $link-black;
+            &:hover {
+            background-color: $link-gray-200;
+            border-color: $link-gray-500;
+            color: $link-black;
+            }
+        }
+        
+        .btn:not(:disabled):not(.disabled):active, 
+        .btn:not(:disabled):not(.disabled).active, 
+        .show > .btn.dropdown-toggle {
+            color: $link-black;
+        }
+
+        div {
+            color: $link-black
+        }
+
+        .form-control {
+            display: block;
+            width: 100%;
+            font-size: 1rem;
+            line-height: 1;
+            color: $link-gray-700;
+            background-color: $link-white;
+            background-clip: padding-box;
+            border: 1px solid $link-gray-400;
+            border-radius: 2px;
+            transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+            padding: 0.35714rem 0.57143rem;
+            height: auto;
+        }
+
+        @media screen and (prefers-reduced-motion: reduce) {
+            .form-control {
+                transition: none; 
+            } 
+        }
+        .form-control::-ms-expand {
+            background-color: transparent;
+            border: 0; 
+        }
+        .form-control:focus {
+            color: $link-gray-700;
+            background-color: $link-white;
+            border-color: #37edff;
+            outline: 0;
+            box-shadow: 0 0 0 0.2rem rgba(0, 166, 182, 0.25); 
+        }
+        .form-control::placeholder {
+            color: $link-gray-600;
+            opacity: 1; 
+        }
+        .form-control:disabled, .form-control[readonly] {
+            background-color: $link-gray-200;
+            opacity: 1; 
+        }
+
+        .border {
+            border: 1px solid $link-gray-300 !important;
+        }
+
+        .border-bottom-0 {
+            border-bottom: 0 !important
+        }
+
+        .border-top-0 {
+            border-top: 0 !important
+        }
+
+        .border-left-0 {
+            border-left: 0 !important
+        }
+
+        .border-right-0 {
+            border-right: 0 !important
+        }
+
+        .bg-white {
+            background-color: $link-white !important;
+        }
+
+        .bg-gray-200 {
+            background-color: $link-gray-200 !important;
+        }
+        
+        input[type='radio'].form-check-input {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background: transparent;
+            border: 1px solid $link-black;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            transition: all 0.2s ease;
+            &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: $link-blue-300;
+            margin: 8px;
+            transition: all 0.2s ease-out;
+            }
+            &:hover {
+            border-color: $link-blue-300;
+            }
+            &:checked {
+            &:before {
+                width: 8px;
+                height: 8px;
+                margin: 3px;
+            }
+            }
+        }
+
+        .text-dark {
+            color: $link-black !important;
+        }
+
+        .btn-primary {
+            color: $link-white;
+            background-color: $link-blue-300;
+            border-color: $link-blue-300; 
+        
+        }
+
+        .btn-primary:hover {
+            color: $link-white;
+            background-color: $link-blue-400;
+            border-color: $link-blue-400; 
+        }
+
+        .btn-primary:focus, .btn-primary.focus {
+            box-shadow: 0 0 0 0.2rem rgba(0, 166, 182, 0.5); }
+        .btn-primary.disabled, .btn-primary:disabled {
+            color: $link-white;
+            background-color: $link-blue-300;
+            border-color: $link-blue-300; }
+        .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
+        .show > .btn-primary.dropdown-toggle {
+            color: $link-white;
+            background-color: $link-blue-400;
+            border-color: $link-blue-400; }
+            .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
+            .show > .btn-primary.dropdown-toggle:focus {
+            box-shadow: 0 0 0 0.2rem rgba(0, 166, 182, 0.5); }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+            
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+            
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.2); 
+        }
+            
+        ::-webkit-scrollbar-thumb:hover {
+            background: rgba(255, 255, 255, 0.3); 
+        }
+    }
+}

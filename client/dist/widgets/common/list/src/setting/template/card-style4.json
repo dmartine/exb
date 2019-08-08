@@ -1,0 +1,165 @@
+{
+  "config": {
+    "maxItems": 3,
+    "space": 10,
+    "itemsPerPage": 10,
+    "pageStyle": "SCROLL",
+    "itemStyle": "STYLE4",
+    "hoverType": "HOVER0",
+    "selectedStyle": "STYLE0",
+    "differentOddEven": false,
+    "direction": "VERTICAL",
+    "alignType": "CENTER",
+    "isInitialed": true,
+    "cardConfigs": {
+      "REGULAR": {
+        "cardSize": {
+          "DESKTOP": {
+            "width": 300,
+            "height": 40
+          }
+        },
+        "enable": true,
+        "backgroundStyle": {
+          "border": {
+            "type": "solid",
+            "color": "rgba(0, 0, 0, 1)",
+            "width": {
+              "distance": 1,
+              "unit": "px"
+            }
+          }
+        }
+      },
+      "HOVER": {
+        "cardSize": {
+          "DESKTOP": {
+            "width": 300,
+            "height": 40
+          }
+        },
+        "enable": false,
+        "backgroundStyle": {
+          "border": {
+            "type": "solid",
+            "color": "rgba(0, 0, 0, 1)",
+            "width": {
+              "distance": 1,
+              "unit": "px"
+            }
+          }
+        }
+      },
+      "SELECTED": {
+        "cardSize": {
+          "DESKTOP": {
+            "width": 300,
+            "height": 40
+          }
+        },
+        "backgroundStyle": {
+          "border": {
+            "type": "solid",
+            "color": "rgba(133, 55, 241, 1)",
+            "width": {
+              "distance": 1,
+              "unit": "px"
+            }
+          }
+        },
+        "selectionMode": "SINGLE"
+      }
+    },
+    "style": {
+      "id": "default"
+    },
+    "isItemStyleConfirm": true
+  },
+  "layouts": {
+    "REGULAR": {
+      "DESKTOP": "layout_8"
+    }
+  },
+  "allLayouts": {
+    "layout_8": {
+      "type": "FIXED",
+      "content": {
+        "29": {
+          "type": "WIDGET",
+          "widgetId": "widget_42",
+          "bbox": {
+            "left": 62,
+            "right": 20,
+            "top": "6px",
+            "height": "32px"
+          },
+          "setting": {
+            "autoProps": {
+              "width": true
+            },
+            "lockParent": true
+          }
+        },
+        "30": {
+          "type": "WIDGET",
+          "widgetId": "widget_43",
+          "setting": {
+            "lockParent": true
+          },
+          "bbox": {
+            "left": 25,
+            "top": "8px",
+            "width": "24px",
+            "height": "24px"
+          }
+        }
+      },
+      "order": [
+        "29",
+        "30"
+      ]
+    }
+  },
+  "widgets": {
+    "widget_42": {
+      "config": {
+        "text": "<p>DEFAULT TEXT</p>"
+      },
+      "uri": "widgets/common/text/"
+    },
+    "widget_43": {
+      "uri": "widgets/common/image/",
+      "config": {
+        "styleConfig": {
+          "shape": "round",
+          "borderRadius": {
+            "number": [
+              50,
+              50,
+              50,
+              50
+            ],
+            "unit": "%"
+          }
+        },
+        "functionConfig": {
+          "altText": "",
+          "toolTip": "",
+          "fileName": "",
+          "linkParam": {},
+          "imageParam": {
+            "url": "#",
+            "originalUrl": "#",
+            "fileName": null,
+            "originalName": null,
+            "imgSourceType": "BY_URL"
+          },
+          "src": "",
+          "scale": "Fit",
+          "widgetWidth": 24,
+          "widgetHeight": 24
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="238px" height="160px" viewBox="0 0 238 160" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>blank-scrolling</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Style" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="00-EXB-Icon-&amp;-Thumbnail" transform="translate(-467.000000, -1920.000000)">
+            <g id="blank-scrolling" transform="translate(467.000000, 1920.000000)">
+                <rect id="Background" fill="#F9FEFF" x="0" y="0" width="238" height="160"></rect>
+                <rect id="window" stroke="#AADFEF" fill="#F5FEFF" fill-rule="nonzero" x="10.5" y="11.5" width="217" height="139" rx="10"></rect>
+                <g id="Title" transform="translate(10.000000, 10.000000)" fill-rule="nonzero">
+                    <path d="M0.5,15.5 L217.5,15.5 L217.5,10 C217.5,4.75329488 213.246705,0.5 208,0.5 L10,0.5 C4.75329488,0.5 0.5,4.75329488 0.5,10 L0.5,15.5 Z" id="title" stroke="#AADFEF" fill-opacity="0.1" fill="#00C9DD"></path>
+                    <path d="M15,11 C13.3431458,11 12,9.65685425 12,8 C12,6.34314575 13.3431458,5 15,5 C16.6568542,5 18,6.34314575 18,8 C18,9.65685425 16.6568542,11 15,11 Z M27,11 C25.3431458,11 24,9.65685425 24,8 C24,6.34314575 25.3431458,5 27,5 C28.6568542,5 30,6.34314575 30,8 C30,9.65685425 28.6568542,11 27,11 Z M39,11 C37.3431458,11 36,9.65685425 36,8 C36,6.34314575 37.3431458,5 39,5 C40.6568542,5 42,6.34314575 42,8 C42,9.65685425 40.6568542,11 39,11 Z" id="buttons" fill="#00A6B6" opacity="0.3"></path>
+                </g>
+                <g id="T3" transform="translate(18.000000, 34.000000)">
+                    <rect id="Layout" fill-opacity="0.4" fill="#00C9DD" x="40" y="33" width="60" height="40"></rect>
+                    <g id="Arrow" transform="translate(67.000000, 0.000000)">
+                        <path d="M3,3 L3,26" stroke="#00C9DD"></path>
+                        <polygon id="Triangle" fill="#00C9DD" points="3 0 6 6 0 6"></polygon>
+                        <polygon id="Triangle" fill="#00C9DD" points="3 29 0 23 6 23"></polygon>
+                    </g>
+                    <path d="M2,2 L2,12 L0,12 L0,2 L0,0 L12,0 L12,2 L2,2 Z M200,2 L190,2 L190,0 L202,0 L202,12 L200,12 L200,2 Z M2,106 L12,106 L12,108 L0,108 L0,96 L2,96 L2,106 Z M200,106 L200,96 L202,96 L202,108 L190,108 L190,106 L200,106 Z" id="Area" fill-opacity="0.4" fill="#00C9DD"></path>
+                    <g id="Arrow" transform="translate(67.000000, 77.000000)">
+                        <path d="M3,3 L3,27.0177588" stroke="#00C9DD"></path>
+                        <polygon id="Triangle" fill="#00C9DD" points="3 0 6 6 0 6"></polygon>
+                        <polygon id="Triangle" fill="#00C9DD" points="3 31 0 25 6 25"></polygon>
+                    </g>
+                    <g id="Arrow" transform="translate(0.000000, 50.000000)">
+                        <path d="M33,3 L3,3" stroke="#00C9DD"></path>
+                        <polygon id="Triangle" fill="#00C9DD" points="36 3 30 6 30 1.8369702e-16"></polygon>
+                        <polygon id="Triangle" fill="#00C9DD" points="0 3 6 0 6 6"></polygon>
+                    </g>
+                    <g id="Arrow" transform="translate(104.000000, 50.000000)">
+                        <path d="M95,3 L3,3" stroke="#00C9DD"></path>
+                        <polygon id="Triangle" fill="#00C9DD" points="98 3 92 6 92 1.8369702e-16"></polygon>
+                        <polygon id="Triangle" fill="#00C9DD" points="0 3 6 0 6 6"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
