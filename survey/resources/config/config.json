@@ -1,0 +1,480 @@
+{
+  "pages": {
+    "page_0": {
+      "id": "page_0",
+      "mode": "FIT_WINDOW",
+      "type": "NORMAL",
+      "layout": {
+        "LARGE": "layout_0"
+      },
+      "isDefault": true,
+      "label": "Page 1",
+      "isVisible": true
+    }
+  },
+  "layouts": {
+    "layout_0": {
+      "type": "FIXED",
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "bbox": {
+            "left": 0,
+            "top": 0,
+            "width": "65.00%",
+            "height": "100.0000%",
+            "right": "500px",
+            "bottom": 0
+          },
+          "widgetId": "widget_1",
+          "setting": {
+            "autoProps": {
+              "right": true,
+              "left": false,
+              "top": false,
+              "bottom": false,
+              "height": true
+            },
+            "order": 0,
+            "lockParent": false,
+            "lockLayout": false
+          }
+        },
+        "1": {
+          "type": "WIDGET",
+          "bbox": {
+            "left": "60.8997%",
+            "top": 0,
+            "width": "35.00%",
+            "height": "100.0000%",
+            "right": 0,
+            "bottom": 0
+          },
+          "widgetId": "widget_2",
+          "setting": {
+            "autoProps": {
+              "right": false,
+              "left": true,
+              "top": false,
+              "bottom": false,
+              "height": true
+            },
+            "order": 0,
+            "lockParent": false,
+            "lockLayout": false,
+            "vCenter": false,
+            "hCenter": false
+          },
+          "isPending": false
+        }
+      },
+      "order": [
+        "0",
+        "1"
+      ]
+    },
+    "layout_1": {
+      "type": "FIXED",
+      "label": "Map FixedLayout"
+    }
+  },
+  "exbVersion": "1.0.0",
+  "mainSizeMode": "LARGE",
+  "theme": "themes/default/",
+  "forBuilderAttributes": {
+    "lockLayout": false
+  },
+  "template": "blankfullscreen",
+  "attributes": {
+    "portalUrl": "https://esridevbeijing.maps.arcgis.com"
+  },
+  "themeManifest": {
+    "name": "default",
+    "label": "Default",
+    "type": "theme",
+    "thumbnails ": [],
+    "colors": {
+      "primary": "#315dfc",
+      "secondary": "#00c3cc",
+      "success": "#00cca5",
+      "info": "#09acf8",
+      "warning": "#ffab21",
+      "danger": "#f6146f",
+      "light": "#fafbfc",
+      "dark": "#2d3235"
+    },
+    "font": {
+      "fontFamily": "Avenir Next",
+      "color": "#fff"
+    },
+    "version": "1.0.0",
+    "exbVersion": "1.0.0",
+    "supportedLocales": [
+      "en",
+      "ar",
+      "bs",
+      "ca",
+      "cs",
+      "da",
+      "de",
+      "el",
+      "es",
+      "et",
+      "fi",
+      "fr",
+      "he",
+      "hr",
+      "hu",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "lt",
+      "lv",
+      "nb",
+      "nl",
+      "pl",
+      "pt-br",
+      "pt-pt",
+      "ro",
+      "ru",
+      "sl",
+      "sr",
+      "sv",
+      "th",
+      "tr",
+      "zh-cn",
+      "uk",
+      "vi",
+      "zh-hk",
+      "zh-tw"
+    ],
+    "translatedLocales": [
+      "en",
+      "ar",
+      "bs",
+      "ca",
+      "cs",
+      "da",
+      "de",
+      "el",
+      "es",
+      "et",
+      "fi",
+      "fr",
+      "he",
+      "hr",
+      "hu",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "lt",
+      "lv",
+      "nb",
+      "nl",
+      "pl",
+      "pt-br",
+      "pt-pt",
+      "ro",
+      "ru",
+      "sl",
+      "sr",
+      "sv",
+      "th",
+      "tr",
+      "zh-cn",
+      "uk",
+      "vi",
+      "zh-hk",
+      "zh-tw"
+    ],
+    "styleFiles": {
+      "css": false,
+      "js": false
+    }
+  },
+  "widgets": {
+    "widget_1": {
+      "uri": "widgets/arcgis/arcgis-map/",
+      "version": "1.0.0",
+      "label": "Map 1",
+      "config": {
+        "toolConifg": {
+          "canZoom": true,
+          "canHome": true,
+          "canSearch": true
+        },
+        "isUseCustomMapState": false,
+        "initialMapDataSourceID": "dataSource_1",
+        "initialMapState": null
+      },
+      "id": "widget_1",
+      "layouts": {
+        "MapFixedLayout": {
+          "LARGE": "layout_1"
+        }
+      },
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_1"
+        }
+      ]
+    },
+    "widget_2": {
+      "uri": "widgets/survey/",
+      "version": "1.0.0",
+      "label": "Survey1 1",
+      "config": {
+        "surveyItemId": "99417745e54546c0b0e44981eee188a5",
+        "portalUrl": "",
+        "embeds": [
+          "fullScreen",
+          "onSubmitted"
+        ],
+        "hides": [
+          "navbar",
+          "header",
+          "description",
+          "footer",
+          "theme"
+        ],
+        "activeLinkData": true,
+        "layerViewInfo": {
+          "jimuMapViewId": "widget_1-dataSource_1",
+          "jimuLayerId": "Eat_in_San_Diego_92",
+          "datasourceId": "dataSource_1-Eat_in_San_Diego_92",
+          "rootDatasourceId": "dataSource_1"
+        },
+        "fieldQuestionMapping": [
+          {
+            "field": "geometry",
+            "question": "location"
+          },
+          {
+            "field": "RestaurantName",
+            "question": "name"
+          }
+        ],
+        "selectedSurvey": {
+          "id": "99417745e54546c0b0e44981eee188a5",
+          "owner": "dmart",
+          "title": "TestingSurvey",
+          "created": 1585170039000,
+          "tags": [
+            "exb"
+          ],
+          "thumbnail": "thumbnail/ago_downloaded.png",
+          "formItemInfo": {
+            "id": "99417745e54546c0b0e44981eee188a5",
+            "owner": "dmart",
+            "created": 1585170039000,
+            "isOrgItem": true,
+            "modified": 1585870527000,
+            "guid": null,
+            "name": "undefined",
+            "title": "TestingSurvey",
+            "type": "Form",
+            "typeKeywords": [
+              "Form",
+              "Survey123",
+              "Survey123 Hub",
+              "xForm"
+            ],
+            "description": null,
+            "tags": [
+              "exb"
+            ],
+            "snippet": null,
+            "thumbnail": "thumbnail/ago_downloaded.png",
+            "documentation": null,
+            "extent": [],
+            "categories": [],
+            "spatialReference": null,
+            "accessInformation": null,
+            "licenseInfo": null,
+            "culture": "english (united states)",
+            "properties": null,
+            "url": null,
+            "proxyFilter": null,
+            "access": "org",
+            "size": -1,
+            "appCategories": [],
+            "industries": [],
+            "languages": [],
+            "largeThumbnail": null,
+            "banner": null,
+            "screenshots": [],
+            "listed": false,
+            "ownerFolder": "e2efac43a2c74d7a9a69d9c391f5dbe3",
+            "protected": false,
+            "numComments": 0,
+            "numRatings": 0,
+            "avgRating": 0,
+            "numViews": 0,
+            "scoreCompleteness": 16,
+            "groupDesignations": null
+          },
+          "form": {
+            "layerName": "survey",
+            "portalUrl": "https://www.arcgis.com",
+            "header": {
+              "isVisible": true,
+              "content": ""
+            },
+            "subHeader": {
+              "isVisible": true,
+              "content": ""
+            },
+            "questions": [],
+            "rules": [],
+            "version": "3.9",
+            "themes": [
+              {
+                "id": null,
+                "name": "theme-color1",
+                "isEnabled": true,
+                "header": {
+                  "backgroundColor": "#31872E",
+                  "textColor": "#ffffff"
+                },
+                "form": {
+                  "backgroundColor": "#ffffff",
+                  "backgroundOpacity": 1,
+                  "textColor": "#505050",
+                  "primaryColor": "#31872E",
+                  "primaryTextColor": "#ffffff",
+                  "inputTextColor": "#505050",
+                  "inputBackgroundColor": "#ffffff"
+                },
+                "webpage": {
+                  "backgroundColor": "#B7DCC7"
+                }
+              }
+            ],
+            "footer": {
+              "isVisible": true,
+              "content": ""
+            },
+            "submit": {
+              "buttonText": ""
+            },
+            "settings": {
+              "thankYouScreenContent": "",
+              "openStatusInfo": {
+                "status": "open",
+                "schedule": {
+                  "start": null,
+                  "end": null
+                },
+                "closedStatusContent": ""
+              },
+              "recordStartEndTime": {
+                "isEnabled": false,
+                "fieldInfos": []
+              },
+              "notificationsInfo": {},
+              "isVersionLocked": true,
+              "multiSubmissionInfo": {
+                "maxAllowed": 0,
+                "showSubmitAnotherTip": false
+              },
+              "draftInfo": {
+                "isEnabled": false
+              }
+            }
+          },
+          "reportMerge": {
+            "templateItems": []
+          },
+          "featureService": {
+            "source": {
+              "itemId": "",
+              "url": "",
+              "isView": false,
+              "isRelatedToFormItem": false,
+              "count": -1,
+              "initialized": false,
+              "exist": false,
+              "featureServiceReachable": false,
+              "surveyFeatureLayer": {
+                "name": null,
+                "fields": []
+              }
+            },
+            "metadata": {
+              "itemId": "",
+              "url": "",
+              "isView": false,
+              "isRelatedToFormItem": false,
+              "count": -1,
+              "initialized": false,
+              "exist": false,
+              "featureServiceReachable": false,
+              "surveyFeatureLayer": {
+                "name": null,
+                "fields": []
+              }
+            },
+            "fieldworker": {
+              "itemId": "",
+              "url": "",
+              "isView": true,
+              "isRelatedToFormItem": false
+            },
+            "stakeholder": {
+              "itemId": "",
+              "url": "",
+              "isView": true,
+              "isRelatedToFormItem": false
+            }
+          }
+        }
+      },
+      "id": "widget_2",
+      "useMapWidgetIds": [
+        "widget_1"
+      ],
+      "outputDataSources": [
+        "widget_2-output"
+      ],
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_1-Eat_in_San_Diego_92",
+          "rootDataSourceId": "dataSource_1"
+        }
+      ]
+    }
+  },
+  "widgetsManifest": {},
+  "views": {},
+  "sections": {},
+  "dialogs": {},
+  "dataSources": {
+    "dataSource_1": {
+      "type": "WEB_MAP",
+      "itemId": "881596ee57e84618b98232584d36e37d",
+      "id": "dataSource_1",
+      "label": "ExB Eat in Downtown San Diego",
+      "portalUrl": "https://esridevbeijing.maps.arcgis.com"
+    },
+    "widget_2-output": {
+      "id": "widget_2-output",
+      "label": "Survey1 1 Query Result",
+      "type": "FEATURE_LAYER",
+      "originDataSources": [
+        {
+          "dataSourceId": "dataSource_1-Eat_in_San_Diego_92",
+          "rootDataSourceId": "dataSource_1"
+        }
+      ],
+      "isOutputFromWidget": true
+    }
+  },
+  "messageConfigs": {},
+  "pageStructure": [
+    {
+      "page_0": []
+    }
+  ]
+}
