@@ -1,6 +1,0 @@
-{
-  "exbVersion": "1.0.0-beta",
-  "exbBuildNum": "VERSION_NAME_FROM_JENKINS",
-  "exbBuildDate": "BUILD_DATE_FROM_JENKINS",
-  "productVersion": "ArcGIS Experience Builder"
-}

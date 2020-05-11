@@ -1,8 +1,0 @@
-{
-  "env": {
-    "prod": {
-      "portalUrl": "https://edn.maps.arcgis.com",
-      "clientId": "FE0HHamg0XSRXtpj"
-    }
-  }
-}

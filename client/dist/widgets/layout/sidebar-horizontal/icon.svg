@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <g id="Style" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="0-UI-icons" transform="translate(-425.000000, -790.000000)" fill="#FFFFFF" fill-rule="nonzero">
-            <path d="M440,792 L426,792 L426,804 C426,804.552285 426.447715,805 427,805 L439,805 C439.552285,805 440,804.552285 440,804 L440,792 Z M427,790 L439,790 C440.104569,790 441,790.895431 441,792 L441,804 C441,805.104569 440.104569,806 439,806 L427,806 C425.895431,806 425,805.104569 425,804 L425,792 C425,790.895431 425.895431,790 427,790 Z M430,792 L431,792 L431,805 L430,805 L430,792 Z" id="widget-sidebar-horizontal"></path>
-        </g>
-    </g>
-</svg>
