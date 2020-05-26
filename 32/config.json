@@ -1,0 +1,246 @@
+{
+  "pages": {
+    "page_0": {
+      "id": "page_0",
+      "mode": "FIT_WINDOW",
+      "type": "NORMAL",
+      "layout": {
+        "LARGE": "layout_0"
+      },
+      "isDefault": true,
+      "label": "Page 1",
+      "isVisible": true
+    }
+  },
+  "layouts": {
+    "layout_0": {
+      "type": "FIXED",
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "bbox": {
+            "left": 0,
+            "top": 0,
+            "width": "41.9495%",
+            "height": "62.7100%",
+            "right": 743.046875,
+            "bottom": 298.3203125
+          },
+          "widgetId": "widget_1",
+          "setting": {
+            "autoProps": {
+              "right": true,
+              "left": false,
+              "top": false,
+              "bottom": true
+            },
+            "order": 0,
+            "lockParent": false,
+            "lockLayout": false
+          }
+        },
+        "1": {
+          "type": "WIDGET",
+          "bbox": {
+            "left": 732.9996799999999,
+            "top": "11.1250%",
+            "width": "31.2500%",
+            "height": "37.5000%",
+            "right": "11.4844%",
+            "bottom": "51.3750%"
+          },
+          "widgetId": "widget_2",
+          "setting": {
+            "autoProps": {
+              "right": false,
+              "left": true,
+              "top": false,
+              "bottom": true
+            }
+          }
+        }
+      },
+      "order": [
+        "0",
+        "1"
+      ]
+    },
+    "layout_1": {
+      "type": "FIXED",
+      "label": "Map FixedLayout"
+    }
+  },
+  "exbVersion": "1.0.0",
+  "mainSizeMode": "LARGE",
+  "theme": "themes/default/",
+  "forBuilderAttributes": {
+    "lockLayout": false
+  },
+  "template": "blankfullscreen",
+  "attributes": {
+    "portalUrl": "https://esridevbeijing.maps.arcgis.com"
+  },
+  "themeManifest": {
+    "name": "default",
+    "label": "Default",
+    "type": "theme",
+    "thumbnails ": [],
+    "colors": {
+      "primary": "#315dfc",
+      "secondary": "#00c3cc",
+      "success": "#00cca5",
+      "info": "#09acf8",
+      "warning": "#ffab21",
+      "danger": "#f6146f",
+      "light": "#fafbfc",
+      "dark": "#2d3235"
+    },
+    "font": {
+      "fontFamily": "Avenir Next",
+      "color": "#fff"
+    },
+    "version": "1.0.0",
+    "exbVersion": "1.0.0",
+    "supportedLocales": [
+      "en",
+      "ar",
+      "bs",
+      "ca",
+      "cs",
+      "da",
+      "de",
+      "el",
+      "es",
+      "et",
+      "fi",
+      "fr",
+      "he",
+      "hr",
+      "hu",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "lt",
+      "lv",
+      "nb",
+      "nl",
+      "pl",
+      "pt-br",
+      "pt-pt",
+      "ro",
+      "ru",
+      "sl",
+      "sr",
+      "sv",
+      "th",
+      "tr",
+      "zh-cn",
+      "uk",
+      "vi",
+      "zh-hk",
+      "zh-tw"
+    ],
+    "translatedLocales": [
+      "en",
+      "ar",
+      "bs",
+      "ca",
+      "cs",
+      "da",
+      "de",
+      "el",
+      "es",
+      "et",
+      "fi",
+      "fr",
+      "he",
+      "hr",
+      "hu",
+      "id",
+      "it",
+      "ja",
+      "ko",
+      "lt",
+      "lv",
+      "nb",
+      "nl",
+      "pl",
+      "pt-br",
+      "pt-pt",
+      "ro",
+      "ru",
+      "sl",
+      "sr",
+      "sv",
+      "th",
+      "tr",
+      "zh-cn",
+      "uk",
+      "vi",
+      "zh-hk",
+      "zh-tw"
+    ],
+    "styleFiles": {
+      "css": false,
+      "js": false
+    }
+  },
+  "widgets": {
+    "widget_1": {
+      "uri": "widgets/arcgis/arcgis-map/",
+      "version": "1.0.0",
+      "label": "Map 1",
+      "config": {
+        "toolConifg": {
+          "canZoom": true,
+          "canHome": true,
+          "canSearch": true
+        },
+        "isUseCustomMapState": false,
+        "initialMapDataSourceID": "dataSource_1",
+        "initialMapState": null
+      },
+      "id": "widget_1",
+      "layouts": {
+        "MapFixedLayout": {
+          "LARGE": "layout_1"
+        }
+      },
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_1"
+        }
+      ]
+    },
+    "widget_2": {
+      "uri": "widgets/common/embed/",
+      "version": "1.0.0",
+      "label": "Embed 1",
+      "config": {
+        "embedType": "url",
+        "staticUrl": "https://survey123.arcgis.com/share/27327bf852a44870b91bd213b0c7ca55?portalUrl=https://esridevbeijing.maps.arcgis.com"
+      },
+      "id": "widget_2"
+    }
+  },
+  "widgetsManifest": {},
+  "views": {},
+  "sections": {},
+  "dialogs": {},
+  "dataSources": {
+    "dataSource_1": {
+      "type": "WEB_MAP",
+      "itemId": "9cbf246e913e4c55aa6453bbcf5b9a99",
+      "id": "dataSource_1",
+      "label": "US Breweries",
+      "portalUrl": "https://esridevbeijing.maps.arcgis.com"
+    }
+  },
+  "messageConfigs": {},
+  "pageStructure": [
+    {
+      "page_0": []
+    }
+  ]
+}
