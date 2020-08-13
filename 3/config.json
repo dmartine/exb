@@ -1,0 +1,206 @@
+{
+  "pages": {
+    "page_0": {
+      "id": "page_0",
+      "mode": "FIT_WINDOW",
+      "type": "NORMAL",
+      "layout": {
+        "LARGE": "layout_0"
+      },
+      "isDefault": true,
+      "isVisible": true,
+      "label": "Page 1",
+      "header": true
+    }
+  },
+  "layouts": {
+    "layout_0": {
+      "type": "FIXED",
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "bbox": {
+            "left": 0,
+            "right": "42.0578%",
+            "top": 0,
+            "bottom": 0,
+            "width": "57.9422%",
+            "height": "100.0000%"
+          },
+          "widgetId": "widget_1",
+          "setting": {
+            "autoProps": {
+              "left": false,
+              "right": true,
+              "top": false,
+              "bottom": false,
+              "height": "STRETCH"
+            },
+            "hCenter": false,
+            "vCenter": false
+          }
+        },
+        "1": {
+          "type": "WIDGET",
+          "bbox": {
+            "left": "57.9489%",
+            "right": 0,
+            "top": 0,
+            "bottom": 0,
+            "width": "42.0511%",
+            "height": "100.0000%"
+          },
+          "widgetId": "widget_2",
+          "setting": {
+            "autoProps": {
+              "right": false,
+              "left": true,
+              "top": false,
+              "bottom": false,
+              "height": "STRETCH"
+            },
+            "hCenter": false,
+            "vCenter": false
+          }
+        }
+      },
+      "order": [
+        "0",
+        "1"
+      ]
+    },
+    "layout_1": {
+      "type": "FIXED"
+    },
+    "layout_2": {
+      "type": "FIXED",
+      "label": "Map FixedLayout"
+    }
+  },
+  "exbVersion": "1.1.0",
+  "mainSizeMode": "LARGE",
+  "theme": "themes/default/",
+  "forBuilderAttributes": {
+    "lockLayout": false
+  },
+  "template": "blankfullscreen",
+  "attributes": {
+    "portalUrl": "https://esridevbeijing.maps.arcgis.com",
+    "clientId": "3V9Mq5y21C1ifT3F"
+  },
+  "widgets": {
+    "widget_1": {
+      "uri": "widgets/arcgis/arcgis-map/",
+      "version": "1.1.0",
+      "label": "Map 1",
+      "config": {
+        "toolConifg": {
+          "canZoom": true,
+          "canHome": true,
+          "canSearch": true
+        },
+        "isUseCustomMapState": false
+      },
+      "id": "widget_1",
+      "layouts": {
+        "MapFixedLayout": {
+          "LARGE": "layout_2"
+        }
+      },
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_1",
+          "mainDataSourceId": "dataSource_1"
+        }
+      ]
+    },
+    "widget_2": {
+      "uri": "widgets/survey123/",
+      "version": "1.1.0",
+      "label": "Survey 1",
+      "config": {
+        "surveyItemId": "68489f0f7c934313a5327dc69611b2e5",
+        "portalUrl": "",
+        "embeds": [
+          "fullScreen",
+          "onSubmitted"
+        ],
+        "hides": [
+          "navbar",
+          "header",
+          "description",
+          "footer",
+          "theme"
+        ],
+        "activeLinkData": true,
+        "layerViewInfo": {
+          "jimuMapViewId": "widget_1-dataSource_1",
+          "jimuLayerId": "dataSource_1-1730b72703c-layer-0",
+          "datasourceId": "dataSource_1-1730b72703c-layer-0",
+          "rootDatasourceId": "dataSource_1"
+        },
+        "fieldQuestionMapping": [
+          {
+            "field": "ParkName",
+            "question": "favorite_national_park"
+          }
+        ]
+      },
+      "id": "widget_2",
+      "useMapWidgetIds": [
+        "widget_1"
+      ],
+      "outputDataSources": [
+        "widget_2-output"
+      ],
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_1-1730b72703c-layer-0",
+          "mainDataSourceId": "dataSource_1-1730b72703c-layer-0",
+          "rootDataSourceId": "dataSource_1"
+        }
+      ]
+    }
+  },
+  "widgetsManifest": {},
+  "views": {},
+  "sections": {},
+  "dialogs": {},
+  "dataSources": {
+    "dataSource_1": {
+      "type": "WEB_SCENE",
+      "itemId": "efbc5d8024bb4cb3ba4def07800741ff",
+      "id": "dataSource_1",
+      "portalUrl": "https://esridevbeijing.maps.arcgis.com"
+    },
+    "widget_2-output": {
+      "id": "widget_2-output",
+      "label": "Survey 1 Query Result",
+      "type": "FEATURE_LAYER",
+      "originDataSources": [
+        {
+          "dataSourceId": "dataSource_1-1730b72703c-layer-0",
+          "mainDataSourceId": "dataSource_1-1730b72703c-layer-0",
+          "rootDataSourceId": "dataSource_1"
+        }
+      ],
+      "isOutputFromWidget": true
+    }
+  },
+  "messageConfigs": {},
+  "pageStructure": [
+    {
+      "page_0": []
+    }
+  ],
+  "header": {
+    "layout": {
+      "LARGE": "layout_1"
+    },
+    "height": {
+      "LARGE": 75
+    },
+    "backgroundColor": "var(--success)"
+  },
+  "timestamp": 1597374155729
+}
