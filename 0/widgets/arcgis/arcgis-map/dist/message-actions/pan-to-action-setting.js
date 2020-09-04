@@ -1,0 +1,180 @@
+System.register(["jimu-arcgis","jimu-core","jimu-ui/advanced/data-source-selector","jimu-ui/advanced/setting-components"], function(__WEBPACK_DYNAMIC_EXPORT__) {
+	var __WEBPACK_EXTERNAL_MODULE_jimu_arcgis__, __WEBPACK_EXTERNAL_MODULE_jimu_core__, __WEBPACK_EXTERNAL_MODULE_jimu_ui_advanced_data_source_selector__, __WEBPACK_EXTERNAL_MODULE_jimu_ui_advanced_setting_components__;
+	return {
+		setters: [
+			function(module) {
+				__WEBPACK_EXTERNAL_MODULE_jimu_arcgis__ = module;
+			},
+			function(module) {
+				__WEBPACK_EXTERNAL_MODULE_jimu_core__ = module;
+			},
+			function(module) {
+				__WEBPACK_EXTERNAL_MODULE_jimu_ui_advanced_data_source_selector__ = module;
+			},
+			function(module) {
+				__WEBPACK_EXTERNAL_MODULE_jimu_ui_advanced_setting_components__ = module;
+			}
+		],
+		execute: function() {
+			__WEBPACK_DYNAMIC_EXPORT__(
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = function(exports) {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
+/******/ 	// create a fake namespace object
+/******/ 	// mode & 1: value is a module id, require it
+/******/ 	// mode & 2: merge all properties of value into the ns
+/******/ 	// mode & 4: return value when already ns object
+/******/ 	// mode & 8|1: behave like require
+/******/ 	__webpack_require__.t = function(value, mode) {
+/******/ 		if(mode & 1) value = __webpack_require__(value);
+/******/ 		if(mode & 8) return value;
+/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
+/******/ 		var ns = Object.create(null);
+/******/ 		__webpack_require__.r(ns);
+/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
+/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
+/******/ 		return ns;
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = "./extensions/widgets/arcgis/arcgis-map/src/message-actions/pan-to-action-setting.tsx");
+/******/ })
+/************************************************************************/
+/******/ ({
+
+/***/ "./extensions/widgets/arcgis/arcgis-map/src/message-actions/pan-to-action-setting.tsx":
+/*!********************************************************************************************!*\
+  !*** ./extensions/widgets/arcgis/arcgis-map/src/message-actions/pan-to-action-setting.tsx ***!
+  \********************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jimu_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jimu-core */ \"jimu-core\");\n/* harmony import */ var jimu_core__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jimu_core__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var jimu_ui_advanced_setting_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jimu-ui/advanced/setting-components */ \"jimu-ui/advanced/setting-components\");\n/* harmony import */ var jimu_ui_advanced_setting_components__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jimu_ui_advanced_setting_components__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var jimu_arcgis__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! jimu-arcgis */ \"jimu-arcgis\");\n/* harmony import */ var jimu_arcgis__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(jimu_arcgis__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var jimu_ui_advanced_data_source_selector__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! jimu-ui/advanced/data-source-selector */ \"jimu-ui/advanced/data-source-selector\");\n/* harmony import */ var jimu_ui_advanced_data_source_selector__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(jimu_ui_advanced_data_source_selector__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _setting_translations_default__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../setting/translations/default */ \"./extensions/widgets/arcgis/arcgis-map/src/setting/translations/default.ts\");\nvar __extends = (undefined && undefined.__extends) || (function () {\n    var extendStatics = function (d, b) {\n        extendStatics = Object.setPrototypeOf ||\n            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||\n            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };\n        return extendStatics(d, b);\n    };\n    return function (d, b) {\n        extendStatics(d, b);\n        function __() { this.constructor = d; }\n        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());\n    };\n})();\nvar __makeTemplateObject = (undefined && undefined.__makeTemplateObject) || function (cooked, raw) {\n    if (Object.defineProperty) { Object.defineProperty(cooked, \"raw\", { value: raw }); } else { cooked.raw = raw; }\n    return cooked;\n};\n/** @jsx jsx */\n\n\n\n\n\nvar DSSelectorTypes = Object(jimu_core__WEBPACK_IMPORTED_MODULE_0__[\"Immutable\"])([jimu_ui_advanced_data_source_selector__WEBPACK_IMPORTED_MODULE_3__[\"AllDataSourceTypes\"].FeatureLayer, jimu_ui_advanced_data_source_selector__WEBPACK_IMPORTED_MODULE_3__[\"AllDataSourceTypes\"].FeatureQuery]);\nvar _PanToActionSetting = /** @class */ (function (_super) {\n    __extends(_PanToActionSetting, _super);\n    function _PanToActionSetting(props) {\n        var _this = _super.call(this, props) || this;\n        _this.modalStyle = { position: 'absolute', top: '0', bottom: '0', width: '259px',\n            height: 'auto', borderRight: '', borderBottom: '', paddingBottom: '1px' };\n        _this.getInitConfig = function () {\n            var useDataSource = null;\n            if (!_this.props.config.useDataSource) {\n                useDataSource = null;\n            }\n            else {\n                useDataSource = _this.checkAndGetInitUseDataSource(_this.props.messageWidgetId, _this.props.config.useDataSource);\n            }\n            return {\n                useDataSource: useDataSource\n            };\n        };\n        _this.checkAndGetInitUseDataSource = function (widgetId, oldUseDataSource) {\n            var config = Object(jimu_core__WEBPACK_IMPORTED_MODULE_0__[\"getAppStore\"])().getState().appStateInBuilder.appConfig;\n            var widgetJson = config.widgets[widgetId];\n            var initUseDataSource = null;\n            var isMapDs = false;\n            var dsId = widgetJson.useDataSources && widgetJson.useDataSources[0] && widgetJson.useDataSources[0].dataSourceId;\n            if (!dsId) {\n                return null;\n            }\n            var dsJson = config.dataSources[dsId];\n            if (dsJson && ((dsJson.type === jimu_arcgis__WEBPACK_IMPORTED_MODULE_2__[\"ArcGISDataSourceTypes\"].WebMap) || (dsJson.type === jimu_arcgis__WEBPACK_IMPORTED_MODULE_2__[\"ArcGISDataSourceTypes\"].WebScene))) {\n                isMapDs = true;\n            }\n            if (isMapDs) {\n                // webmap or webscene ds\n                var isUseOldDs = false;\n                if (widgetJson && widgetJson.useDataSources) {\n                    for (var i = 0; i < widgetJson.useDataSources.length; i++) {\n                        if (widgetJson.useDataSources[i].dataSourceId === oldUseDataSource.rootDataSourceId) {\n                            isUseOldDs = true;\n                            break;\n                        }\n                    }\n                }\n                if (isUseOldDs) {\n                    initUseDataSource = oldUseDataSource;\n                }\n                else {\n                    initUseDataSource = null;\n                }\n            }\n            else {\n                // featurelayer ds\n                initUseDataSource = null;\n            }\n            return initUseDataSource;\n        };\n        _this.handleTriggerLayerChange = function (useDataSources) {\n            if (useDataSources && useDataSources.length > 0) {\n                _this.handleTriggerLayerSelected(useDataSources[0]);\n            }\n            else {\n                _this.handleRemoveLayerForTriggerLayer();\n            }\n        };\n        _this.handleTriggerLayerSelected = function (currentSelectedDs) {\n            _this.props.onSettingChange({\n                actionId: _this.props.actionId,\n                config: _this.props.config.set('useDataSource', currentSelectedDs)\n            });\n        };\n        _this.handleRemoveLayerForTriggerLayer = function () {\n            _this.props.onSettingChange({\n                actionId: _this.props.actionId,\n                config: _this.props.config.set('useDataSource', null)\n            });\n        };\n        _this.getDsRootIdsByWidgetId = function (wId) {\n            var _a, _b, _c, _d;\n            var appConfig = (_b = (_a = Object(jimu_core__WEBPACK_IMPORTED_MODULE_0__[\"getAppStore\"])().getState()) === null || _a === void 0 ? void 0 : _a.appStateInBuilder) === null || _b === void 0 ? void 0 : _b.appConfig;\n            var widgetJson = (_c = appConfig === null || appConfig === void 0 ? void 0 : appConfig.widgets) === null || _c === void 0 ? void 0 : _c[wId];\n            var rootIds = [];\n            var dsM = jimu_core__WEBPACK_IMPORTED_MODULE_0__[\"DataSourceManager\"].getInstance();\n            (_d = widgetJson === null || widgetJson === void 0 ? void 0 : widgetJson.useDataSources) === null || _d === void 0 ? void 0 : _d.forEach(function (useDS) {\n                var ds = dsM.getDataSource(useDS.dataSourceId);\n                if ((ds === null || ds === void 0 ? void 0 : ds.type) === jimu_arcgis__WEBPACK_IMPORTED_MODULE_2__[\"ArcGISDataSourceTypes\"].WebMap || (ds === null || ds === void 0 ? void 0 : ds.type) === jimu_arcgis__WEBPACK_IMPORTED_MODULE_2__[\"ArcGISDataSourceTypes\"].WebScene) { //is root ds\n                    rootIds.push(useDS.dataSourceId);\n                }\n            });\n            return rootIds.length > 0 ? Object(jimu_core__WEBPACK_IMPORTED_MODULE_0__[\"Immutable\"])(rootIds) : undefined;\n        };\n        _this.getDsIdsByWidgetId = function (wId) {\n            var _a, _b, _c, _d, _e;\n            var appConfig = (_b = (_a = Object(jimu_core__WEBPACK_IMPORTED_MODULE_0__[\"getAppStore\"])().getState()) === null || _a === void 0 ? void 0 : _a.appStateInBuilder) === null || _b === void 0 ? void 0 : _b.appConfig;\n            var widgetJson = (_c = appConfig === null || appConfig === void 0 ? void 0 : appConfig.widgets) === null || _c === void 0 ? void 0 : _c[wId];\n            return Object(jimu_core__WEBPACK_IMPORTED_MODULE_0__[\"Immutable\"])((_e = (_d = widgetJson === null || widgetJson === void 0 ? void 0 : widgetJson.useDataSources) === null || _d === void 0 ? void 0 : _d.map(function (useDS) { return useDS.dataSourceId; })) !== null && _e !== void 0 ? _e : []);\n        };\n        _this.modalStyle.borderRight = '1px solid black';\n        _this.modalStyle.borderBottom = '1px solid black';\n        _this.state = {\n            isShowLayerList: false\n        };\n        return _this;\n    }\n    _PanToActionSetting.prototype.componentDidMount = function () {\n        var initConfig = this.getInitConfig();\n        this.props.onSettingChange({\n            actionId: this.props.actionId,\n            config: this.props.config.set('useDataSource', initConfig.useDataSource)\n        });\n    };\n    _PanToActionSetting.prototype.getStyle = function (theme) {\n        return Object(jimu_core__WEBPACK_IMPORTED_MODULE_0__[\"css\"])(templateObject_1 || (templateObject_1 = __makeTemplateObject([\"\\n      .setting-header {\\n        padding: \", \" \", \" \", \" \", \"\\n      }\\n\\n      .deleteIcon {\\n        cursor: pointer;\\n        opacity: .8;\\n      }\\n\\n      .deleteIcon:hover {\\n        opacity: 1;\\n      }\\n    \"], [\"\\n      .setting-header {\\n        padding: \", \" \", \" \", \" \", \"\\n      }\\n\\n      .deleteIcon {\\n        cursor: pointer;\\n        opacity: .8;\\n      }\\n\\n      .deleteIcon:hover {\\n        opacity: 1;\\n      }\\n    \"])), jimu_core__WEBPACK_IMPORTED_MODULE_0__[\"polished\"].rem(10), jimu_core__WEBPACK_IMPORTED_MODULE_0__[\"polished\"].rem(16), jimu_core__WEBPACK_IMPORTED_MODULE_0__[\"polished\"].rem(0), jimu_core__WEBPACK_IMPORTED_MODULE_0__[\"polished\"].rem(16));\n    };\n    _PanToActionSetting.prototype.render = function () {\n        var triggerRootIds = this.getDsRootIdsByWidgetId(this.props.messageWidgetId);\n        return Object(jimu_core__WEBPACK_IMPORTED_MODULE_0__[\"jsx\"])(\"div\", { css: this.getStyle(this.props.theme) },\n            Object(jimu_core__WEBPACK_IMPORTED_MODULE_0__[\"jsx\"])(jimu_ui_advanced_setting_components__WEBPACK_IMPORTED_MODULE_1__[\"SettingSection\"], { title: this.props.intl.formatMessage({ id: 'mapAction_TriggerLayer', defaultMessage: _setting_translations_default__WEBPACK_IMPORTED_MODULE_4__[\"default\"].mapAction_TriggerLayer }) }, Object(jimu_core__WEBPACK_IMPORTED_MODULE_0__[\"jsx\"])(jimu_ui_advanced_data_source_selector__WEBPACK_IMPORTED_MODULE_3__[\"DataSourceSelector\"], { types: DSSelectorTypes, useDataSources: (this.props.config.useDataSource && this.props.config.useDataSource.dataSourceId)\n                    ? Object(jimu_core__WEBPACK_IMPORTED_MODULE_0__[\"Immutable\"])([this.props.config.useDataSource]) : Object(jimu_core__WEBPACK_IMPORTED_MODULE_0__[\"Immutable\"])([]), fromRootDsIds: triggerRootIds, fromDsIds: triggerRootIds ? undefined : this.getDsIdsByWidgetId(this.props.messageWidgetId), closeDataSourceListOnChange: true, disableAddData: true, hideTypeDropdown: true, mustUseDataSource: true, onChange: this.handleTriggerLayerChange, widgetId: this.props.messageWidgetId, disableDataView: true, hideDataView: true })));\n    };\n    _PanToActionSetting.defaultProps = {\n        config: Object(jimu_core__WEBPACK_IMPORTED_MODULE_0__[\"Immutable\"])({\n            useDataSource: null\n        })\n    };\n    return _PanToActionSetting;\n}(jimu_core__WEBPACK_IMPORTED_MODULE_0__[\"React\"].PureComponent));\n/* harmony default export */ __webpack_exports__[\"default\"] = (jimu_core__WEBPACK_IMPORTED_MODULE_0__[\"themeUtils\"].withTheme(_PanToActionSetting));\nvar templateObject_1;\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9leHRlbnNpb25zL3dpZGdldHMvYXJjZ2lzL2FyY2dpcy1tYXAvc3JjL21lc3NhZ2UtYWN0aW9ucy9wYW4tdG8tYWN0aW9uLXNldHRpbmcudHN4LmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vZXh0ZW5zaW9ucy93aWRnZXRzL2FyY2dpcy9hcmNnaXMtbWFwL3NyYy9tZXNzYWdlLWFjdGlvbnMvcGFuLXRvLWFjdGlvbi1zZXR0aW5nLnRzeD9iMTVlIl0sInNvdXJjZXNDb250ZW50IjpbIi8qKiBAanN4IGpzeCAqL1xuaW1wb3J0IHtSZWFjdCwgY3NzLCBqc3gsIEFjdGlvblNldHRpbmdQcm9wcywgU2VyaWFsaXplZFN0eWxlcywgSW1tdXRhYmxlT2JqZWN0LCBEYXRhU291cmNlTWFuYWdlcixcbiAgdGhlbWVVdGlscywgVGhlbWVWYXJpYWJsZXMsIHBvbGlzaGVkLCBnZXRBcHBTdG9yZSwgSW1tdXRhYmxlLCBVc2VEYXRhU291cmNlLCBJTVVzZURhdGFTb3VyY2V9IGZyb20gJ2ppbXUtY29yZSc7XG5pbXBvcnQge1NldHRpbmdTZWN0aW9ufSBmcm9tICdqaW11LXVpL2FkdmFuY2VkL3NldHRpbmctY29tcG9uZW50cyc7XG5pbXBvcnQge0FyY0dJU0RhdGFTb3VyY2VUeXBlc30gZnJvbSAnamltdS1hcmNnaXMnO1xuaW1wb3J0IHtEYXRhU291cmNlU2VsZWN0b3IsIEFsbERhdGFTb3VyY2VUeXBlc30gZnJvbSAnamltdS11aS9hZHZhbmNlZC9kYXRhLXNvdXJjZS1zZWxlY3Rvcic7XG5pbXBvcnQgZGVmYXVsdE1lc3NhZ2VzIGZyb20gJy4uL3NldHRpbmcvdHJhbnNsYXRpb25zL2RlZmF1bHQnO1xuXG5pbnRlcmZhY2UgRXh0cmFQcm9wcyB7XG4gIHRoZW1lPzogVGhlbWVWYXJpYWJsZXM7XG59XG5cbmludGVyZmFjZSBTdGF0ZXMge1xuICBpc1Nob3dMYXllckxpc3Q6IGJvb2xlYW47XG59XG5cbmludGVyZmFjZSBDb25maWcge1xuICB1c2VEYXRhU291cmNlOiBVc2VEYXRhU291cmNlO1xufVxuXG5leHBvcnQgdHlwZSBJTUNvbmZpZyA9IEltbXV0YWJsZU9iamVjdDxDb25maWc+O1xuXG5jb25zdCBEU1NlbGVjdG9yVHlwZXMgPSBJbW11dGFibGUoW0FsbERhdGFTb3VyY2VUeXBlcy5GZWF0dXJlTGF5ZXIsIEFsbERhdGFTb3VyY2VUeXBlcy5GZWF0dXJlUXVlcnldKTtcblxuY2xhc3MgX1BhblRvQWN0aW9uU2V0dGluZyBleHRlbmRzIFJlYWN0LlB1cmVDb21wb25lbnQ8QWN0aW9uU2V0dGluZ1Byb3BzPElNQ29uZmlnPiAmIEV4dHJhUHJvcHMsIFN0YXRlcz57XG5cbiAgbW9kYWxTdHlsZTogYW55ID0ge3Bvc2l0aW9uOiAnYWJzb2x1dGUnLCB0b3A6ICcwJywgYm90dG9tOiAnMCcsIHdpZHRoOiAnMjU5cHgnLFxuICAgIGhlaWdodDogJ2F1dG8nLCBib3JkZXJSaWdodDogJycsIGJvcmRlckJvdHRvbTogJycsIHBhZGRpbmdCb3R0b206ICcxcHgnfTtcblxuICBjb25zdHJ1Y3Rvcihwcm9wcyl7XG4gICAgc3VwZXIocHJvcHMpO1xuXG4gICAgdGhpcy5tb2RhbFN0eWxlLmJvcmRlclJpZ2h0ID0gJzFweCBzb2xpZCBibGFjayc7XG4gICAgdGhpcy5tb2RhbFN0eWxlLmJvcmRlckJvdHRvbSA9ICcxcHggc29saWQgYmxhY2snO1xuXG4gICAgdGhpcy5zdGF0ZSA9IHtcbiAgICAgIGlzU2hvd0xheWVyTGlzdDogZmFsc2VcbiAgICB9XG4gIH1cblxuICBzdGF0aWMgZGVmYXVsdFByb3BzID0ge1xuICAgIGNvbmZpZzogSW1tdXRhYmxlKHtcbiAgICAgIHVzZURhdGFTb3VyY2U6IG51bGxcbiAgICB9KVxuICB9XG5cbiAgZ2V0SW5pdENvbmZpZyA9ICgpID0+IHtcbiAgICBsZXQgdXNlRGF0YVNvdXJjZTogSU1Vc2VEYXRhU291cmNlID0gbnVsbDtcbiAgICBpZiAoIXRoaXMucHJvcHMuY29uZmlnLnVzZURhdGFTb3VyY2UpIHtcbiAgICAgIHVzZURhdGFTb3VyY2UgPSBudWxsO1xuICAgIH0gZWxzZSB7XG4gICAgICB1c2VEYXRhU291cmNlID0gdGhpcy5jaGVja0FuZEdldEluaXRVc2VEYXRhU291cmNlKHRoaXMucHJvcHMubWVzc2FnZVdpZGdldElkLCB0aGlzLnByb3BzLmNvbmZpZy51c2VEYXRhU291cmNlKTtcbiAgICB9XG5cbiAgICByZXR1cm4ge1xuICAgICAgdXNlRGF0YVNvdXJjZTogdXNlRGF0YVNvdXJjZVxuICAgIH1cbiAgfVxuXG4gIGNoZWNrQW5kR2V0SW5pdFVzZURhdGFTb3VyY2UgPSAod2lkZ2V0SWQ6IHN0cmluZywgb2xkVXNlRGF0YVNvdXJjZTogSW1tdXRhYmxlLkltbXV0YWJsZU9iamVjdDxVc2VEYXRhU291cmNlPikgPT4ge1xuICAgIGNvbnN0IGNvbmZpZyA9IGdldEFwcFN0b3JlKCkuZ2V0U3RhdGUoKS5hcHBTdGF0ZUluQnVpbGRlci5hcHBDb25maWc7XG4gICAgY29uc3Qgd2lkZ2V0SnNvbiA9IGNvbmZpZy53aWRnZXRzW3dpZGdldElkXTtcbiAgICBsZXQgaW5pdFVzZURhdGFTb3VyY2UgPSBudWxsO1xuICAgIGxldCBpc01hcERzID0gZmFsc2U7XG5cbiAgICBjb25zdCBkc0lkID0gd2lkZ2V0SnNvbi51c2VEYXRhU291cmNlcyAmJiB3aWRnZXRKc29uLnVzZURhdGFTb3VyY2VzWzBdICYmIHdpZGdldEpzb24udXNlRGF0YVNvdXJjZXNbMF0uZGF0YVNvdXJjZUlkO1xuICAgIGlmICghZHNJZCkge1xuICAgICAgcmV0dXJuIG51bGw7XG4gICAgfVxuXG4gICAgY29uc3QgZHNKc29uID0gY29uZmlnLmRhdGFTb3VyY2VzW2RzSWRdO1xuICAgIGlmIChkc0pzb24gJiYgKChkc0pzb24udHlwZSA9PT0gQXJjR0lTRGF0YVNvdXJjZVR5cGVzLldlYk1hcCkgfHwgKGRzSnNvbi50eXBlID09PSBBcmNHSVNEYXRhU291cmNlVHlwZXMuV2ViU2NlbmUpKSkge1xuICAgICAgaXNNYXBEcyA9IHRydWU7XG4gICAgfVxuXG4gICAgaWYgKGlzTWFwRHMpIHtcbiAgICAgIC8vIHdlYm1hcCBvciB3ZWJzY2VuZSBkc1xuICAgICAgbGV0IGlzVXNlT2xkRHMgPSBmYWxzZTtcbiAgICAgIGlmICh3aWRnZXRKc29uICYmIHdpZGdldEpzb24udXNlRGF0YVNvdXJjZXMpIHtcbiAgICAgICAgZm9yIChsZXQgaSA9IDA7IGkgPCB3aWRnZXRKc29uLnVzZURhdGFTb3VyY2VzLmxlbmd0aDsgaSsrKSB7XG4gICAgICAgICAgaWYgKHdpZGdldEpzb24udXNlRGF0YVNvdXJjZXNbaV0uZGF0YVNvdXJjZUlkID09PSBvbGRVc2VEYXRhU291cmNlLnJvb3REYXRhU291cmNlSWQpIHtcbiAgICAgICAgICAgIGlzVXNlT2xkRHMgPSB0cnVlO1xuICAgICAgICAgICAgYnJlYWs7XG4gICAgICAgICAgfVxuICAgICAgICB9XG4gICAgICB9XG5cbiAgICAgIGlmIChpc1VzZU9sZERzKSB7XG4gICAgICAgIGluaXRVc2VEYXRhU291cmNlID0gb2xkVXNlRGF0YVNvdXJjZTtcbiAgICAgIH0gZWxzZSB7XG4gICAgICAgIGluaXRVc2VEYXRhU291cmNlID0gbnVsbDtcbiAgICAgIH1cbiAgICB9IGVsc2Uge1xuICAgICAgLy8gZmVhdHVyZWxheWVyIGRzXG4gICAgICBpbml0VXNlRGF0YVNvdXJjZSA9IG51bGw7XG4gICAgfVxuXG4gICAgcmV0dXJuIGluaXRVc2VEYXRhU291cmNlO1xuICB9XG5cbiAgY29tcG9uZW50RGlkTW91bnQoKSB7XG4gICAgY29uc3QgaW5pdENvbmZpZyA9IHRoaXMuZ2V0SW5pdENvbmZpZygpO1xuXG4gICAgdGhpcy5wcm9wcy5vblNldHRpbmdDaGFuZ2Uoe1xuICAgICAgYWN0aW9uSWQ6IHRoaXMucHJvcHMuYWN0aW9uSWQsXG4gICAgICBjb25maWc6IHRoaXMucHJvcHMuY29uZmlnLnNldCgndXNlRGF0YVNvdXJjZScsIGluaXRDb25maWcudXNlRGF0YVNvdXJjZSlcbiAgICB9KTtcbiAgfVxuXG4gIGdldFN0eWxlICh0aGVtZTogVGhlbWVWYXJpYWJsZXMpOiBTZXJpYWxpemVkU3R5bGVzIHtcbiAgICByZXR1cm4gY3NzYFxuICAgICAgLnNldHRpbmctaGVhZGVyIHtcbiAgICAgICAgcGFkZGluZzogJHtwb2xpc2hlZC5yZW0oMTApfSAke3BvbGlzaGVkLnJlbSgxNil9ICR7cG9saXNoZWQucmVtKDApfSAke3BvbGlzaGVkLnJlbSgxNil9XG4gICAgICB9XG5cbiAgICAgIC5kZWxldGVJY29uIHtcbiAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgICAgICBvcGFjaXR5OiAuODtcbiAgICAgIH1cblxuICAgICAgLmRlbGV0ZUljb246aG92ZXIge1xuICAgICAgICBvcGFjaXR5OiAxO1xuICAgICAgfVxuICAgIGA7XG4gIH1cblxuICBoYW5kbGVUcmlnZ2VyTGF5ZXJDaGFuZ2UgPSAodXNlRGF0YVNvdXJjZXM6IFVzZURhdGFTb3VyY2VbXSkgPT4ge1xuICAgIGlmKHVzZURhdGFTb3VyY2VzICYmIHVzZURhdGFTb3VyY2VzLmxlbmd0aCA+IDApe1xuICAgICAgdGhpcy5oYW5kbGVUcmlnZ2VyTGF5ZXJTZWxlY3RlZCh1c2VEYXRhU291cmNlc1swXSk7XG4gICAgfWVsc2V7XG4gICAgICB0aGlzLmhhbmRsZVJlbW92ZUxheWVyRm9yVHJpZ2dlckxheWVyKCk7XG4gICAgfVxuICB9XG5cbiAgaGFuZGxlVHJpZ2dlckxheWVyU2VsZWN0ZWQgPSAoY3VycmVudFNlbGVjdGVkRHM6IFVzZURhdGFTb3VyY2UpID0+IHtcbiAgICB0aGlzLnByb3BzLm9uU2V0dGluZ0NoYW5nZSh7XG4gICAgICBhY3Rpb25JZDogdGhpcy5wcm9wcy5hY3Rpb25JZCxcbiAgICAgIGNvbmZpZzogdGhpcy5wcm9wcy5jb25maWcuc2V0KCd1c2VEYXRhU291cmNlJywgY3VycmVudFNlbGVjdGVkRHMpXG4gICAgfSk7XG4gIH1cblxuICBoYW5kbGVSZW1vdmVMYXllckZvclRyaWdnZXJMYXllciA9ICgpID0+IHtcbiAgICB0aGlzLnByb3BzLm9uU2V0dGluZ0NoYW5nZSh7XG4gICAgICBhY3Rpb25JZDogdGhpcy5wcm9wcy5hY3Rpb25JZCxcbiAgICAgIGNvbmZpZzogdGhpcy5wcm9wcy5jb25maWcuc2V0KCd1c2VEYXRhU291cmNlJywgbnVsbClcbiAgICB9KVxuICB9XG5cbiAgZ2V0RHNSb290SWRzQnlXaWRnZXRJZCA9ICh3SWQ6IHN0cmluZykgPT4ge1xuICAgIGNvbnN0IGFwcENvbmZpZyA9IGdldEFwcFN0b3JlKCkuZ2V0U3RhdGUoKT8uYXBwU3RhdGVJbkJ1aWxkZXI/LmFwcENvbmZpZztcbiAgICBjb25zdCB3aWRnZXRKc29uID0gYXBwQ29uZmlnPy53aWRnZXRzPy5bd0lkXVxuICAgIGNvbnN0IHJvb3RJZHMgPSBbXVxuICAgIGNvbnN0IGRzTSA9IERhdGFTb3VyY2VNYW5hZ2VyLmdldEluc3RhbmNlKCk7XG4gICAgd2lkZ2V0SnNvbj8udXNlRGF0YVNvdXJjZXM/LmZvckVhY2goKHVzZURTOiBJbW11dGFibGVPYmplY3Q8VXNlRGF0YVNvdXJjZT4pID0+IHtcbiAgICAgIGNvbnN0IGRzID0gZHNNLmdldERhdGFTb3VyY2UodXNlRFMuZGF0YVNvdXJjZUlkKVxuICAgICAgaWYgKGRzPy50eXBlID09PSBBcmNHSVNEYXRhU291cmNlVHlwZXMuV2ViTWFwIHx8IGRzPy50eXBlID09PSBBcmNHSVNEYXRhU291cmNlVHlwZXMuV2ViU2NlbmUpIHsvL2lzIHJvb3QgZHNcbiAgICAgICAgcm9vdElkcy5wdXNoKHVzZURTLmRhdGFTb3VyY2VJZClcbiAgICAgIH1cbiAgICB9KVxuICAgIHJldHVybiByb290SWRzLmxlbmd0aCA+IDAgPyBJbW11dGFibGUocm9vdElkcykgOiB1bmRlZmluZWRcbiAgfVxuXG4gIGdldERzSWRzQnlXaWRnZXRJZCA9ICh3SWQ6IHN0cmluZykgPT4ge1xuICAgIGNvbnN0IGFwcENvbmZpZyA9IGdldEFwcFN0b3JlKCkuZ2V0U3RhdGUoKT8uYXBwU3RhdGVJbkJ1aWxkZXI/LmFwcENvbmZpZztcbiAgICBjb25zdCB3aWRnZXRKc29uID0gYXBwQ29uZmlnPy53aWRnZXRzPy5bd0lkXVxuICAgIHJldHVybiBJbW11dGFibGUod2lkZ2V0SnNvbj8udXNlRGF0YVNvdXJjZXM/Lm1hcCgodXNlRFM6IEltbXV0YWJsZU9iamVjdDxVc2VEYXRhU291cmNlPikgPT4gdXNlRFMuZGF0YVNvdXJjZUlkKSA/PyBbXSlcbiAgfVxuXG4gIHJlbmRlcigpe1xuICAgIGNvbnN0IHRyaWdnZXJSb290SWRzID0gdGhpcy5nZXREc1Jvb3RJZHNCeVdpZGdldElkKHRoaXMucHJvcHMubWVzc2FnZVdpZGdldElkKTtcblxuICAgIHJldHVybiA8ZGl2IGNzcz17dGhpcy5nZXRTdHlsZSh0aGlzLnByb3BzLnRoZW1lKX0+XG4gICAgICA8U2V0dGluZ1NlY3Rpb24gdGl0bGU9e3RoaXMucHJvcHMuaW50bC5mb3JtYXRNZXNzYWdlKHtpZDogJ21hcEFjdGlvbl9UcmlnZ2VyTGF5ZXInLCBkZWZhdWx0TWVzc2FnZTogZGVmYXVsdE1lc3NhZ2VzLm1hcEFjdGlvbl9UcmlnZ2VyTGF5ZXJ9KX0+XG4gICAgICAgIHs8RGF0YVNvdXJjZVNlbGVjdG9yXG4gICAgICAgICAgdHlwZXM9e0RTU2VsZWN0b3JUeXBlc31cbiAgICAgICAgICB1c2VEYXRhU291cmNlcz17KHRoaXMucHJvcHMuY29uZmlnLnVzZURhdGFTb3VyY2UgJiYgdGhpcy5wcm9wcy5jb25maWcudXNlRGF0YVNvdXJjZS5kYXRhU291cmNlSWQpXG4gICAgICAgICAgICA/IEltbXV0YWJsZShbdGhpcy5wcm9wcy5jb25maWcudXNlRGF0YVNvdXJjZV0pIDogSW1tdXRhYmxlKFtdKX1cbiAgICAgICAgICBmcm9tUm9vdERzSWRzPXt0cmlnZ2VyUm9vdElkc31cbiAgICAgICAgICBmcm9tRHNJZHM9e3RyaWdnZXJSb290SWRzID8gdW5kZWZpbmVkIDogdGhpcy5nZXREc0lkc0J5V2lkZ2V0SWQodGhpcy5wcm9wcy5tZXNzYWdlV2lkZ2V0SWQpfVxuICAgICAgICAgIGNsb3NlRGF0YVNvdXJjZUxpc3RPbkNoYW5nZT17dHJ1ZX1cbiAgICAgICAgICBkaXNhYmxlQWRkRGF0YT17dHJ1ZX1cbiAgICAgICAgICBoaWRlVHlwZURyb3Bkb3duPXt0cnVlfVxuICAgICAgICAgIG11c3RVc2VEYXRhU291cmNlPXt0cnVlfVxuICAgICAgICAgIG9uQ2hhbmdlPXt0aGlzLmhhbmRsZVRyaWdnZXJMYXllckNoYW5nZX1cbiAgICAgICAgICB3aWRnZXRJZD17dGhpcy5wcm9wcy5tZXNzYWdlV2lkZ2V0SWR9XG4gICAgICAgICAgZGlzYWJsZURhdGFWaWV3PXt0cnVlfVxuICAgICAgICAgIGhpZGVEYXRhVmlldz17dHJ1ZX1cbiAgICAgICAgICAvLyBvblNlbGVjdD17dGhpcy5oYW5kbGVUcmlnZ2VyTGF5ZXJTZWxlY3RlZH1cbiAgICAgICAgICAvLyBvblJlbW92ZT17dGhpcy5oYW5kbGVSZW1vdmVMYXllckZvclRyaWdnZXJMYXllcn1cbiAgICAgICAgLz59XG4gICAgICA8L1NldHRpbmdTZWN0aW9uPlxuICAgIDwvZGl2PjtcbiAgfVxufVxuXG5leHBvcnQgZGVmYXVsdCB0aGVtZVV0aWxzLndpdGhUaGVtZShfUGFuVG9BY3Rpb25TZXR0aW5nKTsiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUFBO0FBQ0E7QUFFQTtBQUNBO0FBQ0E7QUFDQTtBQWdCQTtBQUVBO0FBQUE7QUFLQTtBQUFBO0FBSEE7QUFDQTtBQW1CQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQUE7QUFDQTtBQUNBO0FBRUE7QUFDQTtBQUNBO0FBQ0E7QUFFQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBRUE7QUFDQTtBQUNBO0FBQ0E7QUFFQTtBQUNBO0FBQ0E7QUFDQTtBQUVBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFFQTtBQUNBO0FBQ0E7QUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBRUE7QUFDQTtBQTRCQTtBQUNBO0FBQ0E7QUFDQTtBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBRUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBRUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBRUE7O0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBRUE7O0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUF0SUE7QUFDQTtBQUVBO0FBQ0E7QUFDQTs7QUFDQTtBQThEQTtBQUNBO0FBRUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUVBO0FBQ0E7QUFjQTtBQTRDQTtBQUNBO0FBRUE7QUFDQTtBQUlBO0FBZ0JBO0FBeEpBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFxSkE7QUFBQTtBQUVBOzsiLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./extensions/widgets/arcgis/arcgis-map/src/message-actions/pan-to-action-setting.tsx\n");
+
+/***/ }),
+
+/***/ "./extensions/widgets/arcgis/arcgis-map/src/setting/translations/default.ts":
+/*!**********************************************************************************!*\
+  !*** ./extensions/widgets/arcgis/arcgis-map/src/setting/translations/default.ts ***!
+  \**********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n    sourceLabel: 'Source',\n    sourceDescript: 'A web map or web scene, or any combination of the two.',\n    initialMap: 'Initial map',\n    initialMapView: 'Initial view',\n    selectMap: 'Select map',\n    setMapView: 'Modify initial view',\n    defaultView: 'Default',\n    defaultViewTip: 'Initial position of the map inherited from the web map or web scene',\n    customView: 'Custom',\n    customViewTip: 'Create a new position of the map',\n    customViewSet: 'Modify',\n    toolLabel: 'Tools',\n    options: 'Options',\n    selectionHighlightColor: 'Selection highlight',\n    disableScrollZoom: 'Disable scroll zooming',\n    disablePopUp: 'Disable pop-up',\n    chooseALayer: 'Select a layer',\n    dataRelationShip: 'Data relationship',\n    mapNone: 'none',\n    messageField: 'Message field',\n    mapLayout: 'Tools layout',\n    mapLayout_LargeAndMedium: 'Large and medium size',\n    mapLayout_Small: 'Small size',\n    mapAction_TriggerLayer: 'Trigger data',\n    mapAction_SetData: 'Select data',\n    mapAction_ActionLayer: 'Action data',\n    mapAction_Conditions: 'Conditions',\n    mapAction_RelateMessage: 'Trigger / action connection',\n    mapAction_TriggerLayerField: 'Select a trigger field',\n    mapAction_None: 'none',\n    mapAction_Equals: 'equals',\n    mapAction_ActionLayerField: 'Select an action field',\n    mapAction_MoreConditions: 'More conditions',\n    mapAction_SetExpression: 'Please set your expression first.',\n    mapAction_ChooseLayer: 'Select data',\n    mapAction_AutoBind: 'Auto bound.',\n    mapAction_NoLayer: 'No data.',\n    mapZoomToAction_ZoomScale: 'Zoom scale',\n    mapZoomToAction_Automatic: 'Automatic',\n    mapZoomToAction_Custom: 'Custom',\n    mapZoomToAction_TypeScale: 'Type a scale'\n});\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9leHRlbnNpb25zL3dpZGdldHMvYXJjZ2lzL2FyY2dpcy1tYXAvc3JjL3NldHRpbmcvdHJhbnNsYXRpb25zL2RlZmF1bHQudHMuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9leHRlbnNpb25zL3dpZGdldHMvYXJjZ2lzL2FyY2dpcy1tYXAvc3JjL3NldHRpbmcvdHJhbnNsYXRpb25zL2RlZmF1bHQudHM/YzQzOCJdLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgZGVmYXVsdCB7XG4gIHNvdXJjZUxhYmVsOiAnU291cmNlJyxcbiAgc291cmNlRGVzY3JpcHQ6ICdBIHdlYiBtYXAgb3Igd2ViIHNjZW5lLCBvciBhbnkgY29tYmluYXRpb24gb2YgdGhlIHR3by4nLFxuICBpbml0aWFsTWFwOiAnSW5pdGlhbCBtYXAnLFxuICBpbml0aWFsTWFwVmlldzogJ0luaXRpYWwgdmlldycsXG4gIHNlbGVjdE1hcDogJ1NlbGVjdCBtYXAnLFxuICBzZXRNYXBWaWV3OiAnTW9kaWZ5IGluaXRpYWwgdmlldycsXG4gIGRlZmF1bHRWaWV3OiAnRGVmYXVsdCcsXG4gIGRlZmF1bHRWaWV3VGlwOiAnSW5pdGlhbCBwb3NpdGlvbiBvZiB0aGUgbWFwIGluaGVyaXRlZCBmcm9tIHRoZSB3ZWIgbWFwIG9yIHdlYiBzY2VuZScsXG4gIGN1c3RvbVZpZXc6ICdDdXN0b20nLFxuICBjdXN0b21WaWV3VGlwOiAnQ3JlYXRlIGEgbmV3IHBvc2l0aW9uIG9mIHRoZSBtYXAnLFxuICBjdXN0b21WaWV3U2V0OiAnTW9kaWZ5JyxcbiAgdG9vbExhYmVsOiAnVG9vbHMnLFxuICBvcHRpb25zOiAnT3B0aW9ucycsXG4gIHNlbGVjdGlvbkhpZ2hsaWdodENvbG9yOiAnU2VsZWN0aW9uIGhpZ2hsaWdodCcsXG4gIGRpc2FibGVTY3JvbGxab29tOiAnRGlzYWJsZSBzY3JvbGwgem9vbWluZycsXG4gIGRpc2FibGVQb3BVcDogJ0Rpc2FibGUgcG9wLXVwJyxcbiAgY2hvb3NlQUxheWVyOiAnU2VsZWN0IGEgbGF5ZXInLFxuICBkYXRhUmVsYXRpb25TaGlwOiAnRGF0YSByZWxhdGlvbnNoaXAnLFxuICBtYXBOb25lOiAnbm9uZScsXG4gIG1lc3NhZ2VGaWVsZDogJ01lc3NhZ2UgZmllbGQnLFxuICBtYXBMYXlvdXQ6ICdUb29scyBsYXlvdXQnLFxuICBtYXBMYXlvdXRfTGFyZ2VBbmRNZWRpdW06ICdMYXJnZSBhbmQgbWVkaXVtIHNpemUnLFxuICBtYXBMYXlvdXRfU21hbGw6ICdTbWFsbCBzaXplJyxcblxuICBtYXBBY3Rpb25fVHJpZ2dlckxheWVyOiAnVHJpZ2dlciBkYXRhJyxcbiAgbWFwQWN0aW9uX1NldERhdGE6ICdTZWxlY3QgZGF0YScsXG4gIG1hcEFjdGlvbl9BY3Rpb25MYXllcjogJ0FjdGlvbiBkYXRhJyxcbiAgbWFwQWN0aW9uX0NvbmRpdGlvbnM6ICdDb25kaXRpb25zJyxcbiAgbWFwQWN0aW9uX1JlbGF0ZU1lc3NhZ2U6ICdUcmlnZ2VyIC8gYWN0aW9uIGNvbm5lY3Rpb24nLFxuICBtYXBBY3Rpb25fVHJpZ2dlckxheWVyRmllbGQ6ICdTZWxlY3QgYSB0cmlnZ2VyIGZpZWxkJyxcbiAgbWFwQWN0aW9uX05vbmU6ICdub25lJyxcbiAgbWFwQWN0aW9uX0VxdWFsczogJ2VxdWFscycsXG4gIG1hcEFjdGlvbl9BY3Rpb25MYXllckZpZWxkOiAnU2VsZWN0IGFuIGFjdGlvbiBmaWVsZCcsXG4gIG1hcEFjdGlvbl9Nb3JlQ29uZGl0aW9uczogJ01vcmUgY29uZGl0aW9ucycsXG4gIG1hcEFjdGlvbl9TZXRFeHByZXNzaW9uOiAnUGxlYXNlIHNldCB5b3VyIGV4cHJlc3Npb24gZmlyc3QuJyxcbiAgbWFwQWN0aW9uX0Nob29zZUxheWVyOiAnU2VsZWN0IGRhdGEnLFxuICBtYXBBY3Rpb25fQXV0b0JpbmQ6ICdBdXRvIGJvdW5kLicsXG4gIG1hcEFjdGlvbl9Ob0xheWVyOiAnTm8gZGF0YS4nLFxuICBtYXBab29tVG9BY3Rpb25fWm9vbVNjYWxlOiAnWm9vbSBzY2FsZScsXG4gIG1hcFpvb21Ub0FjdGlvbl9BdXRvbWF0aWM6ICdBdXRvbWF0aWMnLFxuICBtYXBab29tVG9BY3Rpb25fQ3VzdG9tOiAnQ3VzdG9tJyxcbiAgbWFwWm9vbVRvQWN0aW9uX1R5cGVTY2FsZTogJ1R5cGUgYSBzY2FsZSdcbn1cbiJdLCJtYXBwaW5ncyI6IkFBQUE7QUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFFQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTsiLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./extensions/widgets/arcgis/arcgis-map/src/setting/translations/default.ts\n");
+
+/***/ }),
+
+/***/ "jimu-arcgis":
+/*!******************************!*\
+  !*** external "jimu-arcgis" ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = __WEBPACK_EXTERNAL_MODULE_jimu_arcgis__;//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiamltdS1hcmNnaXMuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vZXh0ZXJuYWwgXCJqaW11LWFyY2dpc1wiPzlmMWMiXSwic291cmNlc0NvbnRlbnQiOlsibW9kdWxlLmV4cG9ydHMgPSBfX1dFQlBBQ0tfRVhURVJOQUxfTU9EVUxFX2ppbXVfYXJjZ2lzX187Il0sIm1hcHBpbmdzIjoiQUFBQSIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///jimu-arcgis\n");
+
+/***/ }),
+
+/***/ "jimu-core":
+/*!****************************!*\
+  !*** external "jimu-core" ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = __WEBPACK_EXTERNAL_MODULE_jimu_core__;//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiamltdS1jb3JlLmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vL2V4dGVybmFsIFwiamltdS1jb3JlXCI/YzY5NSJdLCJzb3VyY2VzQ29udGVudCI6WyJtb2R1bGUuZXhwb3J0cyA9IF9fV0VCUEFDS19FWFRFUk5BTF9NT0RVTEVfamltdV9jb3JlX187Il0sIm1hcHBpbmdzIjoiQUFBQSIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///jimu-core\n");
+
+/***/ }),
+
+/***/ "jimu-ui/advanced/data-source-selector":
+/*!********************************************************!*\
+  !*** external "jimu-ui/advanced/data-source-selector" ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = __WEBPACK_EXTERNAL_MODULE_jimu_ui_advanced_data_source_selector__;//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiamltdS11aS9hZHZhbmNlZC9kYXRhLXNvdXJjZS1zZWxlY3Rvci5qcyIsInNvdXJjZXMiOlsid2VicGFjazovLy9leHRlcm5hbCBcImppbXUtdWkvYWR2YW5jZWQvZGF0YS1zb3VyY2Utc2VsZWN0b3JcIj9hOTBiIl0sInNvdXJjZXNDb250ZW50IjpbIm1vZHVsZS5leHBvcnRzID0gX19XRUJQQUNLX0VYVEVSTkFMX01PRFVMRV9qaW11X3VpX2FkdmFuY2VkX2RhdGFfc291cmNlX3NlbGVjdG9yX187Il0sIm1hcHBpbmdzIjoiQUFBQSIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///jimu-ui/advanced/data-source-selector\n");
+
+/***/ }),
+
+/***/ "jimu-ui/advanced/setting-components":
+/*!******************************************************!*\
+  !*** external "jimu-ui/advanced/setting-components" ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = __WEBPACK_EXTERNAL_MODULE_jimu_ui_advanced_setting_components__;//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiamltdS11aS9hZHZhbmNlZC9zZXR0aW5nLWNvbXBvbmVudHMuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vZXh0ZXJuYWwgXCJqaW11LXVpL2FkdmFuY2VkL3NldHRpbmctY29tcG9uZW50c1wiP2RlZTIiXSwic291cmNlc0NvbnRlbnQiOlsibW9kdWxlLmV4cG9ydHMgPSBfX1dFQlBBQ0tfRVhURVJOQUxfTU9EVUxFX2ppbXVfdWlfYWR2YW5jZWRfc2V0dGluZ19jb21wb25lbnRzX187Il0sIm1hcHBpbmdzIjoiQUFBQSIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///jimu-ui/advanced/setting-components\n");
+
+/***/ })
+
+/******/ })
+			);
+		}
+	};
+});
