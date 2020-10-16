@@ -115,7 +115,7 @@
           "canNavigation": true
         },
         "isUseCustomMapState": false,
-        "initialMapDataSourceID": "dataSource_1",
+        "initialMapDataSourceID": "dataSource_3",
         "initialMapState": null
       },
       "id": "widget_1",
@@ -131,8 +131,8 @@
           "mainDataSourceId": "dataSource_1"
         },
         {
-          "dataSourceId": "dataSource_2",
-          "mainDataSourceId": "dataSource_2"
+          "dataSourceId": "dataSource_3",
+          "mainDataSourceId": "dataSource_3"
         }
       ]
     }
@@ -153,6 +153,12 @@
       "itemId": "1390243355fc42508f53be133b7672bc",
       "id": "dataSource_2",
       "portalUrl": "https://esridevbeijing.maps.arcgis.com"
+    },
+    "dataSource_3": {
+      "type": "WEB_MAP",
+      "itemId": "bcbfcc4ddaf246a09400b71b4f54acc4",
+      "id": "dataSource_3",
+      "portalUrl": "https://esridevbeijing.maps.arcgis.com"
     }
   },
   "messageConfigs": {},
@@ -169,5 +175,5 @@
       "SMALL": 75
     }
   },
-  "timestamp": 1599210653717
+  "timestamp": 1599211983772
 }
