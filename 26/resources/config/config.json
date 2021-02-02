@@ -1,0 +1,252 @@
+{
+  "pages": {
+    "page_1": {
+      "id": "page_1",
+      "mode": "AUTO_SCROLL",
+      "type": "NORMAL",
+      "layout": {
+        "LARGE": "layout_1"
+      },
+      "isDefault": true,
+      "isVisible": true,
+      "label": "Page",
+      "header": false,
+      "footer": false
+    }
+  },
+  "layouts": {
+    "layout_1": {
+      "type": "FLOW",
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "bbox": {
+            "left": "273px",
+            "right": "633px",
+            "top": "111px",
+            "bottom": "181px",
+            "width": "360px",
+            "height": 90
+          },
+          "widgetId": "widget_1",
+          "setting": {
+            "heightMode": "fixed"
+          }
+        },
+        "1": {
+          "type": "WIDGET",
+          "bbox": {
+            "left": "195px",
+            "right": "595px",
+            "top": "174px",
+            "bottom": "574px",
+            "width": "400px",
+            "height": "600px"
+          },
+          "widgetId": "widget_3",
+          "setting": {
+            "heightMode": "fixed"
+          }
+        }
+      },
+      "order": [
+        "0",
+        "1"
+      ]
+    },
+    "layout_2": {
+      "type": "ROW",
+      "label": "Default",
+      "order": [
+        "0"
+      ],
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "bbox": {
+            "left": 5,
+            "width": 3,
+            "height": "70px"
+          },
+          "widgetId": "widget_2",
+          "setting": {
+            "heightMode": "fit"
+          }
+        }
+      }
+    },
+    "layout_3": {
+      "type": "ROW",
+      "label": "Default",
+      "order": [
+        "0"
+      ],
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "bbox": {
+            "left": 0,
+            "width": 12,
+            "height": "400px"
+          },
+          "widgetId": "widget_4",
+          "setting": {
+            "heightMode": "fit"
+          }
+        }
+      }
+    },
+    "layout_4": {
+      "type": "FIXED",
+      "label": "Map FixedLayout"
+    }
+  },
+  "exbVersion": "1.2.0",
+  "mainSizeMode": "LARGE",
+  "theme": "themes/morandi/",
+  "forBuilderAttributes": {
+    "lockLayout": false
+  },
+  "template": "blankfullscreen",
+  "attributes": {
+    "portalUrl": "https://esridevbeijing.maps.arcgis.com"
+  },
+  "customTheme": {
+    "sharedThemeVariables": {
+      "header": {
+        "bg": "#004da8",
+        "color": "#ffffff"
+      },
+      "body": {
+        "bg": "#d6d6d6",
+        "color": "#1a1a1a",
+        "link": "#1a1a1a"
+      },
+      "button": {
+        "color": "#1a1a1a"
+      },
+      "logo": {
+        "small": "",
+        "link": "https://www.esri.com"
+      },
+      "fonts": {
+        "base": {
+          "url": "",
+          "family": "Avenir Next"
+        },
+        "heading": {
+          "url": "",
+          "family": "Avenir Next"
+        }
+      }
+    }
+  },
+  "widgets": {
+    "widget_1": {
+      "uri": "widgets/layout/row/",
+      "version": "1.2.0",
+      "label": "Block 1",
+      "config": {
+        "space": 10,
+        "style": {
+          "padding": {
+            "number": [
+              10
+            ],
+            "unit": "px"
+          }
+        }
+      },
+      "id": "widget_1",
+      "layouts": {
+        "DEFAULT": {
+          "LARGE": "layout_2"
+        }
+      }
+    },
+    "widget_2": {
+      "uri": "widgets/common/text/",
+      "version": "1.2.0",
+      "label": "Text 1",
+      "config": {
+        "text": "<p style=\"text-align: center;\"><span style=\"font-size: 36px; color: var(--primary-500);\">State map</span></p>",
+        "placeholder": "Double click to edit text",
+        "style": {
+          "verticalAlign": "start",
+          "wrap": true
+        }
+      },
+      "id": "widget_2"
+    },
+    "widget_3": {
+      "uri": "widgets/layout/row/",
+      "version": "1.2.0",
+      "label": "Block 2",
+      "config": {
+        "space": 10,
+        "style": {
+          "padding": {
+            "number": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "unit": "px"
+          }
+        }
+      },
+      "id": "widget_3",
+      "layouts": {
+        "DEFAULT": {
+          "LARGE": "layout_3"
+        }
+      }
+    },
+    "widget_4": {
+      "uri": "widgets/arcgis/arcgis-map/",
+      "version": "1.2.0",
+      "label": "Map 1",
+      "config": {
+        "toolConifg": {
+          "canZoom": true,
+          "canHome": true,
+          "canSearch": true,
+          "canNavigation": true
+        },
+        "isUseCustomMapState": false
+      },
+      "id": "widget_4",
+      "layouts": {
+        "MapFixedLayout": {
+          "LARGE": "layout_4"
+        }
+      },
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_1",
+          "mainDataSourceId": "dataSource_1"
+        }
+      ]
+    }
+  },
+  "widgetsManifest": {},
+  "views": {},
+  "sections": {},
+  "dialogs": {},
+  "dataSources": {
+    "dataSource_1": {
+      "type": "WEB_MAP",
+      "itemId": "c793ebd8c4e2489795dad8ea6a54e9e0",
+      "id": "dataSource_1",
+      "portalUrl": "https://esridevbeijing.maps.arcgis.com"
+    }
+  },
+  "messageConfigs": {},
+  "pageStructure": [
+    {
+      "page_1": []
+    }
+  ],
+  "timestamp": 1612321925721
+}
