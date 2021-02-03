@@ -1,5 +1,5 @@
 ! function (e) {
-	//states added
+	//Counties added
 	var t = {};
 
 	function s(n) {
