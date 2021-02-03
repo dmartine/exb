@@ -141,7 +141,7 @@
       "version": "1.2.0",
       "label": "Text 1",
       "config": {
-        "text": "<p style=\"text-align: center;\"><span style=\"font-size: 36px; color: var(--primary-500);\">Counties map</span></p>",
+        "text": "<p style=\"text-align: center;\"><span style=\"font-size: 36px; color: var(--primary-500);\">States map</span></p>",
         "placeholder": "Double click to edit text",
         "style": {
           "verticalAlign": "start",
@@ -209,7 +209,7 @@
   "dataSources": {
     "dataSource_1": {
       "type": "WEB_MAP",
-      "itemId": "2bd47d464bd148c294626d386fcfad62",
+      "itemId": "c793ebd8c4e2489795dad8ea6a54e9e0",
       "id": "dataSource_1",
       "portalUrl": "https://esridevbeijing.maps.arcgis.com"
     }
