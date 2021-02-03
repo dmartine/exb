@@ -1,5 +1,5 @@
 ! function (e) {
-	//add comments
+	//states added
 	var t = {};
 
 	function s(n) {
