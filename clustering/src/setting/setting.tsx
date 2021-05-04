@@ -1,26 +1,14 @@
 import {React} from 'jimu-core';
 import {AllWidgetSettingProps} from 'jimu-for-builder';
 import { JimuMapViewSelector, SettingRow, SettingSection} from "jimu-ui/advanced/setting-components";
-import { IMConfig } from "../config";
 
-export default class Setting extends React.PureComponent<AllWidgetSettingProps<IMConfig>, {}>{
+export default class Setting extends React.PureComponent<AllWidgetSettingProps<any>, {}> {
 
   onMapSelected = (useMapWidgetIds: string[]) => {
-    let originMapWidgetIds = []
-    originMapWidgetIds = useMapWidgetIds
-    if (originMapWidgetIds && originMapWidgetIds.length ===0){
-      this.props.onSettingChange({
-        id: this.props.id,
-        useMapWidgetIds: useMapWidgetIds,
-        config: this.props.config.set("checkboxStatus", true)
-      });
-    } else {
-      this.props.onSettingChange({
-        id: this.props.id,
-        useMapWidgetIds: useMapWidgetIds,
-        config: this.props.config.set("checkboxStatus", false)
-      });
-     }
+    this.props.onSettingChange({
+      id: this.props.id,
+      useMapWidgetIds: useMapWidgetIds,
+    });
    };
 
   render(){
