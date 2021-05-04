@@ -1,3 +1,0 @@
-define({
-  description: "Bicicletas"
-});
