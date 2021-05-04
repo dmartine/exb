@@ -2,7 +2,6 @@
 import {React, AllWidgetProps, jsx } from 'jimu-core';
 import {JimuMapViewComponent, JimuMapView} from "jimu-arcgis";
 import {Label, Checkbox, WidgetPlaceholder} from 'jimu-ui';
-import { IMConfig } from "../config";
 
 interface State {
  jimuMapView: JimuMapView;
@@ -11,7 +10,7 @@ interface State {
  errorTip: boolean;
 }
 
-export default class Widget extends React.PureComponent<AllWidgetProps<IMConfig>, State> {
+export default class Widget extends React.PureComponent<AllWidgetProps<any>, State> {
 
  constructor(props){
    super(props);
@@ -98,12 +97,12 @@ renderWidgetPlaceholder() {
  render() {
   const mapContent = <JimuMapViewComponent useMapWidgetId={this.props.useMapWidgetIds?.[0]} onActiveViewChange={this.activeViewChangeHandler} />
   let clusterContent = null;
-  if (this.state.errorTip){
+  if (this.state.errorTip || !(this.props.useMapWidgetIds && this.props.useMapWidgetIds.length > 0)){
     clusterContent = this.renderWidgetPlaceholder();
   } else {
     clusterContent = 
     <Label style={{ cursor: "pointer"}} >
-        <Checkbox  checked={this.state.clusterStatus} disabled={this.props.config.checkboxStatus} onChange={(e) => {this.onCheckBoxChange({
+        <Checkbox  checked={this.state.clusterStatus} onChange={(e) => {this.onCheckBoxChange({
 					target: {
 					  	value: e.target.checked,
 						},
